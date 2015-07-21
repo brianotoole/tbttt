@@ -20,77 +20,6 @@ p {
 	color: #242121;
 }
 
-
-
-/* filling lines stuff */
-body::before{
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-}
-body::before, body::after{
-  content: '';
-  position: fixed;
-  height: 50%;
-  width: 10%;
-  z-index: -1;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -mos-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-}
-body::before{
-  background-color: $maroon;
-  top: 0;
-}
-body::after{
-  background-color: rgba(52, 52, 52, 0.1);
-  top:50%;
-}
-header.filling {
-  text-align: center;
-  padding: 20% auto;
-  height: 460px;
-  background-color: #109cbf;
-}
-header h1{
-  font-size: 34px;
-  padding: 20px 0;
-}
-.cd-service{
-  position: relative;
-  z-index: 2;
-  min-height: 300px;
-  margin-left: 100px;
-  background: transparent;
-}
-.cd-service::before, .cd-service::after{
-  content: '';
-  position: absolute;
-  width: 100px;
-  right: 100%;
-  z-index: 2;
-}
-.cd-service::before{
-  top: 0;
-  height: 73px;
-  background-repeat: no-repeat;
-}
-.cd-service::after{
-  top: 0;
-  bottom: 0;
-  left: 35%;
-  background-image: url("http://boudaoud.samir.free.fr/test/images/trait.png");
-  background-repeat: repeat-y;
-}
-.cd-service-divider::after{
-  top: 0;
-}
-.bottom{
-  height: 458px;
-}
 /*--------------------------------------------------------------
 Elements
 --------------------------------------------------------------*/
@@ -612,6 +541,8 @@ Content
 }
 
 
+
+
 /* homepage */
 .hero {
 	position: relative;
@@ -628,128 +559,64 @@ Content
 	}
 }
 
-.sec1 #contain {
+
+.sec1 {
     background: $white;
 	width: 100%;
     max-width: 100%;
-    margin: -30px auto;
-	margin: 0 auto;
-	padding: 5px 15px;	
-}
-
-h3.intro {
-	font-size: 38px;
-    line-height: 36px;
-}
-.intro {
-    background: $white;
-	max-width: 85%;
     margin: 0 auto;
-    padding: 40px 0;
-	font-size: 1.2em;
-	line-height: 1.5em;
-	text-align: center;
-    color: #626262;
+    padding: 0;
     
-    /*&:before {
-	    content: '\f10d ';
-	    font-family: 'FontAwesome';
-	    font-size: 1.6em;
-	    color: $maroon;
-    }*/
-}
-.blue-tint img { 
-    background-color: red;
-}
-.red-tint img {
-	opacity: 0.6; 
-}
-      
-      
-.sec1 > .row > .col-sm-6:nth-child(5),
-  .sec1 > .row > .col-sm-6:nth-child(7) {
-    padding-top: 40px;
-}
-.sec1 .squeeze-in {
-    max-width: 85%;
-	margin: 0 auto 30px auto;
-}
-.sec1 .squeeze-in div {
-	padding: 40px 0;
-}
-.sec1 i {
-	color: $maroon;
-	font-size: 1.1em;
-}
-
-.home-cta {
-	padding: 30px 0 32px 0;
-	margin-top: 40px;
-	background: $gray;
-	color: white;
-	text-align: center;
-
-}
-
-.radius-t-left {
-	border-bottom-right-radius: 40px;
-	height: 20px;
-    background: #FFF;
-    position: relative;
-    margin-top: 10px;
-}
-.radius-t-right {
-	border-bottom-left-radius: 40px;
-    height: 20px;
-    background: #FFF;
-    position: relative;
-    margin-top: 10px;
-}
-
-.remove-scroll {
-	margin: -30px 0;
-	background: #FFF;
-    height: 60px;
-}
-
-
-
-.two-panels {
-	background: transparent;
-    margin-bottom: -25px;
-    font-size: 1rem;
-    position: relative;
-    
-	> div {
-		  margin-top: -20px;
-		  margin-bottom: -20px;
-		  width: calc(49.5% - 3px);
-		  background: $white;
-		  padding: 60px;
+    .intro {
+	    background: $white;
+		max-width: 85%;
+	    margin: 0 auto;
+	    padding: 40px 0;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		text-align: center;
+	    color: #626262;  
 	}
 }
 
-.col-l {
-  	width: 49.5%;
- 	background: #00F;
- 	margin-right: 5px;
- 	border-bottom-right-radius: 40px;
+.sec2 {
+    background: white;
+	width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    
+    .intro {
+	    background: transparent;
+		max-width: 85%;
+	    margin: 0 auto;
+	    padding: 40px 0;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		text-align: center;
+	    color: #626262;  
+	}
 }
-.col-r {
- 	width: 49.5%;
- 	background: #00F;
- 	margin-left: 5px;
- 	border-bottom-left-radius: 40px;
-}
-.tr {
-	border-radius: 0;
-	border-top-right-radius: 40px;
-}
-.tl {
-	border-radius: 0;
-	border-top-left-radius: 40px;
+.squeeze-in {
+	> div {
+		padding: 30px;
+	}
+	
+	i,
+	h3 {
+		color: $black;
+	}
 }
 
+
+
+
+.home-cta {
+	padding: 30px 0 32px 0;
+	background: $gray;
+	color: white;
+	text-align: center;
+}
 
 .footer-cta {
 	padding: 30px 0 32px 0;

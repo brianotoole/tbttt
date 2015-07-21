@@ -57,48 +57,45 @@ get_header(); ?>
 		<p class="intro">To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and producing opportunities for the youth of our community regardless of age or background.</p>
 	</div><!--/.intro-->
 </div>
-	
-	
 
-<div class="two-panels text-center">
-		<div class="col-l">
+
+
+<div class="sec2">
+	<div class="intro" id="contain">
+	<div class="row squeeze-in">
+		<div class="col-sm-6 b-right">
 			<h3><i class="fa fa-university"></i></h3>
-			<h3>Provide Scholarships
+			<h3>Provide Scholarships</h3> 
 			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
-			<p><a href="#">Learn More <i class="fa fa-arrow-circle-right"> </i></a></p>
-		</div>
-		<div class="col-r">
-			<h3><i class="fa fa-university"></i></h3>
-			<h3>Provide Scholarships
+		</div><hr class="visible-xs">
+		<div class="col-sm-6">
+			<h3><i class="fa fa-heart"></i></h3>
+			<h3>Inspire Community</h3> 
 			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
-			<p><a href="#">Learn More <i class="fa fa-arrow-circle-right"> </i></a></p>
+		</div><hr class="visible-xs">
+		
+		<div class="col-sm-6 b-right">
+			<h3><i class="fa fa-video-camera"></i></h3>
+			<h3>Develop Performing Arts</h3> 
+			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
+		</div><hr class="visible-xs">
+		<div class="col-sm-6">
+			<h3><i class="fa fa-check-circle-o"></i></h3>
+			<h3>Inspire Community</h3> 
+			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
 		</div>
-</div><!--/.two-panels-->
-
-
-<div class="home-img">
-  <img class="car" src="http://placekitten.com/1600/250">
+    </div><!--/.row-->
+	</div><!--/.intro-->
 </div>
-
-<div class="two-panels text-center">
-		<div class="col-l tr">
-			<h3><i class="fa fa-university"></i></h3>
-			<h3>Provide Scholarships
-			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
-			<p><a href="#">Learn More <i class="fa fa-arrow-circle-right"> </i></a></p>
-		</div>
-		<div class="col-r tl">
-			<h3><i class="fa fa-university"></i></h3>
-			<h3>Provide Scholarships
-			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
-			<p><a href="#">Learn More <i class="fa fa-arrow-circle-right"> </i></a></p>
-		</div>
-</div><!--/.two-panels-->
+	
+	
 
 
-
-
-
+<div class="home-cta">
+    <div class="grid grid-pad no-top">
+		<h2>Upcoming Events</h2>
+    </div>
+</div>
 <div class="home-team">
     <div class="grid grid-pad no-top">
 		<p>fadsfdsafadsfads</p>
