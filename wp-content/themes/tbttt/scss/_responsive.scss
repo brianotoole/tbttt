@@ -9,8 +9,33 @@
 /* container size & below */
 @media screen and (max-width: 1170px) {
 
+	.more {
+		.view {
+			font-size: 1em;
+			padding-left: 0;
+		}
+		&:after {
+			margin-top: -48px;
+			padding: 8px 7px;
+		}
+	}
 
 }//end
+/* above 900, special considerations */
+@media screen and (max-width: 900px) {
+	.more {
+		.view {
+			font-size: 0.85em;
+			padding-left: 0;
+		}
+		&:after {
+			font-size: 1em;
+			width: 22px;
+			margin-top: -44px;
+			padding: 16px 7px;
+		}
+	}
+}
 
 
 
@@ -45,10 +70,32 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		display: none;
 	}
 	
-	.sec1 i {
-		display: block;
-		padding-bottom: 7px;
-		font-size: 1em;
+	.sec1 {
+	
+		i {
+			display: block;
+			padding-bottom: 7px;
+		}
+		.intro {
+			max-width: 100%;
+			padding: 40px 15px;
+		}
+		
+	}
+	.more {
+		margin: 0 auto;
+		.view {
+			font-size: 1em;
+		}
+		&:after {
+			font-size: 1em;
+			width: 38px;
+			margin-top: -48px;
+			padding: 18px 15px;
+		}
+	}
+	.events .pull-right {
+		width: 100%;
 	}
 
 	

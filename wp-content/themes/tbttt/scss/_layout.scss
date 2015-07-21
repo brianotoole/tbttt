@@ -328,9 +328,9 @@ textarea {
 /*white, no border*/
 .button.white {
 	background: white;
-	color: $black;
+	color: $maroon;
 	&:hover {
-		color: darken($black,5%);
+		color: darken($maroon,5%);
 		background: darken($white,5%);
 		text-decoration: none;
 	}
@@ -385,7 +385,7 @@ Menus
 	-webkit-transition: all 0.4s ease;
 	-ms-transition: all 0.4s ease;
 	&:hover {
-		border-top: 6px solid $black;
+		border-top: 6px solid white;
 		color: $black;
 	}
 }
@@ -529,7 +529,7 @@ Menus
     width: 48%;
 }
 .nav-links a {
-	color: #fff;
+	color: white;
 }
 
 
@@ -589,7 +589,7 @@ Content
 
 
 .sec1 {
-    background: $lightgray;
+    background: $maroon;
 	width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -600,6 +600,7 @@ Content
 		max-width: 85%;
 	    margin: 0 auto;
 	    padding: 40px 0;
+	    color: white;
 		font-size: 1.2em;
 		line-height: 1.5em;
 		text-align: center;
@@ -612,16 +613,16 @@ Content
 	h3.h-title {
 		max-width: 85%;
 		margin: 0 auto;
+		color: white;
 	    background: rgba(0, 0, 0, 0) url("http://brianzotoole.com/wp-content/themes/brian/images/divider.png") 0 53px repeat-x;
 	    font-size: 2.2em;
 	    padding-top: 37px;
-	    color: $gray;
 	}
 	
 	h3.h-title span {
 		display: inline-block;
 		padding: 0 20px;
-		background: $lightgray;/* same as .sec1 bg-color */
+		background: $maroon;/* same as .sec1 bg-color */
 	}
 	
 }
@@ -648,9 +649,8 @@ Content
 		padding: 30px;
 	}
 	
-	i,
-	h3 {
-		color: $gray;
+	i {
+		color: $maroon;
 	}
 }
 
@@ -680,14 +680,14 @@ Content
 	background: $lightgray;
 	margin: 45px auto;
 	padding: 15px;
-	color: $gray;
+	color: $maroon;
 	
 	&:after {
 		  content: '\f054';
 		  font-family: 'fontAwesome';
 		  font-size: 1.75em;
 		  color: white;
-		  background: $gray;
+		  background: $maroon;
 		  position: absolute;
 		  right: 0;
 		  width: 30px;
@@ -718,14 +718,14 @@ Content
 
 .home-cta {
 	padding: 30px 0 32px 0;
-	background: $gray;
+	background: $maroon;
 	color: white;
 	text-align: center;
 }
 
 .footer-cta {
 	padding: 30px 0 32px 0;
-	background: $gray;
+	background: $maroon;
 	color: white;
 	text-align: center;
 	
@@ -734,7 +734,7 @@ Content
 	  -moz-border-left-colors: none;
 	  -moz-border-right-colors: none;
 	  -moz-border-top-colors: none;
-	  border-color: $gray rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+	  border-color: $maroon rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
 	  border-image: none;
 	  border-style: solid;
 	  border-width: 21px 21px 0;

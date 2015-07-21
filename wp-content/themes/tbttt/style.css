@@ -3064,7 +3064,7 @@ html[xmlns] .slides {
   padding-top: 20px; }
 
 .blog-entry-header {
-  background: #720000;
+  background: #210213;
   padding: 150px 0 150px; }
 
 .blog-featured-img-header {
@@ -3157,7 +3157,7 @@ html[xmlns] .slides {
   transition: 0.25s ease-in-out; }
 
 .member .fa:hover {
-  background: #720000;
+  background: #210213;
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
@@ -3336,7 +3336,7 @@ input[type="submit"].contact-submit {
   margin-bottom: 40px; }
 
 .home-services .fa, .service .fa {
-  background: #720000;
+  background: #210213;
   color: #fff;
   font-size: 40px;
   padding-top: 30px;
@@ -3346,7 +3346,7 @@ input[type="submit"].contact-submit {
   margin-bottom: 20px; }
 
 .home-news h5:after, .home-team h5:after, .home-cta h6:after, .footer-contact h5:after, .member h5:after {
-  border: 2px solid #720000;
+  border: 2px solid #210213;
   content: " ";
   display: block;
   margin: 20px auto 15px;
@@ -4162,18 +4162,18 @@ textarea {
 /*white, no border*/
 .button.white {
   background: white;
-  color: #242121; }
+  color: #210213; }
   .button.white:hover {
-    color: #171515;
+    color: #090105;
     background: #e8e8e8;
     text-decoration: none; }
 
 /*marroon, no border*/
 .button.maroon {
-  background: #720000;
+  background: #210213;
   color: #555555; }
   .button.maroon:hover {
-    background: #d80000;
+    background: #81084a;
     text-decoration: none; }
 
 /*--------------------------------------------------------------
@@ -4213,7 +4213,7 @@ Menus
   -webkit-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease; }
   .main-navigation a:hover {
-    border-top: 6px solid #242121;
+    border-top: 6px solid white;
     color: #242121; }
 
 .main-navigation ul ul {
@@ -4458,18 +4458,18 @@ Menus
   width: 48%; }
 
 .nav-links a {
-  color: #fff; }
+  color: white; }
 
 /*--------------------------------------------------------------
 Content
 --------------------------------------------------------------*/
 /* color classes */
 .bg-maroon {
-  background: #720000;
+  background: #210213;
   color: white; }
 
 .maroon {
-  color: #720000; }
+  color: #210213; }
 
 .bg-white {
   background: white; }
@@ -4521,7 +4521,7 @@ Content
     margin-top: 300px; }
 
 .sec1 {
-  background: #dddddd;
+  background: #210213;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -4531,6 +4531,7 @@ Content
     max-width: 85%;
     margin: 0 auto;
     padding: 40px 0;
+    color: white;
     font-size: 1.2em;
     line-height: 1.5em;
     text-align: center; }
@@ -4539,14 +4540,14 @@ Content
   .sec1 h3.h-title {
     max-width: 85%;
     margin: 0 auto;
+    color: white;
     background: rgba(0, 0, 0, 0) url("http://brianzotoole.com/wp-content/themes/brian/images/divider.png") 0 53px repeat-x;
     font-size: 2.2em;
-    padding-top: 37px;
-    color: #555555; }
+    padding-top: 37px; }
   .sec1 h3.h-title span {
     display: inline-block;
     padding: 0 20px;
-    background: #dddddd;
+    background: #210213;
     /* same as .sec1 bg-color */ }
 
 .sec2 {
@@ -4566,9 +4567,8 @@ Content
 
 .squeeze-in > div {
   padding: 30px; }
-.squeeze-in i,
-.squeeze-in h3 {
-  color: #555555; }
+.squeeze-in i {
+  color: #210213; }
 
 /* events home */
 .events {
@@ -4589,13 +4589,13 @@ Content
   background: #dddddd;
   margin: 45px auto;
   padding: 15px;
-  color: #555555; }
+  color: #210213; }
   .more:after {
     content: '\f054';
     font-family: 'fontAwesome';
     font-size: 1.75em;
     color: white;
-    background: #555555;
+    background: #210213;
     position: absolute;
     right: 0;
     width: 30px;
@@ -4616,13 +4616,13 @@ Content
 
 .home-cta {
   padding: 30px 0 32px 0;
-  background: #555555;
+  background: #210213;
   color: white;
   text-align: center; }
 
 .footer-cta {
   padding: 30px 0 32px 0;
-  background: #555555;
+  background: #210213;
   color: white;
   text-align: center; }
   .footer-cta:after {
@@ -4630,7 +4630,7 @@ Content
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    border-color: #555555 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-color: #210213 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     border-image: none;
     border-style: solid;
     border-width: 21px 21px 0;
@@ -4723,6 +4723,23 @@ Footer
 /* Media Queries ----------------------------------------------------------- */
 /* above 1600 (xl screens) */
 /* container size & below */
+@media screen and (max-width: 1170px) {
+  .more .view {
+    font-size: 1em;
+    padding-left: 0; }
+  .more:after {
+    margin-top: -48px;
+    padding: 8px 7px; } }
+/* above 900, special considerations */
+@media screen and (max-width: 900px) {
+  .more .view {
+    font-size: 0.85em;
+    padding-left: 0; }
+  .more:after {
+    font-size: 1em;
+    width: 22px;
+    margin-top: -44px;
+    padding: 16px 7px; } }
 /* above .menu-toggle */
 @media screen and (min-width: 768px) {
   .b-right {
@@ -4768,6 +4785,21 @@ Footer
 
   .sec1 i {
     display: block;
-    padding-bottom: 7px;
-    font-size: 1em; } }
+    padding-bottom: 7px; }
+  .sec1 .intro {
+    max-width: 100%;
+    padding: 40px 15px; }
+
+  .more {
+    margin: 0 auto; }
+    .more .view {
+      font-size: 1em; }
+    .more:after {
+      font-size: 1em;
+      width: 38px;
+      margin-top: -48px;
+      padding: 18px 15px; }
+
+  .events .pull-right {
+    width: 100%; } }
 /* .menu-toggle */
