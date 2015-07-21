@@ -88,7 +88,6 @@ get_header(); ?>
 	</div><!--/.intro-->
 </div>
 	
-	
 
 
 <div class="home-cta">
@@ -96,7 +95,7 @@ get_header(); ?>
 		<h2>Upcoming Events</h2>
     </div>
 </div>
-<div class="home-team events">
+<div class="sec3">
     <div class="grid grid-pad no-top">
 		<?php get_template_part( 'part', 'events' ); ?>
     </div>
@@ -444,33 +443,5 @@ else echo esc_url( home_url() );?>"><button class="outline white"><?php echo get
 		<?php endif; ?>
 		<?php // end if ?>
         
-        <?php if( get_theme_mod( 'active_home_widget' ) == '') : ?>   
-        
-        <div class="home-cta" style="background: url(<?php echo get_theme_mod( 'widget_bg_image' ); ?>) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">  
-        	<div class="grid grid-pad"> 
-            	<div class="col-1-1">  
-                
-                	<?php if ( get_theme_mod( 'home_widget_icon' ) ) : ?>
-                		<i class="fa <?php echo get_theme_mod( 'home_widget_icon' ); ?>"></i>
-                	<?php else : ?> 
-					<?php endif; ?> 
-                    
-                    <?php if ( is_active_sidebar('home-widget') ) : ?>
-    					<?php dynamic_sidebar('home-widget'); ?>    
-    		 		<?php endif; ?>
-    
-                    
-                    <?php if ( get_theme_mod( 'widget_button_url' ) ) : ?>  
-    					<a href="<?php echo get_page_link(get_theme_mod('widget_button_url'))?>"><button class="outline white"><?php echo get_theme_mod( 'widget_button_text' ); ?></button></a>  
-    				<?php else : ?>    
-     				<?php endif; ?>
-                    
-                </div><!-- col-1-1 -->
-            </div><!-- grid -->
-        </div><!-- home-cta --> 
-		
-        <?php else : ?>  
-		<?php endif; ?>
-		<?php // end if ?>
 
 <?php get_footer(); ?>

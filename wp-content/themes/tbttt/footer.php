@@ -128,8 +128,8 @@
 	<div class="grid grid-pad row">
 		<div class="col-sm-4 col-xs-12 b-right">
 			<h3>Directions</h3>
-			<iframe class="visible-lg visible-md visible-sm" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1436829367014!6m8!1m7!1s63pv_7or4kXc-Qkmm9iRYg!2m2!1d28.098447!2d-82.504927!3f351!4f0!5f0.7820865974627469" width="335" height="215" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<a href="#" class="visible-xs button white">Open Maps</a>
+			<iframe class="visible-lg visible-md visible-sm" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1436829367014!6m8!1m7!1s63pv_7or4kXc-Qkmm9iRYg!2m2!1d28.098447!2d-82.504927!3f351!4f0!5f0.7820865974627469" width="335" height="232" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<a href="#" class="visible-xs button white">Get Directions</a>
 		</div><hr class="visible-xs">
 		
 		<div class="col-sm-4 col-xs-12 b-right">
@@ -137,11 +137,12 @@
 			<div class="item">
 				<strong>Tampa Bay Triple Threat Theatre, T3</strong>
 				<p>15906 Mapledale Dr., Tampa, FL 33624</p>
-				<p>PH: <a href="tel:813-969-0240<">813-969-0240</a></p>
+				<p class="hidden-xs"><i class="fa fa-phone"></i> <a href="tel:813-969-0240<"> 813-969-0240</a></p>
+				<p class="visible-xs">813-969-0240<br /><i class="fa fa-phone"></i><a href="tel:813-969-0240"> Tap to Call Us</a></p>
 			</div>
 			<div class="item">
 				<strong>Executive Director</strong>
-				<p>First Lastname<br><a href="mailto:ttt@mjpaa.com" target="_blank">ttt@mjpaa.com</a></p>
+				<p>First Lastname<br><i class="fa fa-envelope-o"></i> <a href="mailto:ttt@mjpaa.com" target="_blank"> ttt@mjpaa.com</a></p>
 			</div>
 			<div class="social-page-links">
 			
@@ -149,7 +150,7 @@
 		</div>
 		<div class="col-sm-4 col-xs-12">
 			<h3>Donate</h3>
-			<p>We are only as strong as our community.</p>
+			<p>We are only as strong as our community. Your donations are greatly appreciated.</p>
 			<a href="#" class="button white">Donate</a>
 		</div>
 	</div><!-- grid -->
@@ -158,10 +159,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
     	<div class="grid grid-pad">
 			<div class="site-info col-1-1">
-				<?php if ( get_theme_mod( 'sensible_footerid' ) ) : ?> 
-        			<?php echo get_theme_mod( 'sensible_footerid' ); // footer id ?>  
-				<?php else : ?>  
-				<?php endif; ?>
+				&copy; <?php echo date('Y'); ?> | <em>Tampa Bay Triple Threat Theatre, T3, is a non-profit 501(c)(3) corporation organized exclusively as charitable and civic.</em>  | <a href="#top">Back To Top</a>
 			</div><!-- .site-info -->
         </div><!-- grid --> 
 	</footer><!-- #colophon -->

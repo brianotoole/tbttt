@@ -10,11 +10,13 @@
 @media screen and (max-width: 1170px) {
 
 	.more {
+		margin: 60px -20px auto;
 		.view {
 			font-size: 1em;
 			padding-left: 0;
 		}
 		&:after {
+			right: 18px;
 			margin-top: -48px;
 			padding: 8px 7px;
 		}
@@ -78,16 +80,19 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		}
 		.intro {
 			max-width: 100%;
-			padding: 40px 15px;
+			padding: 30px 10px;
 		}
+		h3.h-title { background: none;}
 		
 	}
+	.squeeze-in > div {padding: 0;}
 	.more {
 		margin: 0 auto;
 		.view {
 			font-size: 1em;
 		}
 		&:after {
+			right: 0;
 			font-size: 1em;
 			width: 38px;
 			margin-top: -48px;
@@ -104,8 +109,16 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 
 
 /* .menu-toggle */
-@media  screen and (max-width: 899px) { 
-
+@media  screen and (max-width: 480px) { 
+	home-cta, .footer-cta {
+		padding: 10px 0 20px;
+		&:after {
+	    	margin-top: 19px;
+		}
+	}
+	.footer-contact {
+		  padding: 30px 0;
+	}
 }//end
 
 

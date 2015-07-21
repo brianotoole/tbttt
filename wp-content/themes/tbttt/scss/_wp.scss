@@ -1,5 +1,131 @@
+b,
+strong {
+	font-weight: 600;
+}
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+blockquote {
+    background: none repeat scroll 0 0 $gray;
+	border-radius: 0 4px 4px 0;
+    border-left: 5px solid $black;
+    color: $black;
+    font-style: italic;
+    padding: 22px 20px 1px;
+	margin: 0 0 1em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: $gray;
+	font-family: Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Monaco, Consolas, monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0 1.5em 1.5em;
+}
+img {
+	height: auto; 
+	max-width: 100%; 
+}
+
+figure {
+	margin: 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+th {
+	font-weight: bold;
+}
+
 /*--------------------------------------------------------------
-10.1 Posts and pages
+Posts and pages
 --------------------------------------------------------------*/
 .sticky {
 	display: block;
@@ -300,10 +426,6 @@ li.contact-comments textarea {
 	text-align: center;
 	border-top: 1px solid #dadada;
 }
-.home-team {
-	padding: 50px 0 30px;
-	border-top: 1px solid #dadada;
-}
 .home-news {
 	background: #fafafa;
 }
@@ -351,7 +473,7 @@ li.contact-comments textarea {
 
 
 /*--------------------------------------------------------------
-6.0 Accessibility
+Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers */
 .screen-reader-text {
@@ -384,7 +506,7 @@ li.contact-comments textarea {
 }
 
 /*--------------------------------------------------------------
-7.0 Alignments
+Alignments
 --------------------------------------------------------------*/
 .alignleft {
 	display: inline;
@@ -433,7 +555,7 @@ li.contact-comments textarea {
 }
 
 /*--------------------------------------------------------------
-9.0 Widgets
+Widgets
 --------------------------------------------------------------*/
 .widget {
 	margin: 0 0 1.5em;
@@ -585,7 +707,7 @@ body {
 
 [class*='col-'] {
 	float: left;
-	padding-right: 30px; /* column-space */
+	/*padding-right: 30px;*/ /* column-space */
 }
 
 .grid {
@@ -605,7 +727,7 @@ body {
 .grid-pad {
 	padding-top: 20px;
 	padding-left: 30px; /* grid-space to left */
-	padding-right: 0px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+	padding-right: 30px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
 }
 
 .push-right {
@@ -761,8 +883,8 @@ body {
 		min-width: 0;
 		margin-left: 0px;
 		margin-right: 0px;
-		padding-left: 20px; /* grid-space to left */
-		padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+		padding-left: 10px; /* grid-space to left */
+		padding-right: 10px; /* grid-space to right */
 	}
 	
 	[class*='col-'] {
@@ -772,8 +894,8 @@ body {
 		margin-right: 0px;
 		margin-top: 10px;
 		margin-bottom: 10px;
-		padding-left: 0px;
-		padding-right: 10px; /* column-space */
+		padding-left: 10px;
+		padding-right: 8px; /* column-space */
 	}
 	
 	

@@ -1,3 +1,4 @@
+<div class="events">
 <a href="#">
 <div class="col-sm-12 no-padding">
 	<div class="col-sm-2 no-padding">
@@ -64,3 +65,5 @@
 <?php } else { ?>
 <br />
 <?php } ?>
+
+</div><!--/.events-->

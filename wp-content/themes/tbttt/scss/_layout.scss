@@ -34,6 +34,7 @@ textarea {
 	font-size: 15px;
 	line-height: 1.8;
 }
+textarea { height: 200px; }
 a {
 	color: $black;
 	-webkit-transition: all 300ms linear;
@@ -49,132 +50,6 @@ a:active {
 	color: darken($black,7%);
 }
 
-b,
-strong {
-	font-weight: 600;
-}
-dfn,
-cite,
-em,
-i {
-	font-style: italic;
-}
-blockquote {
-    background: none repeat scroll 0 0 $gray;
-	border-radius: 0 4px 4px 0;
-    border-left: 5px solid $black;
-    color: $black;
-    font-style: italic;
-    padding: 22px 20px 1px;
-	margin: 0 0 1em;
-}
-
-address {
-	margin: 0 0 1.5em;
-}
-
-pre {
-	background: $gray;
-	font-family: Courier, monospace;
-	font-size: 15px;
-	font-size: 1.5rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
-
-code,
-kbd,
-tt,
-var {
-	font: 15px Monaco, Consolas, monospace;
-}
-
-abbr,
-acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
-}
-
-mark,
-ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
-
-sup,
-sub {
-	font-size: 75%;
-	height: 0;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sup {
-	bottom: 1ex;
-}
-
-sub {
-	top: .5ex;
-}
-
-small {
-	font-size: 75%;
-}
-
-big {
-	font-size: 125%;
-}
-
-
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
-}
-ul,
-ol {
-	margin: 0 0 1.5em 3em;
-}
-ul {
-	list-style: disc;
-}
-ol {
-	list-style: decimal;
-}
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-dt {
-	font-weight: bold;
-}
-dd {
-	margin: 0 1.5em 1.5em;
-}
-img {
-	height: auto; 
-	max-width: 100%; 
-}
-
-figure {
-	margin: 0;
-}
-
-table {
-	margin: 0 0 1.5em;
-	width: 100%;
-}
-
-th {
-	font-weight: bold;
-}
-
 /*--------------------------------------------------------------
 Buttons, Inputs, Forms
 --------------------------------------------------------------*/
@@ -185,6 +60,8 @@ textarea {
 	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+	line-height: 38px;
+    font-size: 1em;
 }
 
 button,
@@ -193,35 +70,24 @@ input[type="reset"],
 input[type="submit"] {
 	border: 2px solid;
 	border-color: $gray;
-	border-radius: 4px;
-	background: $lightgray;
+	border-radius: 0;
+	background: white;
 	box-shadow: none;
-	color: #fff;
+	color: $gray;
 	cursor: pointer;
 	-webkit-appearance: button; 
-	font-size: 15px;
+	font-size: 1.2em;
 	line-height: 1;
-	font-weight: 600;
-	padding: 1em 1.5em 1em;
+	font-weight: inherit;
+	padding: 1em;
 	text-shadow: none;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: $darkgray;
-}
-
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-	border-color: $darkgray;
+	text-transform: uppercase;
+	
+	&:hover, &:focus, &:active {
+		border-color: darken($gray,20%);
+		color: darken($gray,20%);
+	}
+	
 }
 
 input[type="checkbox"],
@@ -252,18 +118,14 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+	width: 100%;
 	color: #666;
 	border: 1px solid #ccc;
-	border-radius: 3px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-	color: #111;
+	border-radius: 0;
+	
+	&:focus {
+		color: $black;
+	}
 }
 
 input[type="text"],
@@ -271,14 +133,15 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
+	width: 100%;
 	padding: 3px;
 }
 
 textarea {
+	width: 100%;
 	overflow: auto; 
 	padding-left: 3px;
 	vertical-align: top; 
-	width: 100%;
 }
 
 /* buttons */
@@ -611,7 +474,7 @@ Content
 	}
 	
 	h3.h-title {
-		max-width: 85%;
+		max-width: 80%;
 		margin: 0 auto;
 		color: white;
 	    background: rgba(0, 0, 0, 0) url("http://brianzotoole.com/wp-content/themes/brian/images/divider.png") 0 53px repeat-x;
@@ -655,6 +518,9 @@ Content
 }
 
 /* events home */
+.sec3 {
+	padding: 60px 0 30px;
+}
 .events {
 	text-align: left;
 	
@@ -670,15 +536,12 @@ Content
 		}
 	}
 }
-.e:hover {
-	background: red;
-}
 
 .more {
 	clear: both;
     width: 100%;
 	background: $lightgray;
-	margin: 45px auto;
+	margin: 60px auto;
 	padding: 15px;
 	color: $maroon;
 	
@@ -714,8 +577,22 @@ Content
 }
 
 
+/* contact page */
+.contact {
+	
+	input[type="submit"] {
+		width: 100%;
+		margin-top: 5px;
+	}
+	
+	p {
+		margin: 15px 0;
+	}
+}
 
 
+
+/* call to actions, call outs */
 .home-cta {
 	padding: 30px 0 32px 0;
 	background: $maroon;
@@ -803,40 +680,46 @@ Footer
 	padding: 50px 15px 30px;
 	font-weight: 400;
 }
-.footer-contact p {
-	color: white;
+.footer-contact {
 	
-	a {
+	p, a {
 		color: white;
 	}
+
+	h5 {
+		color: $gray;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	 .button {
+		text-decoration: none;
+		margin: 20px auto;
+	}
+	.fa {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	
+	.item {
+		margin: 20px 0;
+	}
+	
 }
-.footer-contact h5 {
-	color: $gray;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-.footer-contact a,
-.footer-contact a:visited {
-	text-decoration: underline;
-}
-.footer-contact .button {
-	text-decoration: none;
-	margin: 20px auto;
-}
-.footer-contact .fa {
-	font-size: 20px;
-	margin-bottom: 15px;
-}
-.footer-contact .item {
-	margin: 20px 0;
-}
+
+
 .site-footer {
 	font-weight: 400;
 	background: $gray;
 	border-top: 1px solid lighten($gray,5%);
 	padding: 20px 0 40px;
-	color: #fff;
+	color: white;
 	text-align: center;
+	
+	a {
+		color: white;
+		text-decoration: underline;
+	}
+	
 }
 .no-padding {padding:0!important;}
