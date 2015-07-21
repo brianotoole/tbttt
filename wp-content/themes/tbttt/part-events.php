@@ -53,11 +53,14 @@
 	      <p class="view">View Event</p>
 	    </div>
 	</div>
-	<div class="clear"></div>
-	<hr>	
+	<div class="clear"></div>	
 </div>
 </a>
 
+<?php if(is_front_page() ) { ?>			
 <div class="col-sm-12 text-center no-padding">
   <a href="<?php echo home_url();?>/events" class="button transparent">View All Events</a>
 </div>
+<?php } else { ?>
+<br />
+<?php } ?>

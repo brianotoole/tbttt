@@ -3898,7 +3898,12 @@ textarea {
   line-height: 1.8; }
 
 a {
-  color: #242121; }
+  color: #242121;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear; }
 
 a:hover,
 a:focus,
@@ -3916,10 +3921,10 @@ i {
   font-style: italic; }
 
 blockquote {
-  background: none repeat scroll 0 0 #f1f1f1;
+  background: none repeat scroll 0 0 #555555;
   border-radius: 0 4px 4px 0;
-  border-left: 5px solid #720000;
-  color: #999;
+  border-left: 5px solid #242121;
+  color: #242121;
   font-style: italic;
   padding: 22px 20px 1px;
   margin: 0 0 1em; }
@@ -3928,7 +3933,7 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #eee;
+  background: #555555;
   font-family: Courier, monospace;
   font-size: 15px;
   font-size: 1.5rem;
@@ -4034,9 +4039,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 2px solid;
-  border-color: #720000;
+  border-color: #555555;
   border-radius: 4px;
-  background: #720000;
+  background: #dddddd;
   box-shadow: none;
   color: #fff;
   cursor: pointer;
@@ -4051,7 +4056,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #720000; }
+  border-color: #343434; }
 
 button:focus,
 input[type="button"]:focus,
@@ -4061,14 +4066,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  border-color: #720000; }
-
-button.outline {
-  background: none; }
-
-button.white {
-  border-color: #fff;
-  color: #fff; }
+  border-color: #343434; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -4130,17 +4128,18 @@ textarea {
   font-size: 17px;
   font-weight: normal;
   font-style: normal;
-  -webkit-transition: background-color 200ms linear;
-  -moz-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  -o-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear;
   line-height: 70px;
   letter-spacing: 0.07em;
   color: white;
   text-transform: uppercase;
   text-decoration: none; }
 
+/*primary, white bg, with border*/
 .button.primary {
   background: white;
   color: #555555;
@@ -4150,6 +4149,7 @@ textarea {
     border: 2px solid #3b3b3b;
     text-decoration: none; }
 
+/*transparent, with border*/
 .button.transparent {
   background: transparent;
   color: #555555;
@@ -4159,6 +4159,16 @@ textarea {
     border: 2px solid #222222;
     text-decoration: none; }
 
+/*white, no border*/
+.button.white {
+  background: white;
+  color: #242121; }
+  .button.white:hover {
+    color: #171515;
+    background: #e8e8e8;
+    text-decoration: none; }
+
+/*marroon, no border*/
 .button.maroon {
   background: #720000;
   color: #555555; }
@@ -4204,7 +4214,7 @@ Menus
   -ms-transition: all 0.4s ease; }
   .main-navigation a:hover {
     border-top: 6px solid #242121;
-    color: #720000; }
+    color: #242121; }
 
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -4423,7 +4433,7 @@ Menus
   overflow: hidden; }
 
 .comment-navigation .nav-previous, .paging-navigation .nav-previous, .post-navigation .nav-previous {
-  background: none repeat scroll 0 0 #720000;
+  background: none repeat scroll 0 0 #555555;
   border-radius: 3px;
   color: #fff;
   float: left;
@@ -4436,7 +4446,7 @@ Menus
   width: 48%; }
 
 .comment-navigation .nav-next, .paging-navigation .nav-next, .post-navigation .nav-next {
-  background: none repeat scroll 0 0 #720000;
+  background: none repeat scroll 0 0 #555555;
   border-radius: 3px;
   float: right;
   font-size: 15px;
@@ -4675,20 +4685,18 @@ Footer
 
 .footer-contact p {
   color: white; }
+  .footer-contact p a {
+    color: white; }
 
 .footer-contact h5 {
-  color: #720000;
+  color: #555555;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700; }
 
 .footer-contact a,
 .footer-contact a:visited {
-  color: white;
   text-decoration: underline; }
-  .footer-contact a:hover,
-  .footer-contact a:visited:hover {
-    color: #e6e6e6; }
 
 .footer-contact .button {
   text-decoration: none;

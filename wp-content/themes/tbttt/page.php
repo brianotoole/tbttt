@@ -1,11 +1,7 @@
 <?php
 /**
- * The template for displaying all pages.
+Default inteior pg
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
  */
 
 get_header(); ?> 
@@ -14,38 +10,52 @@ get_header(); ?>
 		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
             
     	<header class="featured-img-header" data-speed="8" data-type="background" style="background: url('<?php echo $image; ?>') 50% 0 no-repeat fixed;">
-    		<div class="grid grid-pad">
-        		<div class="col-1-1">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-        		</div><!-- .col-1-1 -->
-        	</div><!-- .grid -->
 		</header><!-- .entry-header --> 
+		<div class="sec1">
+			<div class="intro" id="contain">
+			<h3 class="h-title"><span><?php the_title(); ?></span></h3> 
+				<?php if( get_field('interior_callout') ): //if field is entered...?>
+				 <p class="intro"><?php the_field('interior_callout'); ?></p>
+				<?php else: //no field is entered...?> 
+				<p class="intro-no-p"></p>
+				<?php endif; ?>
+			</div><!--/.intro-->
+		</div><!--/.sec1-->
     
 		<?php else : ?>
         
         <header class="entry-header">
-    		<div class="grid grid-pad">
-        		<div class="col-1-1">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-        		</div><!-- .col-1-1 -->
-        	</div><!-- .grid -->
 		</header><!-- .entry-header -->
+
+		<div class="sec1">
+			<div class="intro" id="contain">
+			<h3 class="h-title"><span><?php the_title(); ?></span></h3> 
+				<?php if( get_field('interior_callout') ): //if field is entered...?>
+				 <p class="intro"><?php the_field('interior_callout'); ?></p>
+				<?php else: //no field is entered...?> 
+				<p class="intro-no-p"></p>
+				<?php endif; ?>
+			</div><!--/.intro-->
+		</div><!--/.sec1-->
         
 	<?php endif; ?>
     
 	<div class="grid grid-pad">
-		<div id="primary" class="content-area col-9-12">
+		<div id="primary" class="content-area col-1-1">
 			<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
+				
 				<?php get_template_part( 'content', 'page' ); ?>
+				
+				<?php if (is_page('events')) { ?>
+				  <?php get_template_part( 'part', 'events' ); ?>
+				<?php } else { ?>
+				<?php } ?>
 
 			<?php endwhile; // end of the loop. ?>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
-
-	<?php get_sidebar(); ?>
-	</div><!-- .grid -->  
-	<?php get_footer(); ?>
+	</div><!-- grid -->
+<?php get_footer(); ?>
