@@ -220,7 +220,6 @@ jQuery(function($){
 
 
 
-
 /* scroll events nav 
 var nav = $('#masthead'),
 	NavTopPosition = nav.offset().top + 500;

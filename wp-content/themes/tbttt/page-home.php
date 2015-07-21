@@ -56,69 +56,48 @@ get_header(); ?>
 	<h3 class="">Our Mission</h3> 
 		<p class="intro">To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and producing opportunities for the youth of our community regardless of age or background.</p>
 	</div><!--/.intro-->
+</div>
+	
+	
 
-	<div class="row squeeze-in text-center">
-		<div class="col-sm-6">
-			<h3><i class="fa fa-university"></i> Provide Scholarships</h3> 
+<div class="two-panels text-center">
+		<div class="col-l">
+			<h3><i class="fa fa-university"></i></h3>
+			<h3>Provide Scholarships
 			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
+			<p><a href="#">Learn More <i class="fa fa-arrow-circle-right"> </i></a></p>
 		</div>
-		<div class="col-sm-6">
-			<h3><i class="fa fa-university"></i> Provide Scholarships</h3> 
+		<div class="col-r">
+			<h3><i class="fa fa-university"></i></h3>
+			<h3>Provide Scholarships
 			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
+			<p><a href="#">Learn More <i class="fa fa-arrow-circle-right"> </i></a></p>
 		</div>
-		
-		<div class="col-sm-6">
-			<h3><i class="fa fa-university"></i> Provide Scholarships</h3> 
+</div><!--/.two-panels-->
+
+
+<div class="home-img">
+  <img class="car" src="http://placekitten.com/1600/250">
+</div>
+
+<div class="two-panels text-center">
+		<div class="col-l tr">
+			<h3><i class="fa fa-university"></i></h3>
+			<h3>Provide Scholarships
 			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
+			<p><a href="#">Learn More <i class="fa fa-arrow-circle-right"> </i></a></p>
 		</div>
-		
-		<div class="col-sm-6">
-			<h3><i class="fa fa-university"></i> Provide Scholarships</h3> 
+		<div class="col-r tl">
+			<h3><i class="fa fa-university"></i></h3>
+			<h3>Provide Scholarships
 			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
+			<p><a href="#">Learn More <i class="fa fa-arrow-circle-right"> </i></a></p>
 		</div>
-		
-		<!--<div class="col-sm-12 remove-scroll"></div>-->
-		
-	</div><!--/.row-->
-
-</div><!--/.sec1-->
+</div><!--/.two-panels-->
 
 
 
 
-
-<div class="col-sm-6 radius-t-left"></div>
-<div class="col-sm-6 radius-t-right"></div>
-<div class="sec1" style="">
-	<div class="intro" id="contain">
-	<img class="img-responsive center-block" style="margin:0 auto;" src="https://peoplestrustinsurance.com/images/default-source/rrt/a-fleet-of-148-trucks-ready-to-deploy-in-florida.jpg?sfvrsn=0">
-	</div><!--/.intro-->
-
-	<div class="row squeeze-in text-center">
-		<div class="col-sm-6">
-			<h3><i class="fa fa-university"></i> Provide Scholarships</h3> 
-			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
-		</div>
-		<div class="col-sm-6">
-			<h3><i class="fa fa-university"></i> Provide Scholarships</h3> 
-			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
-		</div>
-		
-		<div class="col-sm-6">
-			<h3><i class="fa fa-university"></i> Provide Scholarships</h3> 
-			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
-		</div>
-		
-		<div class="col-sm-6">
-			<h3><i class="fa fa-university"></i> Provide Scholarships</h3> 
-			<p>To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and.</p>
-		</div>
-		
-		<!--<div class="col-sm-12 remove-scroll"></div>-->
-		
-	</div><!--/.row-->
-
-</div><!--/.sec1-->
 
 <div class="home-team">
     <div class="grid grid-pad no-top">
