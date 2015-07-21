@@ -14,15 +14,12 @@
 get_header(); ?>
 
         
-
         <header class="entry-header">
 		</header><!-- .entry-header -->
 
-		<div class="page-title container full bg-maroon">
-			<div class="row" id="container">
-				<div class="col-sm-12">
-				 <h1 class="entry-title">
-					<?php
+		<div class="sec1">
+			<div class="intro" id="contain">
+			<h3 class="h-title"><span><?php
 						if ( is_category() ) :
 							single_cat_title();
 
@@ -73,7 +70,7 @@ get_header(); ?>
 
 						endif;
 					?>
-				</h1>
+				</span></h3> 
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
@@ -81,10 +78,10 @@ get_header(); ?>
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;
 				?>
-				</div><!--/.col-->
-			</div><!--/.row-->
-		</div>
-        
+				<p class="intro-no-p"></p>
+			</div><!--/.intro-->
+		</div><!--/.sec1-->
+     
 
 
     

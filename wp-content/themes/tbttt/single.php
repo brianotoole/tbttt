@@ -14,7 +14,11 @@ get_header(); ?>
 		<div class="sec1">
 			<div class="intro" id="contain">
 			<h3 class="h-title"><span><?php the_title(); ?></span></h3> 
-				<p class="intro-no-p"><?php the_field('interior_callout'); ?></p>
+				<?php if( get_field('interior_callout') ): //if field is entered...?>
+				 <p class="intro"><?php the_field('interior_callout'); ?></p>
+				<?php else: //no field is entered...?> 
+				<p class="intro-no-p"></p>
+				<?php endif; ?>
 			</div><!--/.intro-->
 		</div><!--/.sec1-->
     
@@ -26,7 +30,11 @@ get_header(); ?>
 		<div class="sec1">
 			<div class="intro" id="contain">
 			<h3 class="h-title"><span><?php the_title(); ?></span></h3> 
-				<p class="intro-no-p"><?php the_field('interior_callout'); ?></p>
+				<?php if( get_field('interior_callout') ): //if field is entered...?>
+				 <p class="intro"><?php the_field('interior_callout'); ?></p>
+				<?php else: //no field is entered...?> 
+				<p class="intro-no-p"></p>
+				<?php endif; ?>
 			</div><!--/.intro-->
 		</div><!--/.sec1-->
         

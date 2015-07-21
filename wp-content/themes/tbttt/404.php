@@ -7,23 +7,22 @@ get_header(); ?>
 <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">
 <META NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-        <header class="entry-header">
+
+		<header class="entry-header">
 		</header><!-- .entry-header -->
 
-		<div class="page-title container full bg-maroon">
-			<div class="row" id="container">
-				<div class="col-sm-12">
-				  <h1 class="entry-title">Page Not Found</h1>
-				</div><!--/.col-->
-			</div><!--/.row-->
-		</div>
+		<div class="sec1">
+			<div class="intro" id="contain">
+			<h3 class="h-title"><span>This Page Does Not Exist - 404</span></h3> 
+				 <p class="intro-no-p"></p>
+			</div><!--/.intro-->
+		</div><!--/.sec1-->
         
     
 	<div class="grid grid-pad">
 		<div id="primary" class="content-area col-1-1">
 			<main id="main" class="site-main" role="main">
 			<div class="entry-content">
-				<h2>This Page Does Not Exist - 404.</h2>
 				<p>Please <a href="<?php bloginfo('url'); ?>">click here to return to the homepage</a>.</p>
 				<br />
 			</div>
