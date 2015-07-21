@@ -96,7 +96,7 @@ get_header(); ?>
 		<h2>Upcoming Events</h2>
     </div>
 </div>
-<div class="events home-team">
+<div class="home-team events">
     <div class="grid grid-pad no-top">
 		<?php get_template_part( 'part', 'events' ); ?>
     </div>

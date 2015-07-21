@@ -129,7 +129,7 @@
 		<div class="col-sm-4 col-xs-12 b-right">
 			<h3>Directions</h3>
 			<iframe class="visible-lg visible-md visible-sm" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1436829367014!6m8!1m7!1s63pv_7or4kXc-Qkmm9iRYg!2m2!1d28.098447!2d-82.504927!3f351!4f0!5f0.7820865974627469" width="335" height="215" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<a href="#" class="visible-xs button maroon">Open Maps</a>
+			<a href="#" class="visible-xs button primary">Open Maps</a>
 		</div><hr class="visible-xs">
 		
 		<div class="col-sm-4 col-xs-12 b-right">
@@ -150,7 +150,7 @@
 		<div class="col-sm-4 col-xs-12">
 			<h3>Donate</h3>
 			<p>We are only as strong as our community.</p>
-			<a href="#" class="button maroon">Donate</a>
+			<a href="#" class="button primary">Donate</a>
 		</div>
 	</div><!-- grid -->
 </div>

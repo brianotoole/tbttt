@@ -1,5 +1,5 @@
-<div class="col-sm-12">
-
+<a href="#">
+<div class="col-sm-12 no-padding">
 	<div class="col-sm-2 no-padding">
 	  <img src="http://placeimg.com/200/200/any">
 	</div>
@@ -15,12 +15,11 @@
 	</div>
 	<div class="clear"></div>
 	<hr>
-	
 </div>
+</a>
 
-
-<div class="col-sm-12">
-
+<a href="#">
+<div class="col-sm-12 no-padding">
 	<div class="col-sm-2 no-padding">
 	  <img src="http://placeimg.com/200/200/any">
 	</div>
@@ -35,12 +34,12 @@
 	    </div>
 	</div>
 	<div class="clear"></div>
-	<hr>
-	
+	<hr>	
 </div>
+</a>
 
-<div class="col-sm-12">
-
+<a href="#">
+<div class="col-sm-12 no-padding">
 	<div class="col-sm-2 no-padding">
 	  <img src="http://placeimg.com/200/200/any">
 	</div>
@@ -55,10 +54,10 @@
 	    </div>
 	</div>
 	<div class="clear"></div>
-	<hr>
-	
+	<hr>	
 </div>
+</a>
 
-<div class="col-sm-12">
-  <a href="#" class="button maroon">View All Events</a>
+<div class="col-sm-12 text-center no-padding">
+  <a href="<?php echo home_url();?>/events" class="button transparent">View All Events</a>
 </div>

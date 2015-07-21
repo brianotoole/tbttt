@@ -126,7 +126,7 @@ function sensible_scripts() {
 	}
 	
 	if ( is_admin() ) { 
-    wp_enqueue_style( 'control', get_template_directory_uri() . '/js/sensible_control.js', array(), false, true );  
+    //wp_enqueue_style( 'control', get_template_directory_uri() . '/js/sensible_control.js', array(), false, true );  
 	} 
 	
 	
