@@ -561,26 +561,7 @@ Content
 
 
 .sec1 {
-    background: $white;
-	width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    
-    .intro {
-	    background: $white;
-		max-width: 85%;
-	    margin: 0 auto;
-	    padding: 40px 0;
-		font-size: 1.2em;
-		line-height: 1.5em;
-		text-align: center;
-	    color: #626262;  
-	}
-}
-
-.sec2 {
-    background: white;
+    background: #fff;
 	width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -594,7 +575,42 @@ Content
 		font-size: 1.2em;
 		line-height: 1.5em;
 		text-align: center;
-	    color: #626262;  
+	}
+	
+	h3.h-title {
+		max-width: 85%;
+		margin: 0 auto;
+	    background: rgba(0, 0, 0, 0) url("http://brianzotoole.com/wp-content/themes/brian/images/divider.png") 0 53px repeat-x;
+	    font-size: 2.2em;
+	    padding-top: 37px;
+	    color: $gray;
+	}
+	
+	h3.h-title span {
+		display: inline-block;
+		padding: 0 20px;
+		background: #fff;
+	}
+	
+}
+
+
+
+.sec2 {
+    background: rgba(52, 52, 52, 0.05);
+	width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    
+    .intro {
+	    background: transparent;
+		max-width: 85%;
+	    margin: 0 auto;
+	    padding: 40px 0;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		text-align: center;
 	}
 }
 .squeeze-in {
@@ -604,7 +620,59 @@ Content
 	
 	i,
 	h3 {
-		color: $black;
+		color: $gray;
+	}
+}
+
+/* events home */
+.events {
+	text-align: left;
+	
+	.button {
+		display: block;
+		margin: 30px auto;
+	}
+}
+/*.round {
+	border-radius: 50%;
+}*/
+
+.more {
+	clear: both;
+    width: 100%;
+	background: $lightgray;
+	margin: 45px auto;
+	padding: 15px;
+	color: $gray;
+	
+	&:after {
+		  content: '\f054';
+		  font-family: 'fontAwesome';
+		  font-size: 1.75em;
+		  color: white;
+		  background: $gray;
+		  position: absolute;
+		  right: 0;
+		  width: 30px;
+		  padding: 11px 7px;
+		  margin-top: -53px;
+	}
+	
+	&:hover {
+		background: darken($lightgray,7%);
+		cursor: pointer;
+	}
+	&:hover:after {
+		background: black;
+		cursor: pointer;
+	}
+	
+	.view {
+		padding-top: 6px;
+		padding-left: 8px;
+		font-size: 1.2em;
+		text-align: left;
+		text-transform: uppercase;
 	}
 }
 
@@ -649,7 +717,7 @@ Content
 .footer-cta {
 	
 	h2, h3, h4 {
-		color: $lightgray;
+		color: white;
 	}
 	
 }
@@ -776,7 +844,6 @@ Content
 }
 .home-team {
 	padding: 50px 0 30px;
-	text-align: center;
 	border-top: 1px solid #dadada;
 }
 .home-news {
@@ -814,7 +881,6 @@ Content
 .home-team img {
 	width: 80%;
 	max-width: 200px;
-	margin: 0 auto 10px;
 }
 .home-cta p {
 	color: #fff;

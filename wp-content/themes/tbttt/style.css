@@ -4293,10 +4293,10 @@ Content
   color: #242121; }
 
 .bg-gray {
-  background: #343434; }
+  background: #555555; }
 
 .gray {
-  color: #343434; }
+  color: #555555; }
 
 /* layouts */
 #container {
@@ -4319,7 +4319,7 @@ Content
 /* homepage */
 .hero {
   position: relative;
-  background: #343434;
+  background: #555555;
   width: 100%;
   height: 500px;
   margin: 0 auto; }
@@ -4330,23 +4330,33 @@ Content
     margin-top: 300px; }
 
 .sec1 {
-  background: whitesmoke;
+  background: #fff;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
   padding: 0; }
   .sec1 .intro {
-    background: whitesmoke;
+    background: transparent;
     max-width: 85%;
     margin: 0 auto;
     padding: 40px 0;
     font-size: 1.2em;
     line-height: 1.5em;
-    text-align: center;
-    color: #626262; }
+    text-align: center; }
+  .sec1 h3.h-title {
+    max-width: 85%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0) url("http://brianzotoole.com/wp-content/themes/brian/images/divider.png") 0 53px repeat-x;
+    font-size: 2.2em;
+    padding-top: 37px;
+    color: #555555; }
+  .sec1 h3.h-title span {
+    display: inline-block;
+    padding: 0 20px;
+    background: #fff; }
 
 .sec2 {
-  background: white;
+  background: rgba(52, 52, 52, 0.05);
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -4358,24 +4368,64 @@ Content
     padding: 40px 0;
     font-size: 1.2em;
     line-height: 1.5em;
-    text-align: center;
-    color: #626262; }
+    text-align: center; }
 
 .squeeze-in > div {
   padding: 30px; }
 .squeeze-in i,
 .squeeze-in h3 {
-  color: #242121; }
+  color: #555555; }
+
+/* events home */
+.events {
+  text-align: left; }
+  .events .button {
+    display: block;
+    margin: 30px auto; }
+
+/*.round {
+	border-radius: 50%;
+}*/
+.more {
+  clear: both;
+  width: 100%;
+  background: #dddddd;
+  margin: 45px auto;
+  padding: 15px;
+  color: #555555; }
+  .more:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    font-size: 1.75em;
+    color: white;
+    background: #555555;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    padding: 11px 7px;
+    margin-top: -53px; }
+  .more:hover {
+    background: #cbcbcb;
+    cursor: pointer; }
+  .more:hover:after {
+    background: black;
+    cursor: pointer; }
+  .more .view {
+    padding-top: 6px;
+    padding-left: 8px;
+    font-size: 1.2em;
+    text-align: left;
+    text-transform: uppercase; }
 
 .home-cta {
   padding: 30px 0 32px 0;
-  background: #343434;
+  background: #555555;
   color: white;
   text-align: center; }
 
 .footer-cta {
   padding: 30px 0 32px 0;
-  background: #343434;
+  background: #555555;
   color: white;
   text-align: center; }
   .footer-cta:after {
@@ -4383,7 +4433,7 @@ Content
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    border-color: #343434 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-color: #555555 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     border-image: none;
     border-style: solid;
     border-width: 21px 21px 0;
@@ -4400,7 +4450,7 @@ Content
 .footer-cta h2,
 .footer-cta h3,
 .footer-cta h4 {
-  color: #dddddd; }
+  color: white; }
 
 .site-header {
   position: absolute;
@@ -4501,7 +4551,7 @@ Content
 .footer-contact {
   padding: 50px 0 80px;
   text-align: center;
-  background: #343434 url("img/gray.png");
+  background: #555555 url("img/gray.png");
   color: white; }
 
 .home-content p {
@@ -4521,7 +4571,6 @@ Content
 
 .home-team {
   padding: 50px 0 30px;
-  text-align: center;
   border-top: 1px solid #dadada; }
 
 .home-news {
@@ -4558,8 +4607,7 @@ Content
 
 .home-team img {
   width: 80%;
-  max-width: 200px;
-  margin: 0 auto 10px; }
+  max-width: 200px; }
 
 .home-cta p {
   color: #fff;
@@ -4627,8 +4675,8 @@ Footer
 
 .site-footer {
   font-weight: 400;
-  background: #343434;
-  border-top: 1px solid #414141;
+  background: #555555;
+  border-top: 1px solid #626262;
   padding: 20px 0 40px;
   color: #fff;
   text-align: center; }

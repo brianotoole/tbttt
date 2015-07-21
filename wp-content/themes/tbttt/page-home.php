@@ -53,7 +53,7 @@ get_header(); ?>
 
 <div class="sec1">
 	<div class="intro" id="contain">
-	<h3 class="">Our Mission</h3> 
+	<h3 class="h-title"><span>Our Mission</span></h3> 
 		<p class="intro">To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and producing opportunities for the youth of our community regardless of age or background.</p>
 	</div><!--/.intro-->
 </div>
@@ -92,13 +92,13 @@ get_header(); ?>
 
 
 <div class="home-cta">
-    <div class="grid grid-pad no-top">
+    <div class="grid grid-pad">
 		<h2>Upcoming Events</h2>
     </div>
 </div>
-<div class="home-team">
+<div class="events home-team">
     <div class="grid grid-pad no-top">
-		<p>fadsfdsafadsfads</p>
+		<?php get_template_part( 'part', 'events' ); ?>
     </div>
 </div>
 
