@@ -118,6 +118,15 @@ function sensible_scripts() {
 	//wp_enqueue_style( 'slider', get_template_directory_uri() . '/css/flexslider.css' );
 	//wp_enqueue_style( 'jPushMenu', get_template_directory_uri() . '/css/jPushMenu.css' );
 	
+
+	//show contact form 7 plugin scripts, only on contact page...
+	if (is_page('contact')){
+        wpcf7_enqueue_scripts();
+        wpcf7_enqueue_styles();
+    }
+   
+
+	
 	if ( get_theme_mod('sensible_animate') != 1 ) {
 		
 		wp_enqueue_script( 'wowjs', get_template_directory_uri() . '/js/wow.js', array('jquery'), true );
