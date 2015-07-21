@@ -90,6 +90,14 @@ input[type="submit"] {
 	
 }
 
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+	background: #f4f4f4;
+	&:focus {
+		background: white;
+		border-color: darken($gray,20%);
+	}
+}
+
 input[type="checkbox"],
 input[type="radio"] {
 	padding: 0; 
@@ -443,10 +451,10 @@ Content
     margin: 0 auto;
     
 	h2 {
-    	font-size: 62px;
+    	font-size: 3.75em;
 		line-height: 64px;
 		color: #FFF;
-		margin-top: 300px;
+		margin-top: 340px;
 	}
 }
 
@@ -514,6 +522,7 @@ Content
 	
 	i {
 		color: $maroon;
+		font-size: 1.4em;
 	}
 }
 
@@ -527,7 +536,7 @@ Content
 	.button {
 		display: block;
 		width: 100%;
-		margin: 30px auto;
+		margin: 30px auto 30px;
 	}
 	
 	> div div {
@@ -563,6 +572,7 @@ Content
 		cursor: pointer;
 	}
 	&:hover:after {
+		color: lighten($maroon,15%);
 		background: black;
 		cursor: pointer;
 	}
@@ -619,7 +629,7 @@ Content
 	  content: "";
 	  height: 0;
 	  left: 50%;
-	  margin-left: -26px;
+	  margin-left: -17px;
 	  position: absolute;
 	  width: 0;
 	  z-index: 10;

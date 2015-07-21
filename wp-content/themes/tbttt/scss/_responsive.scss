@@ -66,11 +66,18 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.menu-toggle {
 		background: none;
 		border: none;
+		color: white;
 		padding: 1em 1.5em 1em 0;
+		&:hover, &:focus {
+			color: white;
+			border: 0;
+		}
 	}
 	.main-navigation ul {
 		display: none;
 	}
+	
+	.hero h2 {font-size:2.5em;}
 	
 	.sec1 {
 	
@@ -81,9 +88,13 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		.intro {
 			max-width: 100%;
 			padding: 30px 10px;
+			font-size: 1em;
+			line-height: 1.75em;
 		}
-		h3.h-title { background: none;}
-		
+		h3.h-title { 
+			font-size: 1.75em;
+			background: none;			
+		}	
 	}
 	.squeeze-in > div {padding: 0;}
 	.more {
@@ -110,6 +121,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 
 /* .menu-toggle */
 @media  screen and (max-width: 480px) { 
+	.hero h2 {font-size:1.75em;}
 	home-cta, .footer-cta {
 		padding: 10px 0 20px;
 		&:after {

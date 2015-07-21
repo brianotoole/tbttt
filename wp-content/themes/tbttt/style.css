@@ -4066,6 +4066,12 @@ input[type="submit"] {
     border-color: #222222;
     color: #222222; }
 
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+  background: #f4f4f4; }
+  input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus {
+    background: white;
+    border-color: #222222; }
+
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0; }
@@ -4334,8 +4340,11 @@ Menus
   overflow-y: scroll; }
 
 .cbp-spmenu-vertical a {
-  border-bottom: 1px solid #252525;
-  padding: 0.65em 0.75em 0.65em 20px; }
+  border-bottom: 1px solid #555555;
+  padding: 25px 20px;
+  text-decoration: none; }
+  .cbp-spmenu-vertical a:hover, .cbp-spmenu-vertical a:focus {
+    text-decoration: none; }
 
 .cbp-spmenu-horizontal {
   width: 100%;
@@ -4514,10 +4523,10 @@ Content
   height: 500px;
   margin: 0 auto; }
   .hero h2 {
-    font-size: 62px;
+    font-size: 3.75em;
     line-height: 64px;
     color: #FFF;
-    margin-top: 300px; }
+    margin-top: 340px; }
 
 .sec1 {
   background: #210213;
@@ -4567,7 +4576,8 @@ Content
 .squeeze-in > div {
   padding: 30px; }
 .squeeze-in i {
-  color: #210213; }
+  color: #210213;
+  font-size: 1.4em; }
 
 /* events home */
 .sec3 {
@@ -4578,7 +4588,7 @@ Content
   .events .button {
     display: block;
     width: 100%;
-    margin: 30px auto; }
+    margin: 30px auto 30px; }
   .events > div div:hover {
     cursor: pointer; }
 
@@ -4604,6 +4614,7 @@ Content
     background: #cbcbcb;
     cursor: pointer; }
   .more:hover:after {
+    color: #69063d;
     background: black;
     cursor: pointer; }
   .more .view {
@@ -4645,7 +4656,7 @@ Content
     content: "";
     height: 0;
     left: 50%;
-    margin-left: -26px;
+    margin-left: -17px;
     position: absolute;
     width: 0;
     z-index: 10; }
@@ -4781,18 +4792,28 @@ Footer
   .menu-toggle {
     background: none;
     border: none;
+    color: white;
     padding: 1em 1.5em 1em 0; }
+    .menu-toggle:hover, .menu-toggle:focus {
+      color: white;
+      border: 0; }
 
   .main-navigation ul {
     display: none; }
+
+  .hero h2 {
+    font-size: 2.5em; }
 
   .sec1 i {
     display: block;
     padding-bottom: 7px; }
   .sec1 .intro {
     max-width: 100%;
-    padding: 30px 10px; }
+    padding: 30px 10px;
+    font-size: 1em;
+    line-height: 1.75em; }
   .sec1 h3.h-title {
+    font-size: 1.75em;
     background: none; }
 
   .squeeze-in > div {
@@ -4813,6 +4834,9 @@ Footer
     width: 100%; } }
 /* .menu-toggle */
 @media screen and (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.75em; }
+
   home-cta, .footer-cta {
     padding: 10px 0 20px; }
     home-cta:after, .footer-cta:after {
