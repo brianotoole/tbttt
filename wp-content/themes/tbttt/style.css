@@ -4525,11 +4525,39 @@ Content
 .hero {
   position: relative;
   background-color: #555555;
-  background: url("img/header-placeholder.png") center center no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
   min-height: 500px; }
+  .hero img {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeShow 21s infinite;
+    -webkit-animation: fadeShow 21s infinite;
+    -moz-animation: fadeShow 21s infinite;
+    -o-animation: fadeShow 21s infinite;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out; }
+    .hero img:nth-child(1) {
+      animation-delay: 0s;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s; }
+    .hero img:nth-child(2) {
+      animation-delay: 7s;
+      -webkit-animation-delay: 7s;
+      -moz-animation-delay: 7s;
+      -o-animation-delay: 7s; }
+    .hero img:nth-child(3) {
+      animation-delay: 14s;
+      -webkit-animation-delay: 14s;
+      -moz-animation-delay: 14s;
+      -o-animation-delay: 14s; }
   .hero:before {
     content: '';
     position: absolute;
@@ -4538,7 +4566,8 @@ Content
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to bottom right, whitesmoke, #210213);
-    opacity: .6; }
+    opacity: .6;
+    z-index: 2; }
   .hero h2 {
     font-family: "Lato", serif, Arial;
     font-size: 4.25em;
@@ -4770,6 +4799,13 @@ Animations
   100% {
     opacity: 1; } }
 
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -4780,6 +4816,56 @@ Animations
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
+
+@-webkit-keyframes fadeShow {
+  0% {
+    opacity: 1;
+    z-index: 1; }
+
+  75% {
+    opacity: 0.5; }
+
+  90% {
+    opacity: 0.25; }
+
+  100% {
+    opacity: 0;
+    z-index: 0; } }
+
+@-moz-keyframes fadeShow {
+  0% {
+    opacity: 1;
+    z-index: 1; }
+
+  75% {
+    opacity: 0.5; }
+
+  90% {
+    opacity: 0.25; }
+
+  100% {
+    opacity: 0;
+    z-index: 0; } }
+
+@keyframes fadeShow {
+  0% {
+    opacity: 1;
+    z-index: 1; }
+
+  75% {
+    opacity: 0.5; }
+
+  90% {
+    opacity: 0.25; }
+
+  100% {
+    opacity: 0;
+    z-index: 0; } }
+
+.fadeshow {
+  -webkit-animation-name: fadeShow;
+  animation-name: fadeShow;
+  animation-timing-function: ease-out; }
 
 /* durations */
 .animateSlow {

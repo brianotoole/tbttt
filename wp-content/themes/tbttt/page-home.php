@@ -7,8 +7,11 @@ get_header(); ?>
 
 
 <!--hero--> 
-<section class="hero" data-speed="" data-type="" style=""> 
-    <div class="hero" id="container">                      
+<section class="hero"> 
+   <img src="<?php bloginfo('stylesheet_directory'); ?>/img/header-placeholder.png" />
+   <img src="<?php bloginfo('stylesheet_directory'); ?>/img/wood.png" />
+   <img src="<?php bloginfo('stylesheet_directory'); ?>/img/gray.png" />
+   <!-- <div class="hero" id="container">                      
         <h2 class="animateSlow fadeIn">Dance. Sing. Act.</h2>
     </div><!--/.hero #container --> 
 </section><!--/section.hero-->
