@@ -3959,7 +3959,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', serif, Arial; }
+  font-family: "Lato", serif, Arial; }
 
 h1 {
   font-size: 42px;
@@ -3999,7 +3999,7 @@ select,
 textarea {
   color: #242121;
   font-weight: 300;
-  font-family: 'Merriweather', sans-serif, serif, Arial;
+  font-family: "Montserrat", serif, Arial;
   font-size: 15px;
   line-height: 1.8; }
 
@@ -4192,7 +4192,7 @@ Menus
   display: block;
   float: left;
   width: 100%;
-  font-family: 'Lato', serif, Arial; }
+  font-family: "Lato", serif, Arial; }
 
 .main-navigation ul {
   list-style: none;
@@ -4535,8 +4535,10 @@ Content
     background-image: linear-gradient(to bottom right, whitesmoke, #210213);
     opacity: .6; }
   .hero h2 {
+    font-family: "Lato", serif, Arial;
     font-size: 3.5em;
     font-style: italic;
+    font-weight: 100;
     line-height: 64px;
     color: #FFF;
     margin-top: 340px; }

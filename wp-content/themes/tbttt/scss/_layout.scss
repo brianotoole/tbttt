@@ -7,7 +7,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Lato', serif, Arial;
+	font-family: $font-heading;
 }
 h1 { font-size: 42px; line-height: 40px; }
 h2 { font-size: 38px; line-height: 36px; }
@@ -30,7 +30,7 @@ select,
 textarea {
 	color: $black;
 	font-weight: 300;
-	font-family: 'Merriweather', sans-serif, serif, Arial;
+	font-family: $font-body;
 	font-size: 15px;
 	line-height: 1.8;
 }
@@ -227,7 +227,7 @@ Menus
 	display: block;
 	float: left;
 	width: 100%;
-	font-family: 'Lato', serif, Arial;
+	font-family: $font-heading;
 }
 
 .main-navigation ul {
@@ -465,8 +465,10 @@ Content
     }
    
 	h2 {
+		font-family: $font-heading;
     	font-size: 3.5em;
     	font-style: italic;
+    	font-weight: 100;
 		line-height: 64px;
 		color: #FFF;
 		margin-top: 340px;
