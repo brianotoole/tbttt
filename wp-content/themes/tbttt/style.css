@@ -4541,7 +4541,7 @@ Content
     opacity: .6; }
   .hero h2 {
     font-family: "Lato", serif, Arial;
-    font-size: 4.125em;
+    font-size: 4.25em;
     font-weight: 100;
     line-height: 64px;
     color: #FFF;
@@ -4634,9 +4634,10 @@ Content
 .more {
   clear: both;
   width: 100%;
-  background: #dddddd;
   margin: 60px auto;
   padding: 15px;
+  background: transparent;
+  border: 1px solid #210213;
   color: #210213; }
   .more:after {
     content: '\f054';
@@ -4762,35 +4763,28 @@ Footer
 /*--------------------------------------------------------------
 Animations
 --------------------------------------------------------------*/
-@-webkit-keyframes fadeInLeft {
+@-webkit-keyframes fadeIn {
   0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); }
+    opacity: 0; }
 
   100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
+    opacity: 1; } }
 
-@keyframes fadeInLeft {
+@keyframes fadeIn {
   0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); }
+    opacity: 0; }
 
   100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
+    opacity: 1; } }
 
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft; }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
 
-.animate {
-  -webkit-animation-duration: 0.75s;
-  animation-duration: 0.75s;
+/* durations */
+.animateSlow {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 

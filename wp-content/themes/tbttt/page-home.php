@@ -6,50 +6,13 @@ Template Name: Home
 get_header(); ?>
 
 
-
-		<?php if( get_theme_mod( 'active_slider' ) == '') : ?>
-
- 		<div class="flexslider"> 
-          <ul class="slides">
-          		<?php query_posts( array ( 'post_type' => 'post', 'posts_per_page' => 3, 'meta_key' => '_sn_primary_checkbox' ) );
-			
-					while ( have_posts() ) : the_post(); ?> 
-                
-                	<li>
-                    <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); $url = $thumb['0']; ?>	
-                    <section id="hero-header" data-speed="8" data-type="background" style="background: url('<?php echo $url?>')  50% 0 no-repeat fixed;">
-                		<div class="slide-content-container">
-                			<div class="slide-content">
-                            <span>
-               				<h2 class="animated fadeInDown"><?php the_title(); ?></h2> 
-                            
-                            <?php if (get_post_meta( $post->ID, '_sn_primary_button_text', true ) ): ?> 
-                        	
-                            <a href="<?php if (get_post_meta( $post->ID, '_sn_primary_url', true ) ): global $post; $text = get_post_meta( $post->ID, '_sn_primary_url', true ); echo $text;  else : the_permalink(); endif; ?>" class="featured-link"><button class="animated fadeInDown"><?php global $post; $text = get_post_meta( $post->ID, '_sn_primary_button_text', true ); echo $text; ?></button></a> 
-                            
-                            <?php endif; ?>
-                               	  
-                			</span> 
-                			</div><!-- slide-content --> 
-                		</div><!-- slide-content-container -->
-                	</section><!-- hero-header --> 
-  					</li>
-        
-				<?php endwhile; // end of the loop. ?> 
-                  
-          </ul><!-- slides -->
-        </div><!-- flexslider -->
-        
-<?php else : ?> 
 <!--hero--> 
 <section class="hero" data-speed="" data-type="" style=""> 
     <div class="hero" id="container">                      
-        <h2 class="fadeInLeft animate">Dance. Sing. Act.</h2>
+        <h2 class="animateSlow fadeIn">Dance. Sing. Act.</h2>
     </div><!--/.hero #container --> 
 </section><!--/section.hero-->
 
-<?php endif; ?>
-<?php // end if ?>  
 
 <div class="sec1">
 	<div class="intro" id="contain">
