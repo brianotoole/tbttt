@@ -44,7 +44,7 @@ get_header(); ?>
 <!--hero--> 
 <section class="hero" data-speed="" data-type="" style=""> 
   <div class="hero" id="container">                      
-   <h2 class="animated delay">Dance. Sing. Act.</h2>
+   <h2 class="fadeInLeft">Dance. Sing. Act.</h2>
   </div><!--/.hero #container --> 
 </section>
 
