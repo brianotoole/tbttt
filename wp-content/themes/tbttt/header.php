@@ -8,7 +8,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
 <?php if ( get_theme_mod('site_favicon') ) : ?>
 	<link rel="shortcut icon" href="<?php echo esc_url(get_theme_mod('site_favicon')); ?>" />
 <?php endif; ?>

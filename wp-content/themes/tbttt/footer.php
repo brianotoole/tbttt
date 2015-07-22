@@ -151,7 +151,7 @@
 		<div class="col-sm-4 col-xs-12">
 			<h3>Donate</h3>
 			<p>We are only as strong as our community. Your donations are greatly appreciated.</p>
-			<a href="#" class="button white">Donate</a>
+			<a href="#" class="button white no-border">Donate</a>
 		</div>
 	</div><!-- grid -->
 </div>

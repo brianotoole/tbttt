@@ -196,7 +196,7 @@ textarea {
 		text-decoration: none;
 	}
 }
-/*white, no border*/
+/*white */
 .button.white {
 	background: white;
 	color: $gray;
@@ -422,17 +422,17 @@ Content
 .gray { color: $gray; }
 
 
-/* layouts */
+/* layout positioning */
 #container {
     display: table;
     position: relative;
     height: 100%;
     min-height: 500px;
     max-width: 100%;
+    /*max-width: 80% */ //to add contain
     margin: 0 auto;
     text-align: center;
 }
-
 .full {
 	position: relative;
 	max-width: 100%;
@@ -466,7 +466,7 @@ Content
 		bottom: 0;
 		left: 0;
 		background-image: linear-gradient(to bottom right,$white,$maroon);
-		opacity: .6; //less opacity = less gradient overlay
+		opacity: .6; //lesser opacity = lesser gradient overlay
     }
    
 	h2 {
@@ -501,7 +501,7 @@ Content
     }
 }
 
-
+/* sections */
 .sec1 {
     background: $maroon;
 	width: 100%;
@@ -511,7 +511,7 @@ Content
     
     .intro {
 	    background: transparent;
-		max-width: 85%;
+		max-width: 75%;
 	    margin: 0 auto;
 	    padding: 40px 0;
 	    color: white;
@@ -525,7 +525,7 @@ Content
 	}
 	
 	h3.h-title {
-		max-width: 80%;
+		max-width: 75%;
 		margin: 0 auto;
 		color: white;
 	    background: rgba(0, 0, 0, 0) url("http://brianzotoole.com/wp-content/themes/brian/images/divider.png") 0 53px repeat-x;
