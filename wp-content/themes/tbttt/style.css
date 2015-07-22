@@ -4655,13 +4655,31 @@ Content
   padding: 60px 0 30px; }
 
 .events {
-  text-align: left; }
+  text-align: left;
+  /* if not thumb, default */ }
   .events .button {
     display: block;
     width: 100%;
     margin: 30px auto 30px; }
-  .events > div div:hover {
-    cursor: pointer; }
+  .events img .thumbnail,
+  .events .thumbnail {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; }
+  .events .default {
+    background: #210213; }
+    .events .default:after {
+      content: '\f001';
+      font-family: 'fontAwesome';
+      position: absolute;
+      font-size: 4em;
+      color: white;
+      bottom: 21px;
+      left: 45px; }
 
 .more {
   clear: both;

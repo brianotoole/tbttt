@@ -622,12 +622,30 @@ Content
 		margin: 30px auto 30px;
 	}
 	
-	> div div {
-		&:hover {
-			cursor: pointer;
+	img .thumbnail,
+	.thumbnail {
+		width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;	
+        -moz-border-radius: 50%;	
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;			
+	}
+	/* if not thumb, default */
+	.default {
+		background: $maroon;
+		&:after {
+			content: '\f001';
+			font-family: 'fontAwesome';
+			position: absolute;
+			font-size: 4em;
+			color: white;	
+			bottom: 21px;
+			left: 45px;
 		}
 	}
-}
+}//events
 
 .more {
 	clear: both;
