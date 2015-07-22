@@ -4893,7 +4893,15 @@ Animations
     font-size: 1em;
     width: 22px;
     margin-top: -44px;
-    padding: 16px 7px; } }
+    padding: 16px 7px; }
+
+  .events .thumbnail {
+    width: 100px;
+    height: 100px; }
+    .events .thumbnail:after {
+      font-size: 3em;
+      bottom: 10px;
+      left: 28px; } }
 /* above .menu-toggle */
 @media screen and (min-width: 768px) {
   .b-right {
@@ -4971,7 +4979,16 @@ Animations
       padding: 18px 15px; }
 
   .events .pull-right {
-    width: 100%; } }
+    width: 100%; }
+  .events .descrip,
+  .events .img,
+  .events .view {
+    text-align: center; }
+  .events .thumbnail {
+    display: block;
+    margin: 0 auto; }
+    .events .thumbnail:after {
+      position: static; } }
 /* .menu-toggle */
 @media screen and (max-width: 480px) {
   .hero h2 {

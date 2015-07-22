@@ -176,7 +176,7 @@ add_action( 'wp_head', 'sensible_html5shiv' );
  */
 function sensible_excerpt_length( $length ) {
 	
-	$excerpt = get_theme_mod('exc_length', '30');
+	$excerpt = get_theme_mod('exc_length', '2');
 	return $excerpt; 
 
 }
