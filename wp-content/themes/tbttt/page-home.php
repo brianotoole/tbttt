@@ -43,10 +43,10 @@ get_header(); ?>
 <?php else : ?> 
 <!--hero--> 
 <section class="hero" data-speed="" data-type="" style=""> 
-  <div class="hero" id="container">                      
-   <h2 class="fadeInLeft">Dance. Sing. Act.</h2>
-  </div><!--/.hero #container --> 
-</section>
+    <div class="hero" id="container">                      
+        <h2 class="fadeInLeft animate">Dance. Sing. Act.</h2>
+    </div><!--/.hero #container --> 
+</section><!--/section.hero-->
 
 <?php endif; ?>
 <?php // end if ?>  
@@ -56,7 +56,7 @@ get_header(); ?>
 	<h3 class="h-title"><span>Our Mission</span></h3> 
 		<p class="intro">To promote and encourage the advancement of education and cultural development of the performing arts by creating, furthering and producing opportunities for the youth of our community regardless of age or background.</p>
 	</div><!--/.intro-->
-</div>
+</div><!--/.sec1-->
 
 
 
@@ -86,7 +86,7 @@ get_header(); ?>
 		</div>
     </div><!--/.row-->
 	</div><!--/.intro-->
-</div>
+</div><!--/.sec2-->
 	
 
 
@@ -94,12 +94,12 @@ get_header(); ?>
     <div class="grid grid-pad">
 		<h2>Upcoming Events</h2>
     </div>
-</div>
+</div><!--/.home-cta-->
 <div class="sec3">
     <div class="grid grid-pad no-top">
 		<?php get_template_part( 'part', 'events' ); ?>
     </div>
-</div>
+</div><!--/.sec3-->
 
 
         

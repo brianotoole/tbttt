@@ -192,16 +192,18 @@ textarea {
 	border: 2px solid $gray;
 	&:hover {
 		color: darken($gray,20%);
-		border: 2px solid darken($gray,20%);
+		border: 2px solid darken($maroon,20%);
 		text-decoration: none;
 	}
 }
 /*white, no border*/
 .button.white {
 	background: white;
-	color: $maroon;
+	color: $gray;
+	border: 2px solid $gray;
 	&:hover {
-		color: darken($maroon,5%);
+		color: $maroon;
+		border: 2px solid $maroon;
 		background: darken($white,5%);
 		text-decoration: none;
 	}
@@ -209,7 +211,7 @@ textarea {
 /*marroon, no border*/
 .button.maroon {
 	background: $maroon;
-	color: $gray;
+	color: white;
 	&:hover {
 		background: lighten($maroon,20%);
 		text-decoration: none;
@@ -227,7 +229,7 @@ Menus
 	display: block;
 	float: left;
 	width: 100%;
-	font-family: $font-body;
+	font-family: $font-heading;
 }
 
 .main-navigation ul {
@@ -444,14 +446,17 @@ Content
 
 
 
-/* homepage */
+/* templates */
+/* home headers */
 .hero {
 	position: relative;
 	background-color: $gray;
-	background: url('http://www.townsquarebuzz.com/wp-content/uploads/2013/09/nutcracker.jpg') center center no-repeat;
+	//background: url('http://www.townsquarebuzz.com/wp-content/uploads/2013/09/nutcracker.jpg') center center no-repeat;
+	background: url('img/header-placeholder.png') center center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
+    min-height: 500px;
     
     &:before {
     	content: '';
@@ -461,18 +466,39 @@ Content
 		bottom: 0;
 		left: 0;
 		background-image: linear-gradient(to bottom right,$white,$maroon);
-		opacity: .6; 
+		opacity: .6; //less opacity = less gradient overlay
     }
    
 	h2 {
-		font-family: $font-body;
-    	font-size: 3.5em;
-    	font-style: italic;
+		font-family: $font-heading;
+    	font-size: 4.125em;
     	font-weight: 100;
 		line-height: 64px;
 		color: #FFF;
-		margin-top: 340px;
+		margin-top: 320px;
 	}
+}
+
+/* interior page headers */
+.entry-header {
+	position: relative;
+	background-color: $gray;
+	background: url('http://chamberlainperformingarts.org/wp-content/uploads/2012/07/SupportTab.jpg') center center no-repeat;
+	//background: url('https://dl.dropboxusercontent.com/u/5049340/office%402x.png') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    &:before {
+    	content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,$white,$maroon);
+		opacity: .75; //less opacity = less gradient overlay
+    }
 }
 
 
@@ -668,22 +694,10 @@ Content
 /*--------------------------------------------------------------
 Interior
 --------------------------------------------------------------*/
-.entry-header {
-	padding: 0 0 40px;
-	height: 305px;
-	background: $gray;
-	
-}
 .featured-img-header {
 	padding: 250px 0 100px;
     position: relative; 
 	background-size: cover;
-}
-.entry-header .entry-title, .featured-img-header .entry-title {
-	font-size: 50px;
-	line-height: 54px;
-	color: #fff;
-	text-align: center;
 }
 .entry-content {
 	
@@ -783,7 +797,13 @@ Animations
 }
 
 .fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
+ 	 -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
   
+}
+.animate {
+  	-webkit-animation-duration: 0.75s;
+  	animation-duration: 0.75s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
 }

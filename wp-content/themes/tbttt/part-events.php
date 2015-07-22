@@ -60,7 +60,7 @@
 
 <?php if(is_front_page() ) { ?>			
 <div class="col-sm-12 text-center no-padding">
-  <a href="<?php echo home_url();?>/events" class="button transparent">View All Events</a>
+  <a href="<?php echo home_url();?>/events" class="button white">View All Events</a>
 </div>
 <?php } else { ?>
 <br />
