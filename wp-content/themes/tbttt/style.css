@@ -4529,12 +4529,12 @@ Content
   width: 100%;
   height: 100%;
   min-height: 500px; }
-  .hero img {
+  .hero .img {
     position: absolute;
     width: 100%;
     height: 500px;
     z-index: 1;
-    opacity: 0;
+    visibility: hidden;
     animation: fadeShow 21s infinite;
     -webkit-animation: fadeShow 21s infinite;
     -moz-animation: fadeShow 21s infinite;
@@ -4543,17 +4543,17 @@ Content
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out; }
-    .hero img:nth-child(1) {
+    .hero .img:nth-child(1) {
       animation-delay: 0s;
       -webkit-animation-delay: 0s;
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s; }
-    .hero img:nth-child(2) {
+    .hero .img:nth-child(2) {
       animation-delay: 7s;
       -webkit-animation-delay: 7s;
       -moz-animation-delay: 7s;
       -o-animation-delay: 7s; }
-    .hero img:nth-child(3) {
+    .hero .img:nth-child(3) {
       animation-delay: 14s;
       -webkit-animation-delay: 14s;
       -moz-animation-delay: 14s;
@@ -4566,15 +4566,18 @@ Content
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to bottom right, whitesmoke, #210213);
-    opacity: .6;
+    opacity: 0.4;
     z-index: 2; }
-  .hero h2 {
-    font-family: "Lato", serif, Arial;
-    font-size: 4.25em;
-    font-weight: 100;
-    line-height: 64px;
-    color: #FFF;
-    margin-top: 320px; }
+
+.home-hero h2 {
+  position: relative;
+  font-family: "Lato", serif, Arial;
+  font-size: 4.25em;
+  font-weight: 100;
+  line-height: 64px;
+  color: #FFF;
+  margin-top: 360px;
+  z-index: 3; }
 
 /* interior page headers */
 .entry-header {
@@ -4819,60 +4822,36 @@ Animations
 
 @-webkit-keyframes fadeShow {
   0% {
-    opacity: 1;
-    z-index: 1; }
-
-  75% {
-    opacity: 0.5; }
-
-  90% {
-    opacity: 0.25; }
+    visibility: visible; }
 
   100% {
-    opacity: 0;
+    visibility: hidden;
     z-index: 0; } }
 
 @-moz-keyframes fadeShow {
   0% {
-    opacity: 1;
-    z-index: 1; }
-
-  75% {
-    opacity: 0.5; }
-
-  90% {
-    opacity: 0.25; }
+    visibility: visible; }
 
   100% {
-    opacity: 0;
+    visibility: hidden;
     z-index: 0; } }
 
 @keyframes fadeShow {
   0% {
-    opacity: 1;
-    z-index: 1; }
-
-  75% {
-    opacity: 0.5; }
-
-  90% {
-    opacity: 0.25; }
+    visibility: visible; }
 
   100% {
-    opacity: 0;
+    visibility: hidden;
     z-index: 0; } }
 
 .fadeshow {
   -webkit-animation-name: fadeShow;
-  animation-name: fadeShow;
-  animation-timing-function: ease-out; }
+  animation-name: fadeShow; }
 
 /* durations */
 .animateSlow {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
+  -webkit-animation-duration: 3.75s;
+  animation-duration: 3.75s; }
 
 /* Media Queries ----------------------------------------------------------- */
 /* above 1600 (xl screens) */

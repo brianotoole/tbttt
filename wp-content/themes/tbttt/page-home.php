@@ -7,13 +7,14 @@ get_header(); ?>
 
 
 <!--hero--> 
-<section class="hero"> 
-   <img src="<?php bloginfo('stylesheet_directory'); ?>/img/header-placeholder.png" />
-   <img src="<?php bloginfo('stylesheet_directory'); ?>/img/wood.png" />
-   <img src="<?php bloginfo('stylesheet_directory'); ?>/img/gray.png" />
-   <!-- <div class="hero" id="container">                      
-        <h2 class="animateSlow fadeIn">Dance. Sing. Act.</h2>
-    </div><!--/.hero #container --> 
+<section class="hero">
+	<div class="img" style="background: url('<?php the_field('fadeshow_img1'); ?>') top center no-repeat;"></div> 
+	<div class="img" style="background: url('<?php the_field('fadeshow_img2'); ?>') 0 0 no-repeat;"></div> 
+	<div class="img" style="background: url('<?php the_field('fadeshow_img3'); ?>') 0 0 no-repeat;"></div>
+	<div class="home-hero" id="container">                      
+        <h2 class="hidden-xs animateSlow fadeIn">Dance. Sing. Act.</h2>
+        <h2 class="visible-xs">Dance. Sing. Act.</h2>
+      </div><!--/.hero #container --> 
 </section><!--/section.hero-->
 
 
