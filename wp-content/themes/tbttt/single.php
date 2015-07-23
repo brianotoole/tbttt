@@ -44,8 +44,7 @@ get_header(); ?>
        
 	<header class="single-blog-entry-header">
 		<div class="entry-meta">
-			<?php _e( 'Posted by, ', 'sensible' ); ?><?php the_author(); ?><?php echo get_avatar( get_the_author_meta('email'), get_the_author() ); ?>
-            <?php _e( 'on ', 'sensible' ); ?><?php the_date(); ?>
+			<h5><?php _e( 'Event Date: ', 'sensible' ); ?> <?php the_date(); ?></h5>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
    
@@ -55,14 +54,8 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>  
 
-			<?php sensible_post_nav(); ?>
+		
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
 
 		<?php endwhile; // end of the loop. ?>
 

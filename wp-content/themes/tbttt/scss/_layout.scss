@@ -678,7 +678,7 @@ Content
 		background: black;
 		cursor: pointer;
 	}
-	
+
 	.view {
 		padding-top: 6px;
 		padding-left: 8px;
@@ -768,7 +768,21 @@ Interior
 		text-decoration: underline;
 	}
 }
-
+/*--------------------------------------------------------------
+Single / Archives / Cat / Post Types
+--------------------------------------------------------------*/
+/*sidebar*/
+#secondary {
+	color: $black;
+}
+.single-blog-entry-header {
+	background: #F4F4F4;
+	padding: 30px 10px 20px;
+	color: $black;
+	border-top: 1px solid #DADADA;
+	border-bottom: 1px solid #DADADA;
+	text-align: center;
+}
 
 
 /*--------------------------------------------------------------
