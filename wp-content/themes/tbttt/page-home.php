@@ -8,10 +8,10 @@ get_header(); ?>
 
 <!--hero--> 
 <section class="hero">
-  <div class="img" style="background: url('<?php the_field('fadeshow_img1'); ?>') top center no-repeat;background-size:cover;"></div> 
-  <div class="img" style="background: url('<?php the_field('fadeshow_img2'); ?>') 0 0 no-repeat;background-size:cover;"></div> 
-  <div class="img" style="background: url('<?php the_field('fadeshow_img3'); ?>') 0 0 no-repeat;background-size:cover;"></div>
-  <div class="img" style="background: url('<?php the_field('fadeshow_img4'); ?>') 0 0 no-repeat;background-size:cover;"></div>
+  <div class="img" style="background: url('<?php the_field('fadeshow_img1'); ?>') top center no-repeat fixed;background-size:cover;"></div> 
+  <div class="img" style="background: url('<?php the_field('fadeshow_img2'); ?>') 0 0 no-repeat fixed;background-size:cover;"></div> 
+  <div class="img" style="background: url('<?php the_field('fadeshow_img3'); ?>') 0 0 no-repeat fixed;background-size:cover;"></div>
+  <div class="img" style="background: url('<?php the_field('fadeshow_img4'); ?>') 0 0 no-repeat fixed;background-size:cover;"></div>
      <div class="home-hero" id="container">                      
         <h2 class="hidden-xs animateSlow fadeIn"><?php the_field('fadeshow_overlay_text'); ?></h2>
         <h2 class="visible-xs"><?php the_field('fadeshow_overlay_text'); ?></h2>
