@@ -41,7 +41,8 @@ get_header(); ?>
 	<?php endif; ?>
 
     
-		<div class="grid grid-pad">
+	  <div class="sec3">
+   		 <div class="grid grid-pad no-top">
 			<div id="primary" class="content-area col-9-12 blog-archive">
 				<main id="main" class="site-main" role="main">
 
@@ -70,6 +71,8 @@ get_header(); ?>
 
 				</main><!-- #main -->
 			</div><!-- #primary -->
+		</div><!-- grid -->
+     </div><!--.sec3-->
 
 	<?php get_sidebar(); ?>
 	</div><!-- grid -->

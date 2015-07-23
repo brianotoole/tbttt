@@ -1,14 +1,9 @@
 <?php
 /**
  * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package sensible
+
  */
 
 get_header(); ?>
@@ -27,16 +22,16 @@ get_header(); ?>
 							single_tag_title();
 
 						elseif ( is_author() ) :
-							printf( __( 'Events, Author: %s', 'sensible' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							printf( __( 'Events by:%s', 'sensible' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
 						elseif ( is_day() ) :
-							printf( __( 'Events, Day: %s', 'sensible' ), '<span>' . get_the_date() . '</span>' );
+							printf( __( 'Events on:%s', 'sensible' ), '<span>' . get_the_date() . '</span>' );
 
 						elseif ( is_month() ) :
-							printf( __( 'Events, Month: %s', 'sensible' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'sensible' ) ) . '</span>' );
+							printf( __( 'Events in:%s', 'sensible' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'sensible' ) ) . '</span>' );
 
 						elseif ( is_year() ) :
-							printf( __( 'Events, Year: %s', 'sensible' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'sensible' ) ) . '</span>' );
+							printf( __( 'Events in:%s', 'sensible' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'sensible' ) ) . '</span>' );
 
 						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
 							_e( 'Asides', 'sensible' );
@@ -85,10 +80,10 @@ get_header(); ?>
 
 
     
-		<div class="grid grid-pad">
-			<div id="primary" class="content-area col-9-12 blog-archive">
+	  <div class="sec3">
+   		 <div class="grid grid-pad no-top">
+			<div id="primary" class="ontent-area col-12 event-archive">
 				<main id="main" class="site-main" role="main">
-
 				<?php if ( have_posts() ) : ?>
 
 					<?php /* Start the Loop */ ?>
@@ -99,8 +94,8 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+				     get_template_part( 'content', '' ); ?>
+
 
 					<?php endwhile; ?>
 
@@ -108,13 +103,12 @@ get_header(); ?>
 
 				<?php else : ?>
 
-					<?php get_template_part( 'content', 'none' ); ?>
+				
 
 				<?php endif; ?>
 
 				</main><!-- #main -->
 			</div><!-- #primary -->
-
-	<?php get_sidebar(); ?>
-	</div><!-- grid -->
+	    </div><!-- grid -->
+    </div><!--.sec3-->
 	<?php get_footer(); ?>
