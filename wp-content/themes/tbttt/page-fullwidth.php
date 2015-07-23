@@ -1,45 +1,36 @@
 <?php
 /**
-Template Name: Page - Fullwidth
+Template Name: Page - Fullwidth, Random Header 
  *
  */
-
 get_header(); ?> 
+<?php 
+$bg = array( //array of images 
+'//localhost/tbttt/wp-content/uploads/2015/07/test-background.jpg',
+'//localhost/tbttt/wp-content/uploads/2015/07/test-background.jpg', 
+'//localhost/tbttt/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg', 
+'//localhost/tbttt/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg', 
+'//localhost/tbttt/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg'
+ );
+$i = rand(0, count($bg)-1); //generate random number of the array 
+$selectedBg = "$bg[$i]"; //create & set variable equal to which random image was chosen 
+?>
 
-	<?php if (has_post_thumbnail( $post->ID ) ): ?>
-		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
-            
-    	<header class="featured-img-header" data-speed="8" data-type="background" style="background: url('<?php echo $image; ?>') 50% 0 no-repeat fixed;">
-		</header><!-- .entry-header --> 
-		<div class="sec1">
-			<div class="intro" id="contain">
+    <header class="entry-header" data-speed="8" data-type="background" style="background: url('<?php echo $selectedBg; ?>')50% 0 no-repeat fixed;">
+	</header><!-- .entry-header -->
+
+	<div class="sec1">
+		<div class="intro" id="contain">
 			<h3 class="h-title"><span><?php the_title(); ?></span></h3> 
 				<?php if( get_field('interior_callout') ): //if field is entered...?>
-				 <p class="intro"><?php the_field('interior_callout'); ?></p>
+				    <p class="intro"><?php the_field('interior_callout'); ?></p>
 				<?php else: //no field is entered...?> 
-				<p class="intro-no-p"></p>
+				    <p class="intro-no-p"></p>
 				<?php endif; ?>
-			</div><!--/.intro-->
-		</div><!--/.sec1-->
-    
-		<?php else : ?>
+		</div><!--/.intro-->
+	</div><!--/.sec1-->
         
-        <header class="entry-header">
-		</header><!-- .entry-header -->
-
-		<div class="sec1">
-			<div class="intro" id="contain">
-			<h3 class="h-title"><span><?php the_title(); ?></span></h3> 
-				<?php if( get_field('interior_callout') ): //if field is entered...?>
-				 <p class="intro"><?php the_field('interior_callout'); ?></p>
-				<?php else: //no field is entered...?> 
-				<p class="intro-no-p"></p>
-				<?php endif; ?>
-			</div><!--/.intro-->
-		</div><!--/.sec1-->
-        
-	<?php endif; ?>
-    
+ 
 	<div class="grid grid-pad">
 		<div id="primary" class="content-area col-1-1">
 			<main id="main" class="site-main" role="main">

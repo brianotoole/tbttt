@@ -492,6 +492,7 @@ Content
 	    	 -o-animation-delay: 14s; 
 	    }
 	    
+	    
 	}//.img
     
     &:before {
@@ -523,7 +524,7 @@ Content
 .entry-header {
 	position: relative;
 	background-color: $gray;
-	background: url('http://chamberlainperformingarts.org/wp-content/uploads/2012/07/SupportTab.jpg') center center no-repeat;
+	//background: url('http://chamberlainperformingarts.org/wp-content/uploads/2012/07/SupportTab.jpg') center center no-repeat;
 	//background: url('https://dl.dropboxusercontent.com/u/5049340/office%402x.png') center center no-repeat;
     background-size: cover;
     width: 100%;
@@ -568,7 +569,7 @@ Content
 		max-width: 75%;
 		margin: 0 auto;
 		color: white;
-	    background: rgba(0, 0, 0, 0) url("http://brianzotoole.com/wp-content/themes/brian/images/divider.png") 0 53px repeat-x;
+	    background: rgba(0, 0, 0, 0) url("img/divider.png") 0 53px repeat-x;
 	    font-size: 2.2em;
 	    padding-top: 37px;
 	}
