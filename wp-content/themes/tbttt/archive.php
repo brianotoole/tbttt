@@ -3,14 +3,8 @@
  * The main template file.
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
-
  */
-
 get_header(); ?>
-
-        
-        <header class="entry-header">
-		</header><!-- .entry-header -->
 
 		<div class="sec1">
 			<div class="intro" id="contain">

@@ -8,9 +8,6 @@ get_header(); ?>
 <META NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-		<header class="entry-header">
-		</header><!-- .entry-header -->
-
 		<div class="sec1">
 			<div class="intro" id="contain">
 			<h3 class="h-title"><span>This Page Does Not Exist - 404</span></h3> 
@@ -18,7 +15,6 @@ get_header(); ?>
 			</div><!--/.intro-->
 		</div><!--/.sec1-->
         
-    
 	<div class="grid grid-pad">
 		<div id="primary" class="content-area col-1-1">
 			<main id="main" class="site-main" role="main">

@@ -1,23 +1,10 @@
 <?php
 /**
-Template Name: Page - Fullwidth, Random Header 
- *
+Template Name: Page - Fullwidth
+ * uses var $selectedBg to set random img, declared in header.php file
  */
 get_header(); ?> 
-<?php 
-$bg = array( //array of images 
-'//localhost/tbttt/wp-content/uploads/2015/07/test-background.jpg',
-'//localhost/tbttt/wp-content/uploads/2015/07/test-background.jpg', 
-'//localhost/tbttt/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg', 
-'//localhost/tbttt/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg', 
-'//localhost/tbttt/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg'
- );
-$i = rand(0, count($bg)-1); //generate random number of the array 
-$selectedBg = "$bg[$i]"; //create & set variable equal to which random image was chosen 
-?>
 
-    <header class="entry-header" data-speed="8" data-type="background" style="background: url('<?php echo $selectedBg; ?>')50% 0 no-repeat fixed;">
-	</header><!-- .entry-header -->
 
 	<div class="sec1">
 		<div class="intro" id="contain">

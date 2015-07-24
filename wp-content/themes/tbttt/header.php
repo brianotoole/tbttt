@@ -8,21 +8,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<?php if ( get_theme_mod('site_favicon') ) : ?>
-	<link rel="shortcut icon" href="<?php echo esc_url(get_theme_mod('site_favicon')); ?>" />
-<?php endif; ?>
-<?php if ( get_theme_mod('apple_touch_144') ) : ?>
-	<link rel="apple-touch-icon" sizes="144x144" href="<?php echo esc_url(get_theme_mod('apple_touch_144')); ?>" />
-<?php endif; ?>
-<?php if ( get_theme_mod('apple_touch_114') ) : ?>
-	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo esc_url(get_theme_mod('apple_touch_114')); ?>" />
-<?php endif; ?>
-<?php if ( get_theme_mod('apple_touch_72') ) : ?>
-	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo esc_url(get_theme_mod('apple_touch_72')); ?>" />
-<?php endif; ?>
-<?php if ( get_theme_mod('apple_touch_57') ) : ?>
-	<link rel="apple-touch-icon" href="<?php echo esc_url(get_theme_mod('apple_touch_57')); ?>" />
-<?php endif; ?> 
 <?php wp_head(); ?>
 </head>
 
@@ -62,3 +47,30 @@
 	</nav>
 
 	<section id="content" class="site-content">
+	
+<?php //random page headers
+$bg = array( //create array of images 
+'//localhost/tbttt/wp-content/uploads/2015/07/test-background.jpg',
+'//localhost/tbttt/wp-content/uploads/2015/07/test-background.jpg', 
+'//localhost/tbttt/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg', 
+'//localhost/tbttt/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg'
+ );
+$i = rand(0, count($bg)-1); //generate random number of the array 
+$selectedBg = "$bg[$i]"; //create & set variable equal to which random image was chosen 
+?>
+
+<?php if (is_archive() || is_category() ): //category or archive, random header ?>
+<header class="entry-header" data-speed="8" data-type="background" style="background: url('<?php echo $selectedBg; ?>')50% 0 no-repeat fixed;">
+</header><!-- .entry-header -->
+
+<?php elseif (has_post_thumbnail( $post->ID ) ): //if featured img is uploaded, show it as header ?>
+<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>   
+<header class="entry-header" data-speed="8" data-type="background" style="background: url('<?php echo $image; ?>') 50% 0 no-repeat fixed;">
+</header><!-- .entry-header --> 
+
+<?php elseif (is_front_page() ): //is front page, do front page template stuff (nothing here) ?>
+<?php else : //no featured img is uploaded, random header again... called last as override ?>	
+<header class="entry-header" data-speed="8" data-type="background" style="background: url('<?php echo $selectedBg; ?>')50% 0 no-repeat fixed;">
+</header><!-- .entry-header -->
+
+<?php endif; ?>

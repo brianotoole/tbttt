@@ -5,7 +5,6 @@ Template Name: Home
  */
 get_header(); ?>
 
-
 <!--hero--> 
 <section class="hero">
   <div class="img" style="background: url('<?php the_field('fadeshow_img1'); ?>') top center no-repeat fixed;background-size:cover;"></div> 
@@ -25,7 +24,6 @@ get_header(); ?>
 		<p class="intro"><?php the_field('homepage_sec1_callout'); ?></p>
 	</div><!--/.intro-->
 </div><!--/.sec1-->
-
 
 
 <div class="sec2">
@@ -57,7 +55,6 @@ get_header(); ?>
 </div><!--/.sec2-->
 	
 
-
 <div class="home-cta">
     <div class="grid grid-pad">
 		<h2><?php the_field('homepage_sec2_title'); ?></h2>
@@ -70,7 +67,7 @@ get_header(); ?>
 </div><!--/.sec3-->
 
 
-        
+ 
         <?php if( get_theme_mod( 'active_services' ) == '') : ?>    
         		
         	<div class="home-services">

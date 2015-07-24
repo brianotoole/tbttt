@@ -2,31 +2,8 @@
 /**
  * The main template file used to display a page when nothing more specific matches a query.
  */
-
 get_header(); ?>
-
         
-        <?php if (has_post_thumbnail( $post->ID ) ): ?>
-		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
-            
-    	<header class="featured-img-header" data-speed="8" data-type="background" style="background: url('<?php echo $image; ?>') 50% 0 no-repeat fixed;">
-		</header><!-- .entry-header --> 
-		<div class="sec1">
-			<div class="intro" id="contain">
-			<h3 class="h-title"><span><?php the_title(); ?></span></h3> 
-				<?php if( get_field('interior_callout') ): //if field is entered...?>
-				 <p class="intro"><?php the_field('interior_callout'); ?></p>
-				<?php else: //no field is entered...?> 
-				<p class="intro-no-p"></p>
-				<?php endif; ?>
-			</div><!--/.intro-->
-		</div><!--/.sec1-->
-    
-		<?php else : ?>
-        
-        <header class="entry-header">
-		</header><!-- .entry-header -->
-
 		<div class="sec1">
 			<div class="intro" id="contain">
 			<h3 class="h-title"><span><?php the_title(); ?></span></h3> 
@@ -38,8 +15,6 @@ get_header(); ?>
 			</div><!--/.intro-->
 		</div><!--/.sec1-->
         
-	<?php endif; ?>
-
     
 	  <div class="sec3">
    		 <div class="grid grid-pad no-top">
