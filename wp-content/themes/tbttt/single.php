@@ -19,9 +19,17 @@ get_header(); ?>
  	<?php while ( have_posts() ) : the_post(); ?>
        
 	<header class="single-blog-entry-header">
+		<?php if( get_field('event_start_date') && !get_field('event_end_date') )://if only start is entered..?>
 		<div class="entry-meta">
-			<h5><?php _e( 'Event Date: ', 'sensible' ); ?> <?php the_date(); ?></h5>
+			<h5><?php _e( 'Event Date: ', '' ); ?> <?php the_field('event_start_date'); ?></h5>
 		</div><!-- .entry-meta -->
+		<?php elseif( get_field('event_start_date') && get_field('event_end_date') ): //start & end date...?> 
+		<div class="entry-meta">
+			<h5><?php _e( 'Event Dates: ', '' ); ?>
+			<?php the_field('event_start_date'); ?> - <?php the_field('event_end_date'); ?></h5>
+		</div><!-- .entry-meta -->
+		<?php else: //no event date is entered...?> 
+		<?php endif; ?>
 	</header><!-- .entry-header -->
    
 	<div class="grid grid-pad">

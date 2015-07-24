@@ -119,28 +119,28 @@ function sensible_scripts() {
 	//wp_enqueue_style( 'jPushMenu', get_template_directory_uri() . '/css/jPushMenu.css' );
 	
 
-	//show contact form 7 plugin scripts, only on contact page...
-	if (is_page('contact')){
+	//show contact form 7 plugin scripts, only on contact & donate pages...
+	if (is_page('contact') || is_page('donate')){
         wpcf7_enqueue_scripts();
         wpcf7_enqueue_styles();
     }
    
 
 	
-	if ( get_theme_mod('sensible_animate') != 1 ) {
+	//if ( get_theme_mod('sensible_animate') != 1 ) {
 		
-		wp_enqueue_script( 'wowjs', get_template_directory_uri() . '/js/wow.js', array('jquery'), true );
-		wp_enqueue_style( 'animations', get_stylesheet_directory_uri() . '/css/animate.css', array() );
-		wp_enqueue_script( 'wow-init', get_template_directory_uri() .  '/js/wow-init.js', array( 'jquery' ), true );
-	}
+		//wp_enqueue_script( 'wowjs', get_template_directory_uri() . '/js/wow.js', array('jquery'), true );
+		//wp_enqueue_style( 'animations', get_stylesheet_directory_uri() . '/css/animate.css', array() );
+		//wp_enqueue_script( 'wow-init', get_template_directory_uri() .  '/js/wow-init.js', array( 'jquery' ), true );
+	//}
 	
-	if ( is_admin() ) { 
+	//if ( is_admin() ) { 
     //wp_enqueue_style( 'control', get_template_directory_uri() . '/js/sensible_control.js', array(), false, true );  
-	} 
+	//} 
 	
 	
 	//wp_enqueue_script('jquery');
-	wp_enqueue_script( 'site-scripts', get_template_directory_uri() . '/js/site.js', array(), '1.0', true );
+	wp_enqueue_script( 'site-scripts', get_template_directory_uri() . '/js/site.min.js', array(), '1.0', true );
 	
 
 	//wp_enqueue_script( 'navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0', true );
@@ -212,7 +212,7 @@ require get_template_directory() . '/panel/sensiblewp-admin_page.php';
 /**
  * Google Fonts  
  */
-require get_template_directory() . '/inc/gfonts.php';  
+//require get_template_directory() . '/inc/gfonts.php';  
 
 /**
  * custom widgets

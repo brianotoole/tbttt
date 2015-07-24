@@ -18,7 +18,15 @@
 	</div>
 	<div class="col-sm-8 descrip">
 	  <h3><a href="<?php the_permalink() ?>" title="Click to View: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-	  <p><em><?php the_time( 'F jS, Y' ); ?></em></p>
+	  <p><em>
+	  <?php if( get_field('event_start_date') && !get_field('event_end_date') )://if only start is entered..?>
+	  <?php the_field('event_start_date'); ?>
+	  
+	  <?php elseif( get_field('event_start_date') && get_field('event_end_date') ): //start & end date...?> 
+      <?php the_field('event_start_date'); ?> - <?php the_field('event_end_date'); ?>
+
+      <?php else: //no event date is entered...?> 
+      <?php endif; ?></em></p>  
 	  <p><?php the_excerpt() ?></p>
 	</div>
 	<div class="col-sm-2 no-padding pull-right">
