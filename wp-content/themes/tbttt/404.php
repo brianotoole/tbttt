@@ -18,8 +18,15 @@ get_header(); ?>
 	<div class="grid grid-pad">
 		<div id="primary" class="content-area col-1-1">
 			<main id="main" class="site-main" role="main">
-			<div class="entry-content">
+			<div class="entry-content text-center">
 				<p>Please <a href="<?php bloginfo('url'); ?>">click here to return to the homepage</a>.</p>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
 				<br />
 			</div>
 
