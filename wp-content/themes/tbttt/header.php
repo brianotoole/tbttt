@@ -50,10 +50,9 @@
 	
 <?php //random page headers
 $bg = array( //create array of images 
-'//localhost/tbttt/wp-content/uploads/2015/07/test-background.jpg',
-'//localhost/tbttt/wp-content/uploads/2015/07/test-background.jpg', 
-'//localhost/tbttt/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg', 
-'//localhost/tbttt/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg'
+' '.site_url('/wp-content/uploads/2015/07/test-background.jpg').'',
+' '.site_url('/wp-content/uploads/2015/07/annie_tbttt_homeimg.jpg').'',
+' '.site_url('/wp-content/uploads/2015/07/keyboard-bg.jpg').''
  );
 $i = rand(0, count($bg)-1); //generate random number of the array 
 $selectedBg = "$bg[$i]"; //create & set variable equal to which random image was chosen 
