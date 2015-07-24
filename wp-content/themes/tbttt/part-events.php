@@ -9,10 +9,12 @@
   
 <div class="col-sm-12 no-padding">
 	<div class="col-sm-2 no-padding img">
-	  <?php if (has_post_thumbnail( $post->ID ) ): // if featured image is uploaded, show it ?>
+	  <?php if (has_post_thumbnail( $post->ID ) ): //if featured image is uploaded... ?>
 	  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
 	  <img class="thumbnail" src="<?php echo $image; ?>">
-	  <?php else : //if no featured image is uploaded, show default ?>
+	  <?php elseif( get_field('event_img')): //if event thumb is entered...?>
+	  <img class="thumbnail" src="<?php the_field('event_img'); ?>">
+	  <?php else: //if no featured image is uploaded, show default icon img ?>
 	  <div class="thumbnail default"></div>
 	  <?php endif; ?>
 	</div>
