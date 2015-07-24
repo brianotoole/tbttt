@@ -46,7 +46,7 @@ get_header(); ?>
 			<p><?php the_field('homepage_pillar_3'); ?></p>
 		</div><hr class="visible-xs">
 		<div class="col-sm-6">
-			<h3><i class="fa fa-check-circle-o"></i></h3>
+			<h3><i class="fa fa-music"></i></h3>
 			<h3><?php the_field('homepage_pillar_title_4'); ?></h3> 
 			<p><?php the_field('homepage_pillar_4'); ?></p>
 		</div>
