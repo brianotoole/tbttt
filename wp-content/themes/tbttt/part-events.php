@@ -31,11 +31,13 @@
       <?php endif; ?></em></p>  
 	  <p><?php the_excerpt() ?></p>
 	</div>
-	<div class="col-sm-2 no-padding pull-right">
+	<a href="<?php the_permalink() ?>" title="Click to View: <?php the_title_attribute(); ?>">
+	  <div class="col-sm-2 no-padding pull-right">
 		<div class="more">
-	      <p class="view"><a href="<?php the_permalink() ?>" title="Click to View: <?php the_title_attribute(); ?>">View Event</a></p>
+	      <p class="view">View Event</p>
 	    </div>
-	</div>
+	  </div>
+	</a>
 	<div class="clear"></div>
 	<hr>
 </div>

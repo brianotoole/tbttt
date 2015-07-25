@@ -76,7 +76,7 @@ get_header(); ?>
     
 	  <div class="sec3">
    		 <div class="grid grid-pad no-top">
-			<div id="primary" class="ontent-area col-12 event-archive">
+			<div id="primary" class="content-area col-12 event-archive">
 				<main id="main" class="site-main" role="main">
 				<?php if ( have_posts() ) : ?>
 

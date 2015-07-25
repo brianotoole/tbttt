@@ -691,20 +691,25 @@ Content
 }
 
 
-/* contact page */
-.contact {
-	
+/* contact & donate forms */
+.contact,
+.donate {
 	input[type="submit"] {
 		width: 100%;
 		margin-top: 5px;
 	}
 	
 	p {
-		margin: 15px 0;
+		margin: 2px 0;
 	}
 }
 
-
+.wpcf7-submit {
+	input[type="submit"] {
+		width: 100%;
+		margin-top: 5px;
+	}
+}
 
 /* call to actions, call outs */
 .home-cta {
@@ -785,7 +790,83 @@ Single / Archives / Cat / Post Types
 	border-bottom: 1px solid #DADADA;
 	text-align: center;
 }
+/*--------------------------------------------------------------
+Sidebar &  Share Buttons
+--------------------------------------------------------------*/
+aside {
+	li.cat-item {
 
+	    a {
+	    	display: block;
+	        width: 100%;
+	        margin: 0 auto 10px;
+	        padding: 12px 5px;
+	        background: $maroon;
+	        font-size: 1.25em;
+	        text-align: center;
+	        text-decoration: none;
+		    color: white;
+	    }
+		&:hover {
+			background: $black;
+		}
+    }
+}
+
+.social-share {
+	margin-bottom: 30px;
+    border-bottom: 1px solid $lightgray;
+    padding-bottom: 25px;
+	
+	a {
+		display: block;
+		width: 100%;
+		margin: 0 auto 10px;
+		padding: 12px 5px;
+		color: white;
+		font-size: 1.25em;
+		text-align: center;
+		text-decoration: none;
+	}
+	
+	a:first-of-type {
+		background: $facebook;
+		border: 2px solid $white;
+		
+		&:before {
+			content: '\f09a';
+			font-family: fontAwesome;
+			font-size: 1em;
+			color: white;
+			padding-right: 10px;
+		}
+		&:hover {
+			background: darken($facebook,12%);
+		}
+		
+	}
+	
+	a:last-of-type {
+		background: $twitter;
+		 border: 2px solid $white;
+		
+		&:before {
+			content: '\f099';
+			font-family: fontAwesome;
+			font-size: 1em;
+			color: white;
+			padding-right: 10px;
+		}
+		&:hover {
+			background: darken($twitter,12%);
+		}
+	}
+	
+	
+	
+	
+	
+}
 
 /*--------------------------------------------------------------
 Footer
