@@ -10,7 +10,8 @@
 @media screen and (max-width: 1170px) {
 
 	.more {
-		margin: 60px -20px auto;
+		padding: 14px;
+		margin: 60px -17px auto;
 		.view {
 			font-size: 1em;
 			padding-left: 0;
@@ -21,10 +22,19 @@
 			padding: 8px 7px;
 		}
 	}
+	.social-share a, aside li.cat-item a {
+		font-size: 1em;
+		&:before {
+			display: none;
+		}
+	}
+	.h-title span {
+		line-height: 1.2em;
+	}
 
 }//end
 /* above 900, special considerations */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 930px) {
 	.more {
 		.view {
 			font-size: 0.85em;
@@ -85,7 +95,7 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		background: none;
 		border: none;
 		color: white;
-		padding: 1em 1.5em 1em 0;
+		padding: 2em 1.5em 2em 0;
 		&:hover, &:focus {
 			color: white;
 			border: 0;
@@ -95,7 +105,24 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 		display: none;
 	}
 	
-	.hero h2 {font-size:2.5em;}
+	.site-logo img { max-width: 80%; }
+	
+	.hero {
+		height: 375px;
+        min-height: 375px;
+		h2 {
+			margin-top: 280px;
+			font-size: 2.4em;
+			text-shadow: none;
+		}
+		.img {
+			height: 250px;
+			border-bottom: 1px solid darken($gray,7%);
+		}
+	}
+	.entry-header {
+		min-height: 200px;
+	}
 	
 	.sec1 {
 	

@@ -19,7 +19,7 @@
 		<div class="col-sm-4 col-xs-12 b-right">
 			<h3>Directions</h3>
 			<iframe class="visible-lg visible-md visible-sm" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1436829367014!6m8!1m7!1s63pv_7or4kXc-Qkmm9iRYg!2m2!1d28.098447!2d-82.504927!3f351!4f0!5f0.7820865974627469" width="335" height="232" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<a href="#" class="visible-xs button white">Tap for Directions</a>
+			<a href="#" class="visible-xs button white">Get Directions</a>
 		</div><hr class="visible-xs">
 		
 		<div class="col-sm-4 col-xs-12 b-right">
