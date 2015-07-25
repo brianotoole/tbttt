@@ -168,7 +168,9 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 			display: block;
 			margin: 0 auto;
 			&:after {
-				position: static;
+				position: relative;
+				top: 9px;
+				left: -2px;
 			}
 		}
 	}
