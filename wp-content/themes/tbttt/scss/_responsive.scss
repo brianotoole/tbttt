@@ -5,7 +5,6 @@
 
 
 
-
 /* container size & below */
 @media screen and (max-width: 1170px) {
 
@@ -22,7 +21,9 @@
 			padding: 8px 7px;
 		}
 	}
-	.social-share a, aside li.cat-item a {
+	.social-share a, 
+	aside li.cat-item a,
+	.event-link a, {
 		font-size: 1em;
 		&:before {
 			display: none;
@@ -33,6 +34,8 @@
 	}
 
 }//end
+
+
 /* above 900, special considerations */
 @media screen and (max-width: 930px) {
 	.more {

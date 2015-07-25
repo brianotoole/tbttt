@@ -460,10 +460,10 @@ Content
          height: 500px;
          z-index: 1;  
          visibility: hidden;
-         animation: fadeShow 21s infinite; 
-         -webkit-animation: fadeShow 21s infinite; 
-         -moz-animation: fadeShow 21s infinite; 
-         -o-animation: fadeShow 21s infinite; 
+         animation: fadeShow 24s infinite; 
+         -webkit-animation: fadeShow 24s infinite; 
+         -moz-animation: fadeShow 24s infinite; 
+         -o-animation: fadeShow 24s infinite; 
          animation-timing-function: ease-out;
          -webkit-animation-timing-function: ease-out;
          -moz-animation-timing-function: ease-out;
@@ -476,22 +476,22 @@ Content
 	    	 -o-animation-delay: 0s;
 	    }
 	    &:nth-child(2) {
-	         animation-delay: 7s;
-	    	 -webkit-animation-delay: 7s;
-	    	 -moz-animation-delay: 7s;
-	    	 -o-animation-delay: 7s;  
+	         animation-delay: 6s;
+	    	 -webkit-animation-delay: 6s;
+	    	 -moz-animation-delay: 6s;
+	    	 -o-animation-delay: 6s;  
 	    }
 	    &:nth-child(3) {
-	         animation-delay: 14s;
-	    	 -webkit-animation-delay: 14s;
-	    	 -moz-animation-delay: 14s;
-	    	 -o-animation-delay: 14s; 
+	         animation-delay: 12s;
+	    	 -webkit-animation-delay: 12s;
+	    	 -moz-animation-delay: 12s;
+	    	 -o-animation-delay: 12s; 
 	    }
 	    &:nth-child(4) {
-	         animation-delay: 21s;
-	    	 -webkit-animation-delay: 21s;
-	    	 -moz-animation-delay: 21s;
-	    	 -o-animation-delay: 21s; 
+	         animation-delay: 18s;
+	    	 -webkit-animation-delay: 18s;
+	    	 -moz-animation-delay: 18s;
+	    	 -o-animation-delay: 18s; 
 	    }    
 	    
 	}//.img
@@ -504,7 +504,7 @@ Content
 		bottom: 0;
 		left: 0;
 		background-image: linear-gradient(to bottom right,$white,$maroon);
-		opacity: 0.2; //lesser opacity = lesser gradient overlay
+		opacity: 0.11; //lesser opacity = lesser gradient overlay
 		z-index: 2;
     }
   
@@ -539,7 +539,7 @@ Content
 		bottom: 0;
 		left: 0;
 		background-image: linear-gradient(to bottom right,$white,$maroon);
-		opacity: .4; //less opacity = less gradient overlay
+		opacity: .7; //less opacity = less gradient overlay
     }
 }
 
@@ -793,6 +793,37 @@ Single / Archives / Cat / Post Types
 /*--------------------------------------------------------------
 Sidebar &  Share Buttons
 --------------------------------------------------------------*/
+.event-link {
+	margin-bottom: 30px;
+    border-bottom: 1px solid $lightgray;
+    padding-bottom: 25px;
+	
+	a {
+		display: block;
+		width: 100%;
+		margin: 0 auto 10px;
+		padding: 12px 5px;
+		color: white;
+		font-size: 1.25em;
+		text-align: center;
+		text-decoration: none;
+		background: $maroon;
+		border: 2px solid $white;
+		&:before {
+			content: '\f044';
+			font-family: fontAwesome;
+			font-size: 1em;
+			color: white;
+			padding-right: 10px;
+		}
+		&:hover {
+			background: $black;
+		}
+		
+	}
+	
+}
+
 aside {
 	li.cat-item {
 
@@ -800,15 +831,16 @@ aside {
 	    	display: block;
 	        width: 100%;
 	        margin: 0 auto 10px;
-	        padding: 12px 5px;
-	        background: $maroon;
+	        padding: 5px;
+	        border-bottom: 1px solid $lightgray;
 	        font-size: 1.25em;
-	        text-align: center;
+	        text-align: left;
 	        text-decoration: none;
-		    color: white;
+		    color: $maroon;
 	    }
 		&:hover {
-			background: $black;
+			color: $black;
+			text-decoration: underline;
 		}
     }
 }
@@ -860,11 +892,7 @@ aside {
 		&:hover {
 			background: darken($twitter,12%);
 		}
-	}
-	
-	
-	
-	
+	}	
 	
 }
 

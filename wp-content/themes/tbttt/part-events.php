@@ -6,7 +6,8 @@
   <?php $query = new WP_Query( 'posts_per_page=-1' ); // else, show all ?>
 <?php } ?>
   <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-  
+
+<a href="<?php the_permalink() ?>" title="Click to View: <?php the_title_attribute(); ?>">  
 <div class="col-sm-12 no-padding">
 	<div class="col-sm-2 no-padding img">
 	  <?php if (has_post_thumbnail( $post->ID ) ): //if featured image is uploaded... ?>
@@ -19,7 +20,7 @@
 	  <?php endif; ?>
 	</div>
 	<div class="col-sm-8 descrip">
-	  <h3><a href="<?php the_permalink() ?>" title="Click to View: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+	  <h3><?php the_title(); ?></h3>
 	  <p><em>
 	  <?php if( get_field('event_start_date') && !get_field('event_end_date') )://if only start is entered..?>
 	  <?php the_field('event_start_date'); ?>
@@ -41,6 +42,7 @@
 	<div class="clear"></div>
 	<hr>
 </div>
+</a>
 
 <?php endwhile; 
  wp_reset_postdata();

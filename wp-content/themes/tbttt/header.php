@@ -51,26 +51,26 @@
 	
 <?php //random page headers
 $bg = array( //create array of images 
-''.site_url('/wp-content/uploads/2015/07/ttt_hero1.jpg').'',
-''.site_url('/wp-content/uploads/2015/07/ttt_hero2.jpg').'',
-''.site_url('/wp-content/uploads/2015/07/ttt_hero3.jpg').''
+''.site_url('/wp-content/uploads/2015/07/ttt_hero1.jpg').'', //cindy fairies
+''.site_url('/wp-content/uploads/2015/07/annie_interior.jpg').'', //annie
+''.site_url('/wp-content/uploads/2015/07/wizard_hero.jpg').'' //wizard of oz
  );
 $i = rand(0, count($bg)-1); //generate random number of the array 
 $selectedBg = "$bg[$i]"; //create & set variable equal to which random image was chosen 
 ?>
 
 <?php if (is_archive() || is_category() ): //category or archive, random header ?>
-<header class="entry-header" data-speed="8" data-type="background" style="background: url('<?php echo $selectedBg; ?>')50% 0 no-repeat fixed;background-size:cover;">
+<header class="entry-header" style="background: url('<?php echo $selectedBg; ?>') center center no-repeat; background-size:cover;">
 </header><!-- .entry-header -->
 
 <?php elseif (has_post_thumbnail( $post->ID ) ): //if featured img is uploaded, show it as header ?>
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>   
-<header class="entry-header" data-speed="8" data-type="background" style="background: url('<?php echo $image; ?>') 50% 0 no-repeat fixed;background-size:cover;">
+<header class="entry-header" style="background: url('<?php echo $image; ?>') center center no-repeat;background-size:cover;">
 </header><!-- .entry-header --> 
 
 <?php elseif (is_front_page() ): //is front page, do front page template stuff (nothing here) ?>
 <?php else : //no featured img is uploaded, random header again... called last as override ?>	
-<header class="entry-header" data-speed="8" data-type="background" style="background: url('<?php echo $selectedBg; ?>')50% 0 no-repeat fixed;background-size:cover;">
+<header class="entry-header" style="background: url('<?php echo $selectedBg; ?>') center center no-repeat;background-size:cover;">
 </header><!-- .entry-header -->
 
 <?php endif; ?>

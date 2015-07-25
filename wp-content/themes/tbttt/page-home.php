@@ -9,7 +9,7 @@ get_header(); ?>
   <div class="img" style="background: url('<?php the_field('fadeshow_img1'); ?>') 50% center no-repeat;background-size:cover;"></div> 
   <div class="img" style="background: url('<?php the_field('fadeshow_img2'); ?>') top no-repeat;background-size:cover;"></div>  
   <div class="img" style="background: url('<?php the_field('fadeshow_img3'); ?>') center center no-repeat;background-size:cover;"></div>
-  <div class="img" style="background: url('<?php the_field('fadeshow_img4'); ?>') 50% 0 no-repeat background-size:cover;"></div>
+  <div class="img" style="background: url('<?php the_field('fadeshow_img4'); ?>') center center no-repeat; background-size:cover;"></div>
      <div class="home-hero" id="container">                      
         <h2 class="hidden-xs animateSlow fadeIn"><?php the_field('fadeshow_overlay_text'); ?></h2>
         <h2 class="visible-xs"><?php the_field('fadeshow_overlay_text'); ?></h2>
