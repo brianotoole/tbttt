@@ -199,6 +199,6 @@ a {
 add_action('admin_head', 'custom_admin_colors');
 
      
-add_action('admin_menu', 'sensible_setup_menu');
+//add_action('admin_menu', 'sensible_setup_menu');
 
 ?>

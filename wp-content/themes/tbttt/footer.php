@@ -19,7 +19,7 @@
 		<div class="col-sm-4 col-xs-12 b-right">
 			<h3>Directions</h3>
 			<iframe class="visible-lg visible-md visible-sm" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=15906+Mapledale+Blvd+Tampa,+FL+33624&sll=28.096629,-82.500887&sspn=0.01484,0.020642&ie=UTF8&hq=&hnear=15906+Mapledale+Blvd,+Tampa,+Hillsborough,+Florida+33624&ll=28.098403,-82.505447&spn=0.00742,0.010321&z=14&output=embed" width="335" height="232" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<a href="geo:28.098403,-82.505447" class="visible-xs button white">Get Directions</a>
+			<a href="https://www.google.com/maps/dir//15906+Mapledale+Blvd,+Tampa,+FL+33624/@28.0987727,-82.5072687,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x88c2bf63a0c73e1f:0x316ea2b6a463d054!2m2!1d-82.504962!2d28.098768!3e0?hl=en" class="visible-xs button white">Get Directions</a>
 		</div><hr class="visible-xs">
 		
 		<div class="col-sm-4 col-xs-12 b-right">
