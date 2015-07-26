@@ -18,8 +18,8 @@
 	<div class="grid grid-pad row">
 		<div class="col-sm-4 col-xs-12 b-right">
 			<h3>Directions</h3>
-			<iframe class="visible-lg visible-md visible-sm" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1436829367014!6m8!1m7!1s63pv_7or4kXc-Qkmm9iRYg!2m2!1d28.098447!2d-82.504927!3f351!4f0!5f0.7820865974627469" width="335" height="232" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<a href="#" class="visible-xs button white">Get Directions</a>
+			<iframe class="visible-lg visible-md visible-sm" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=15906+Mapledale+Blvd+Tampa,+FL+33624&sll=28.096629,-82.500887&sspn=0.01484,0.020642&ie=UTF8&hq=&hnear=15906+Mapledale+Blvd,+Tampa,+Hillsborough,+Florida+33624&ll=28.098403,-82.505447&spn=0.00742,0.010321&z=14&output=embed" width="335" height="232" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<a href="geo:28.098403,-82.505447" class="visible-xs button white">Get Directions</a>
 		</div><hr class="visible-xs">
 		
 		<div class="col-sm-4 col-xs-12 b-right">
@@ -32,7 +32,7 @@
 			</div>
 			<div class="item">
 				<strong>Executive Director</strong>
-				<p>Mary Jo Scanio<br><i class="fa fa-envelope-o"></i> <a href="mailto:ttt@mjpaa.com" target="_blank"> ttt@mjpaa.com</a></p>
+				<p>Mary Jo Scanio<br><i class="fa fa-envelope-o"></i> <a href="mailto:ttt@mjpaa.com"> ttt@mjpaa.com</a></p>
 			</div>
 			<div class="social-page-links">
 			
