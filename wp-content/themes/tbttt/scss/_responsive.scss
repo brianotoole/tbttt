@@ -111,16 +111,14 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	.site-logo img { max-width: 80%; }
 	
 	.hero {
-		height: 375px;
-        min-height: 375px;
+		height: 250px;
+        min-height: 250px;
 		h2 {
-			margin-top: 280px;
+			margin-top: 185px;
 			font-size: 2.4em;
-			text-shadow: none;
 		}
 		.img {
 			height: 250px;
-			border-bottom: 1px solid darken($gray,7%);
 		}
 	}
 	.entry-header {
