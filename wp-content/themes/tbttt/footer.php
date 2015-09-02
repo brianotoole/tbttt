@@ -41,7 +41,12 @@
 		<div class="col-sm-4 col-xs-12">
 			<h3>Donate</h3>
 			<p>We are only as strong as our community. Your donations are greatly appreciated.</p>
-			<a href="<?php bloginfo('url'); ?>/Donate" class="button white no-border">Donate</a>
+			  <a href="<?php bloginfo('url'); ?>/donate" class="click">Click to Donate </a><i class="fa fa-angle-double-right"></i>
+			<hr />
+			<a href="http://smile.amazon.com/ch/36-4493299" target="_blank">
+			  <img class="amazon" src="<?php bloginfo('stylesheet_directory'); ?>/img/amazon-smile-logo.png"/>
+			  <p>Plan on shopping online? Click to shop Amazon and a portion of your spending will benefit the Theatre.</p>
+			</a>
 		</div>
 		
 	</div><!-- grid -->

@@ -922,7 +922,7 @@ Footer
 		margin: 20px auto;
 	}
 	.fa {
-		font-size: 20px;
+		font-size: 16px;
 		margin-bottom: 15px;
 	}
 	
@@ -946,6 +946,12 @@ Footer
 		text-decoration: underline;
 	}
 	
+}
+img.amazon {
+	max-width: 240px;
+}
+.click {
+	text-decoration: underline;
 }
 .no-padding {padding:0!important;}
 
