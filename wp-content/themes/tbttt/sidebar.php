@@ -10,7 +10,7 @@
 
 	<div id="secondary" class="widget-area col-3-12" role="complementary">
 	  <?php if( get_field('event_register_button') )://if event register link is added...?>
-	  <h1 class="widget-title">Register for this Event</h1>
+	  <h1 class="widget-title"><?php the_field('button_text'); ?></h1>
 	  <div class="event-link">
 	  	<a href="<?php the_field('event_register_button'); ?>" target="_blank">Register Now</a>
 	  </div>
