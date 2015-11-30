@@ -2,11 +2,7 @@
 /**
  * The sidebar containing the main widgets
  */
-
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-		return;
-	}
-	?>
+?>
 
 	<div id="secondary" class="widget-area col-3-12" role="complementary">
 	  <?php if( get_field('event_register_button') )://if event register link is added...?>
@@ -25,5 +21,24 @@
 		  <span unselectable="on"></span><span>Share on Twitter</span>
 		  </a>
 	  </div><!--/.social-share-->
-		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	  
+	  
+<aside class="widget widget_categories"> 
+  <h1 class="widget-title">Explore Past Events</h1>
+  
+  <ul>
+<?php $custom_query = new WP_Query('cat=6'); //past-events cat id#
+while($custom_query->have_posts()) : $custom_query->the_post(); ?>
+
+   <li class="cat-item">
+     <a href="<?php the_permalink(); ?>" rel="bookmark" title="Click to Read">
+	     <?php the_title(); ?>
+     </a>
+   </li>
+
+<?php endwhile; ?>
+<?php wp_reset_postdata(); // reset the query ?>
+  </ul>
+</aside>
+
 	</div><!-- #secondary --> 
