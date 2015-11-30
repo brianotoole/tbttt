@@ -27,7 +27,7 @@
   <h1 class="widget-title">Explore Past Events</h1>
   
   <ul>
-<?php $custom_query = new WP_Query('cat=6'); //past-events cat id#
+<?php $custom_query = new WP_Query('cat=7'); //past-events cat id#
 while($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
    <li class="cat-item">

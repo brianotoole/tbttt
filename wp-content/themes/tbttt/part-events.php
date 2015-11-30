@@ -1,9 +1,9 @@
 <div class="events">
 
 <?php if(is_front_page() ) { ?>	
-  <?php $query = new WP_Query( 'posts_per_page=3&category__not_in=6' ); // if homepge, show 3 posts only ?>
+  <?php $query = new WP_Query( 'posts_per_page=3&category__not_in=7' ); // if homepge, show 3 posts only ?>
 <?php } else { ?>
-  <?php $query = new WP_Query( 'posts_per_page=-1&category__not_in=6' ); // else, show all ?>
+  <?php $query = new WP_Query( 'posts_per_page=-1&category__not_in=7' ); // else, show all ?>
 <?php } ?>
   <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
