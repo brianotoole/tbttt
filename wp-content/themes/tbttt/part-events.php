@@ -1,7 +1,7 @@
 <div class="events">
 
 <?php if(is_front_page() ) { ?>	
-  <?php $query = new WP_Query( 'posts_per_page=3&category__not_in=7' ); // if homepge, show 3 posts only ?>
+  <?php $query = new WP_Query( 'posts_per_page=5&category__not_in=7' ); // if homepge, show 3 posts only ?>
 <?php } else { ?>
   <?php $query = new WP_Query( 'posts_per_page=-1&category__not_in=7' ); // else, show all ?>
 <?php } ?>
@@ -50,11 +50,11 @@
 <p><?php _e( 'There are no upcoming events at this time.' ); ?></p>
 <?php endif; ?>
  
-<?php if(is_front_page() ) { //if homepage, show "View All Events" if there are 3 or more ?>	
+<?php if(is_front_page() ) { //if homepage, show "View All Events" if there are 5 or more ?>	
   <?php 
     $count_posts = wp_count_posts();
     $published_posts = $count_posts->publish;
-      if( $published_posts >= 3 ) {
+      if( $published_posts >= 5 ) {
         echo '<div class="col-sm-12 text-center no-padding">';
         echo '<a href="' . get_option('home') . '/events" class="button white">' . 'View All Events' . '</a>';
         echo '</div>'; 
