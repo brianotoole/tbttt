@@ -32,7 +32,7 @@
 			</div>
 			<div class="item">
 				<strong>Executive Director</strong>
-				<p>Mary Jo Scanio<br><i class="fa fa-envelope-o"></i> <a href="mailto:ttt@mjpaa.com"> ttt@mjpaa.com</a></p>
+				<p>Mary Jo Scanio<br><i class="fa fa-envelope-o"></i> <a href="mailto:tbttt@mjpaa.com"> tbttt@mjpaa.com</a></p>
 			</div>
 			<div class="social-page-links">
 			
