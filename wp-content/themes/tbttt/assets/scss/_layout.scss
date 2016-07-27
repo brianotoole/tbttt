@@ -75,19 +75,19 @@ input[type="submit"] {
 	box-shadow: none;
 	color: $gray;
 	cursor: pointer;
-	-webkit-appearance: button; 
+	-webkit-appearance: button;
 	font-size: 1.2em;
 	line-height: 1;
 	font-weight: inherit;
 	padding: 1em;
 	text-shadow: none;
 	text-transform: uppercase;
-	
+
 	&:hover, &:focus, &:active {
 		border-color: darken($gray,20%);
 		color: darken($gray,20%);
 	}
-	
+
 }
 
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="number"], input[type="search"], textarea {
@@ -99,19 +99,19 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 input[type="checkbox"],
 input[type="radio"] {
-	padding: 0; 
+	padding: 0;
 }
 input[type="search"] {
-	-webkit-appearance: textfield; 
-	-webkit-box-sizing: content-box; 
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
 	-moz-box-sizing:    content-box;
 	box-sizing:         content-box;
 }
-input[type="search"]::-webkit-search-decoration { 
+input[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 button::-moz-focus-inner,
-input::-moz-focus-inner { 
+input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
@@ -126,7 +126,7 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 0;
-	
+
 	&:focus {
 		color: $black;
 	}
@@ -143,9 +143,9 @@ input[type="search"] {
 
 textarea {
 	width: 100%;
-	overflow: auto; 
+	overflow: auto;
 	padding-left: 3px;
-	vertical-align: top; 
+	vertical-align: top;
 }
 
 /* buttons */
@@ -344,7 +344,7 @@ Menus
       width: 100%;
   }
   #masthead {
-	  transition: transform 300ms; 
+	  transition: transform 300ms;
   }
   #masthead img {
 	 -webkit-transform: scale(1) translateY(20px);
@@ -354,7 +354,7 @@ Menus
           transition: transform 300ms;
           -webkit-transform: scale(0.8) translateY(-3px);
       -ms-transform: scale(0.8) translateY(-3px);
-          transform: scale(0.8) translateY(-3px); 
+          transform: scale(0.8) translateY(-3px);
   }
   #masthead.is-fixed img {
 	  max-width: 102px;
@@ -453,22 +453,22 @@ Content
     width: 100%;
     height: 100%;
     min-height: 500px;
-    
+
     .img {
          position: absolute;
          width: 100%;
          height: 500px;
-         z-index: 1;  
+         z-index: 1;
          visibility: hidden;
-         animation: fadeShow 24s infinite; 
-         -webkit-animation: fadeShow 24s infinite; 
-         -moz-animation: fadeShow 24s infinite; 
-         -o-animation: fadeShow 24s infinite; 
+         animation: fadeShow 24s infinite;
+         -webkit-animation: fadeShow 24s infinite;
+         -moz-animation: fadeShow 24s infinite;
+         -o-animation: fadeShow 24s infinite;
          animation-timing-function: ease-out;
          -webkit-animation-timing-function: ease-out;
          -moz-animation-timing-function: ease-out;
          -o-animation-timing-function: ease-out;
-	    
+
 	    &:nth-child(1) {
 	    	 animation-delay: 0s;
 	    	 -webkit-animation-delay: 0s;
@@ -479,23 +479,23 @@ Content
 	         animation-delay: 6s;
 	    	 -webkit-animation-delay: 6s;
 	    	 -moz-animation-delay: 6s;
-	    	 -o-animation-delay: 6s;  
+	    	 -o-animation-delay: 6s;
 	    }
 	    &:nth-child(3) {
 	         animation-delay: 12s;
 	    	 -webkit-animation-delay: 12s;
 	    	 -moz-animation-delay: 12s;
-	    	 -o-animation-delay: 12s; 
+	    	 -o-animation-delay: 12s;
 	    }
 	    &:nth-child(4) {
 	         animation-delay: 18s;
 	    	 -webkit-animation-delay: 18s;
 	    	 -moz-animation-delay: 18s;
-	    	 -o-animation-delay: 18s; 
-	    }    
-	    
+	    	 -o-animation-delay: 18s;
+	    }
+
 	}//.img
-    
+
     &:before {
     	content: '';
 		position: absolute;
@@ -507,7 +507,7 @@ Content
 		opacity: 0.3; //lesser opacity = lesser gradient overlay
 		z-index: 2;
     }
-  
+
 }//.hero
 
 .home-hero h2 {
@@ -550,7 +550,7 @@ Content
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
-    
+
     .intro {
 	    background: transparent;
 		max-width: 75%;
@@ -561,26 +561,26 @@ Content
 		line-height: 1.5em;
 		text-align: center;
 	}
-	
+
 	.intro-no-p {
 		padding: 40px 0 0 0;
 	}
-	
+
 	h3.h-title {
 		max-width: 75%;
 		margin: 0 auto;
 		color: white;
-	    background: rgba(0, 0, 0, 0) url("img/divider.png") 0 53px repeat-x;
+	    background: rgba(0, 0, 0, 0) url("assets/img/divider.png") 0 53px repeat-x;
 	    font-size: 2.2em;
 	    padding-top: 37px;
 	}
-	
+
 	h3.h-title span {
 		display: inline-block;
 		padding: 0 20px;
 		background: $maroon;/* same as .sec1 bg-color */
 	}
-	
+
 }
 
 .sec2 {
@@ -589,7 +589,7 @@ Content
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
-    
+
     .intro {
 	    background: transparent;
 		max-width: 85%;
@@ -604,7 +604,7 @@ Content
 	> div {
 		padding: 30px;
 	}
-	
+
 	i {
 		color: $maroon;
 		font-size: 1.4em;
@@ -617,22 +617,22 @@ Content
 }
 .events {
 	text-align: left;
-	
+
 	.button {
 		display: block;
 		width: 100%;
 		margin: 30px auto 30px;
 	}
-	
+
 	img .thumbnail,
 	.thumbnail {
 		width: 150px;
         height: 150px;
         border-radius: 50%;
-        -webkit-border-radius: 50%;	
-        -moz-border-radius: 50%;	
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
         -ms-border-radius: 50%;
-        -o-border-radius: 50%;			
+        -o-border-radius: 50%;
 	}
 	/* if not thumb, default */
 	.default {
@@ -642,7 +642,7 @@ Content
 			font-family: 'fontAwesome';
 			position: absolute;
 			font-size: 4em;
-			color: white;	
+			color: white;
 			bottom: 21px;
 			left: 45px;
 		}
@@ -657,7 +657,7 @@ Content
 	background: transparent;
 	border: 1px solid $maroon;
 	color: $maroon;
-	
+
 	&:after {
 		  content: '\f054';
 		  font-family: 'fontAwesome';
@@ -670,7 +670,7 @@ Content
 		  padding: 11px 7px;
 		  margin-top: -53px;
 	}
-	
+
 	&:hover {
 		background: darken($lightgray,7%);
 		cursor: pointer;
@@ -698,7 +698,7 @@ Content
 		width: 100%;
 		margin-top: 5px;
 	}
-	
+
 	p {
 		margin: 2px 0;
 	}
@@ -724,7 +724,7 @@ Content
 	background: $maroon;
 	color: white;
 	text-align: center;
-	
+
 	&:after {
 	  -moz-border-bottom-colors: none;
 	  -moz-border-left-colors: none;
@@ -743,16 +743,16 @@ Content
 	  width: 0;
 	  z-index: 10;
 	}
-	
+
 }
 
 .home-cta,
 .footer-cta {
-	
+
 	h1, h2, h3, h4, h5 {
 		color: white;
 	}
-	
+
 }
 
 
@@ -762,11 +762,11 @@ Interior
 --------------------------------------------------------------*/
 .featured-img-header {
 	padding: 250px 0 100px;
-    position: relative; 
+    position: relative;
 	background-size: cover;
 }
 .entry-content {
-	
+
 	p {
 		padding: 2px 0px 25px;
 	}
@@ -797,7 +797,7 @@ Sidebar &  Share Buttons
 	margin-bottom: 30px;
     border-bottom: 1px solid $lightgray;
     padding-bottom: 25px;
-	
+
 	a {
 		display: block;
 		width: 100%;
@@ -819,9 +819,9 @@ Sidebar &  Share Buttons
 		&:hover {
 			background: $black;
 		}
-		
+
 	}
-	
+
 }
 
 aside {
@@ -849,7 +849,7 @@ aside {
 	margin-bottom: 30px;
     border-bottom: 1px solid $lightgray;
     padding-bottom: 25px;
-	
+
 	a {
 		display: block;
 		width: 100%;
@@ -860,11 +860,11 @@ aside {
 		text-align: center;
 		text-decoration: none;
 	}
-	
+
 	a:first-of-type {
 		background: $facebook;
 		border: 2px solid $white;
-		
+
 		&:before {
 			content: '\f09a';
 			font-family: fontAwesome;
@@ -875,13 +875,13 @@ aside {
 		&:hover {
 			background: darken($facebook,12%);
 		}
-		
+
 	}
-	
+
 	a:last-of-type {
 		background: $twitter;
 		 border: 2px solid $white;
-		
+
 		&:before {
 			content: '\f099';
 			font-family: fontAwesome;
@@ -892,8 +892,8 @@ aside {
 		&:hover {
 			background: darken($twitter,12%);
 		}
-	}	
-	
+	}
+
 }
 
 /*--------------------------------------------------------------
@@ -906,7 +906,7 @@ Footer
 	font-weight: 400;
 }
 .footer-contact {
-	
+
 	p, a {
 		color: white;
 	}
@@ -925,11 +925,11 @@ Footer
 		font-size: 16px;
 		margin-bottom: 15px;
 	}
-	
+
 	.item {
 		margin: 20px 0;
 	}
-	
+
 }
 
 
@@ -940,12 +940,12 @@ Footer
 	padding: 20px 0 40px;
 	color: white;
 	text-align: center;
-	
+
 	a {
 		color: white;
 		text-decoration: underline;
 	}
-	
+
 }
 img.amazon {
 	max-width: 240px;
@@ -1029,5 +1029,3 @@ Animations
   	-webkit-animation-duration: 3.5s;
   	animation-duration: 3.5s;
 }
-
-

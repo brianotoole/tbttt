@@ -4,13 +4,13 @@
  */
 ?>
 
-	</section><!-- #content --> 
-    
+	</section><!-- #content -->
+
 <div class="footer-cta">
 	<div class="grid grid-pad">
 		<div class="col-1-1">
-			<h2>Stay Connected</h2> 
-		</div><!-- col-1-1 --> 
+			<h2>Stay Connected</h2>
+		</div><!-- col-1-1 -->
 	</div><!-- grid -->
 </div>
 
@@ -21,7 +21,7 @@
 			<iframe class="visible-lg visible-md visible-sm" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=15906+Mapledale+Blvd+Tampa,+FL+33624&sll=28.096629,-82.500887&sspn=0.01484,0.020642&ie=UTF8&hq=&hnear=15906+Mapledale+Blvd,+Tampa,+Hillsborough,+Florida+33624&ll=28.098403,-82.505447&spn=0.00742,0.010321&z=14&output=embed" width="335" height="232" frameborder="0" style="border:0" allowfullscreen></iframe>
 			<a href="https://www.google.com/maps/dir//15906+Mapledale+Blvd,+Tampa,+FL+33624/@28.0987727,-82.5072687,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x88c2bf63a0c73e1f:0x316ea2b6a463d054!2m2!1d-82.504962!2d28.098768!3e0?hl=en" class="visible-xs button white">Get Directions</a>
 		</div><hr class="visible-xs">
-		
+
 		<div class="col-sm-4 col-xs-12 b-right">
 			<h3>Contact</h3>
 			<div class="item">
@@ -35,7 +35,7 @@
 				<p>Mary Jo Scanio<br><i class="fa fa-envelope-o"></i> <a href="mailto:tbttt@mjpaa.com"> tbttt@mjpaa.com</a></p>
 			</div>
 			<div class="social-page-links">
-			
+
 		</div><hr class="visible-xs">
 		</div>
 		<div class="col-sm-4 col-xs-12">
@@ -44,11 +44,11 @@
 			  <a href="<?php bloginfo('url'); ?>/donate" class="click">Click to Donate </a><i class="fa fa-angle-double-right"></i>
 			<hr />
 			<a href="http://smile.amazon.com/ch/36-4493299" target="_blank">
-			  <img class="amazon" src="<?php bloginfo('stylesheet_directory'); ?>/img/amazon-smile-logo.png"/>
+			  <img class="amazon" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/amazon-smile-logo.png"/>
 			  <p>Plan on shopping online? Click to shop Amazon and a portion of your spending will benefit the Theatre.</p>
 			</a>
 		</div>
-		
+
 	</div><!-- grid -->
 </div>
 
@@ -57,10 +57,10 @@
 			<div class="site-info col-1-1">
 				&copy; <?php echo date('Y'); ?> | <em>Tampa Bay Triple Threat Theatre, T3, is a non-profit 501(c)(3) corporation organized exclusively as charitable and civic.</em> <br class="visible-sm visible-xs" /> <a href="<?php bloginfo('url'); ?>/affirmative-action"> Affirmative Action</a> | <a href="#top"> Back To Top</a>
 			</div><!-- .site-info -->
-        </div><!-- grid --> 
+        </div><!-- grid -->
 	</footer><!-- #colophon -->
 
-</div><!-- #page --> 
+</div><!-- #page -->
 
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 <?php wp_footer(); ?>

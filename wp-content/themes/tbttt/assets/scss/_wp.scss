@@ -107,8 +107,8 @@ dd {
 	margin: 0 1.5em 1.5em;
 }
 img {
-	height: auto; 
-	max-width: 100%; 
+	height: auto;
+	max-width: 100%;
 }
 
 figure {
@@ -170,7 +170,7 @@ Posts and pages
 }
 .blog-featured-img-header {
 	padding: 150px 15px 150px;
-    position: relative; 
+    position: relative;
 	background-size: cover !important;
 }
 .blog-entry-header .entry-title, .blog-featured-img-header .entry-title {
@@ -182,7 +182,7 @@ Posts and pages
 .blog-archive article {
 	background: #fafafa;
 	border-radius: 6px;
-	border: 1px solid #dadada;	
+	border: 1px solid #dadada;
 	overflow: hidden;
 	margin-bottom: 50px;
 }
@@ -222,7 +222,7 @@ Posts and pages
     width: 80%;
 }
 .member p {
-	font-size: 15px; 
+	font-size: 15px;
 	line-height: 20px;
 	padding: 0 30px;
 }
@@ -250,7 +250,7 @@ Posts and pages
 
 /**** contact form *****/
 
-#contactForm ul { 
+#contactForm ul {
   list-style: none outside none;
 }
 
@@ -264,33 +264,33 @@ ul.contact-form li {
 }
 ul.contact-form input {
 	border-radius: 4px;
-	width:100%; 
+	width:100%;
 }
 li.contact-name {
-	width: 49%; 
+	width: 49%;
 	margin-bottom: 20px;
 	}
-	
+
 li.contact-email {
 	width: 49%;
 	margin-bottom: 20px;
 }
 li.contact-comments {
-	width: 98.5%;  
+	width: 98.5%;
 }
-li.contact-comments textarea { 
+li.contact-comments textarea {
 	padding: 8px 15px;
 	border-radius: 4px;
 }
- 
+
  input[type="submit"].contact-submit {
-	border-radius: 2px; 
-	margin-top: 20px; 
+	border-radius: 2px;
+	margin-top: 20px;
 	color: #fff;
 	font-weight: 500;
 	text-transform: uppercase;
 	font-size: 13px;
-} 
+}
 .site-header {
 	position: absolute;
 	top: 0;
@@ -313,7 +313,7 @@ li.contact-comments textarea {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-} 
+}
 .slide-content {
 	display: table;
 	position: relative;
@@ -323,7 +323,7 @@ li.contact-comments textarea {
 	text-align: center;
 }
 .slide-content span {
-	display: table-cell; 
+	display: table-cell;
 	vertical-align: middle;
 }
 .slide-content span h2 {
@@ -341,7 +341,7 @@ li.contact-comments textarea {
 	padding: 20px 0 40px;
 	text-align: center;
 	font-size: 20px;
-	color: #888;	
+	color: #888;
 }
 .social-bar span {
   float: left;
@@ -349,25 +349,25 @@ li.contact-comments textarea {
   margin-right: 2%;
   text-align: right;
   width: 48%;
-} 
+}
 .social-bar .fa {
   color: #888;
   font-size: 22px !important;
   padding: 10px 7px 0;
-}   
+}
 .social-media-icons {
   float: left;
   margin: 0;
   text-align: left;
   width: 50%;
-}   
+}
 .social-media-icons li {
-  color: #888; 
+  color: #888;
   display: inline-block;
-  float: none;     
+  float: none;
   list-style: none outside none;
   line-height: 0px !important;
-} 
+}
 
 .social-media-icons .fa a {
   font-size: 18px;
@@ -379,20 +379,20 @@ li.contact-comments textarea {
   -ms-transition:.4s;
   -moz-transition:.4s;
   -webkit-transition:.4s;
-  transition:.4s; 
+  transition:.4s;
 }
 
-.social-media-icons .fa:hover a { color: #D13939; } 
+.social-media-icons .fa:hover a { color: #D13939; }
 
-.social { 
-  margin: 1rem 0; 
+.social {
+  margin: 1rem 0;
 }
 
-.home-content, 
+.home-content,
 .footer-contact {
 	padding: 50px 0 80px;
 	text-align: center;
-	background: $gray url('img/gray.png');
+	background: $gray url('assets/img/gray.png');
 	color: white;
 }
 .home-content p {
@@ -400,9 +400,9 @@ li.contact-comments textarea {
 	margin: 0 auto;
 }
 #hero-header {
-	height: 100%; 
-    width: 100%; 
-    position: relative; 
+	height: 100%;
+    width: 100%;
+    position: relative;
 	background-size: cover !important;
 }
 .home-services, .home-news {
@@ -414,7 +414,7 @@ li.contact-comments textarea {
 	background: #fafafa;
 }
 .home-services h6, .home-content h6, .home-news h6, .home-team h6, .footer-contact h6 {
-	background: url('img/h1-bg.png') no-repeat scroll center bottom rgba(0, 0, 0, 0);
+	background: url('assets/img/h1-bg.png') no-repeat scroll center bottom rgba(0, 0, 0, 0);
     color: white;
     font-size: 15px;
     letter-spacing: 1px;
@@ -722,13 +722,13 @@ body {
 	padding-top: 0;
 }
 
-.tri-clear:nth-child(4), 
-.tri-clear:nth-child(7), 
-.tri-clear:nth-child(10), 
-.tri-clear:nth-child(13), 
-.tri-clear:nth-child(16), 
-.tri-clear:nth-child(19), 
-.tri-clear:nth-child(22), 
+.tri-clear:nth-child(4),
+.tri-clear:nth-child(7),
+.tri-clear:nth-child(10),
+.tri-clear:nth-child(13),
+.tri-clear:nth-child(16),
+.tri-clear:nth-child(19),
+.tri-clear:nth-child(22),
 .tri-clear:nth-child(25)     {
 	clear:both;
 }
@@ -870,7 +870,7 @@ body {
 		padding-left: 10px; /* grid-space to left */
 		padding-right: 10px; /* grid-space to right */
 	}
-	
+
 	[class*='col-'] {
 		width: auto;
 		float: none;
@@ -881,10 +881,10 @@ body {
 		padding-left: 10px;
 		padding-right: 8px; /* column-space */
 	}
-	
-	
+
+
 	/* Mobile Layout */
-	
+
 	[class*='mobile-col-'] {
 		float: left;
 		margin-left: 0px;
@@ -895,7 +895,7 @@ body {
 		padding-right: 10px; /* column-space */
 		padding-bottom: 0px;
 	}
-	
+
 	.mobile-col-1-1 {
 		width: 100%;
 	}
@@ -968,7 +968,7 @@ body {
 	.mobile-col-7-12 {
 		width: 58.33%
 	}
-	
+
 	.hide-on-mobile {
 		display: none !important;
 		width: 0;
@@ -989,7 +989,7 @@ body {
 		line-height: 36px;
 	}
 	.slide-content {
-		max-width: 80%;	
+		max-width: 80%;
 	}
 	.site-branding {
 		max-width: 175px;
@@ -998,27 +998,27 @@ body {
 		padding: 150px 0 80px;
 		background-size: auto !important;
 		background-attachment: scroll !important;
-		background-position: center center; 
+		background-position: center center;
 		background-repeat: repeat;
 	}
 	.entry-header .entry-title, .featured-img-header .entry-title {
 		font-size: 36px;
-		line-height: 40px;	
+		line-height: 40px;
 	}
 	.social-media-icons { width: 100%; float: none; text-align:center; }
-	
+
 	.home-cta {
 		background-position: center center !important;
-		background-attachment: scroll !important; 
+		background-attachment: scroll !important;
 	}
-	
+
 	.hero {
 		background-position: center center !important;
 		background-attachment: scroll !important;
 	}
-	
+
 	.featured-img-header {
-    	background-attachment: scroll !important; 
-	}  
-		
+    	background-attachment: scroll !important;
+	}
+
 }

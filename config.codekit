@@ -6369,6 +6369,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/wp-content\/themes\/tbttt\/assets\/js\/min\/site-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/js\/min\/site-ck.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/js\/min\/min\/site-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/wp-content\/themes\/tbttt\/assets\/js\/navigation.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -6412,17 +6423,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/tbttt\/assets\/js\/site.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/js\/site.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/js\/min\/site-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 0
 		},
 	"\/wp-content\/themes\/tbttt\/assets\/js\/site.min.js": {
 		"fileType": 64,
