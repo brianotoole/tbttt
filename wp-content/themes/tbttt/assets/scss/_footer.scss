@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+.footer-block {
+  width: 100%;
+  background: #fff;
+  padding: 50px 15px 30px;
+  font-weight: 400;
+}
+.footer-contact {
+  a,
+  p {
+    color: white;
+  }
+  h5 {
+    color: $gray;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .button {
+    text-decoration: none;
+    margin: 20px auto;
+  }
+  .fa {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .item {
+    margin: 20px 0;
+  }
+}
+.site-footer {
+  font-weight: 400;
+  background: $gray;
+  border-top: 1px solid lighten($gray,5%);
+  padding: 20px 0 40px;
+  color: white;
+  text-align: center;
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+img.amazon {
+  max-width: 240px;
+}
+
+.footer-cta {
+  padding: 30px 0 32px;
+  background: $maroon;
+  color: white;
+  text-align: center;
+  &:after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: $maroon rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-image: none;
+    border-style: solid;
+    border-width: 21px 21px 0;
+    margin-top: 32px;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -17px;
+    position: absolute;
+    width: 0;
+    z-index: 10;
+  }
+}
+.footer-cta,
+.home-cta {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: white;
+  }
+}

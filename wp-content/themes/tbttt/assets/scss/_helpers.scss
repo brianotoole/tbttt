@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+Helpers
+--------------------------------------------------------------*/
+/* color classes */
+.bg-maroon {
+  background: $maroon;
+  color: white;
+}
+.maroon {
+  color: $maroon;
+}
+.bg-white {
+  background: white;
+}
+.white {
+  color: white;
+}
+.bg-black {
+  background: $black;
+}
+.black {
+  color: $black;
+}
+.bg-gray {
+  background: $gray;
+}
+.gray {
+  color: $gray;
+}
+
+/* actions */
+.click {
+  text-decoration: underline;
+}
+
+/* positioning */
+.no-padding {
+  padding: 0 !important;
+}

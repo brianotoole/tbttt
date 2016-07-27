@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+Animations
+--------------------------------------------------------------*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+@keyframes fadeShow {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    z-index: 0;
+  }
+}
+.fadeshow {
+  animation-name: fadeShow;
+}
+/* durations */
+.animateSlow {
+  animation-duration: 3.5s;
+}

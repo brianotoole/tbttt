@@ -1,0 +1,158 @@
+/*--------------------------------------------------------------
+Template - Home
+--------------------------------------------------------------*/
+.hero {
+  position: relative;
+  background-color: $gray;
+  //background: url('http://www.townsquarebuzz.com/wp-content/uploads/2013/09/nutcracker.jpg') center center no-repeat;
+  //background: url('img/header-placeholder.png') center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  .img {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    visibility: hidden;
+    animation: fadeShow 24s infinite;
+    animation-timing-function: ease-out;
+    &:nth-child(1) {
+      animation-delay: 0s;
+    }
+    &:nth-child(2) {
+      animation-delay: 6s;
+    }
+    &:nth-child(3) {
+      animation-delay: 12s;
+    }
+    &:nth-child(4) {
+      animation-delay: 18s;
+    }
+  }
+  //.img
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,$white,$maroon);
+    opacity: 0.3; //lesser opacity = lesser gradient overlay
+    z-index: 2;
+  }
+}
+//.hero
+.home-hero h2 {
+  position: relative;
+  font-family: $font-heading;
+  font-size: 4.25em;
+  font-weight: 100;
+  line-height: 64px;
+  color: #FFF;
+  text-shadow: 1px 0 22px black;
+  margin-top: 385px;
+  z-index: 3; //on top of gradient
+}
+
+/* sections */
+.sec1 {
+  background: $maroon;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  .intro {
+    background: transparent;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  .intro-no-p {
+    padding: 40px 0 0;
+  }
+  h3.h-title {
+    max-width: 75%;
+    margin: 0 auto;
+    color: white;
+    background: rgba(0, 0, 0, 0) url("assets/img/divider.png") 0 53px repeat-x;
+    font-size: 2.2em;
+    padding-top: 37px;
+  }
+  h3.h-title span {
+    display: inline-block;
+    padding: 0 20px;
+    background: $maroon;
+    /* same as .sec1 bg-color */
+  }
+}
+.sec2 {
+  background: white;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  .intro {
+    background: transparent;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+}
+.squeeze-in {
+  > div {
+    padding: 30px;
+  }
+  i {
+    color: $maroon;
+    font-size: 1.4em;
+  }
+}
+/* events home */
+.sec3 {
+  padding: 60px 0 30px;
+}
+.events {
+  text-align: left;
+  .button {
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+  }
+  .thumbnail,
+  img .thumbnail {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  /* if not thumb, default */
+  .default {
+    background: $maroon;
+    &:after {
+      content: '\f001';
+      font-family: 'fontAwesome';
+      position: absolute;
+      font-size: 4em;
+      color: white;
+      bottom: 21px;
+      left: 45px;
+    }
+  }
+}
+
+/* call to action */
+.home-cta {
+  padding: 30px 0 32px;
+  background: $maroon;
+  color: white;
+  text-align: center;
+}
