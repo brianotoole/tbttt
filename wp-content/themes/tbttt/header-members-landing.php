@@ -31,10 +31,10 @@
 			<?php  if (is_user_logged_in()){
 			  global $current_user; get_currentuserinfo();
 			  echo('<li>Logged in as: &nbsp;' . $current_user->user_firstname . '</li>');
-			  echo '<li class="member-link"><a href="'. wp_logout_url() .'">Logout</a></li>';
+			  echo '<li class="member-link-logout"><a href="'. wp_logout_url() .'">Logout</a></li>';
 			}
 			  else {
-			  echo '<li id="member-login" class="member-link"><a href="#">Member Login</a></li>';
+			  echo '<li id="member-login" class="member-link-login"><a href="#">Member Login</a></li>';
 			};
 			?>
 	          
@@ -70,6 +70,6 @@
     
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
 		<h3>Menu</h3>  
-		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?>
 	</nav>
 
