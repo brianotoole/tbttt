@@ -1,80 +1,96 @@
 /*--------------------------------------------------------------
 Members
 --------------------------------------------------------------*/
-/* memebrs landing (main) */
-.members-landing {
+$shrek: #655c34;
+$nutcracker: #493c4c;
 
-.flex {
+$shrek-light: lighten($shrek,10%);
+$shrek-dark: darken($shrek,10%);
+
+$nutcracker-light: lighten($nutcracker,10%);
+$nutcracker-dark: darken($nutcracker,10%);
+
+/* memebrs landing (main) */
+
+
+.choose-bar {
+  background-color: black;
+  @media (max-width: $screen-sm) { display: none; }
+  .intro {
+	.title {
+      color: $white;
+	}
+  }
+}
+
+
+.members-landing {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-}
-
-.half {
-  width: 100%;
-  -webkit-flex-basis: 57.14286vh;
-      -ms-flex-preferred-size: 57.14286vh;
-          flex-basis: 57.14286vh;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-
-.half {
-  position: relative;
-  font: 600 32px Poppins, sans-serif;
-  color: #f6e8ea;
-  background: #ef626c;
-}
-.half + .half {
-  background: #84dcff;
-}
-
-p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 72%;
-  margin: 0;
-  text-align: center;
-}
-
-.social {
-  display: block;
-  max-height: 0;
-  opacity: 0;
-  -webkit-animation: appear 1s 4s;
-          animation: appear 1s 4s;
-}
-
-a {
-  color: #f9eef0;
-}
-
-}
-
-@-webkit-keyframes appear {
-  50% {
-    max-height: 2em;
-    opacity: 0;
+  
+  .half {
+    position: relative;
+    width: 100%;
+    flex-basis: 57.14286vh;
+    flex-grow: 1;
+    &::before {
+      content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba($black,0.4);
+    }
+    .area {
+	  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 72%;
+      margin: 0;
+      padding: 50px;
+      text-align: center;
+      @media (max-width: $screen-sm) { 
+	    width: 100%;
+	    padding: 0;
+	    border: none!important;
+	    background-color: inherit!important;
+      }
+    }
+    
+    &.left { //shrek
+	  background: url('assets/img/bg-shrek.jpg') center center no-repeat;
+	  background-size: cover;
+	  &::before { background-color: rgba($shrek-light,0.9); }
+	  .area { 
+	    background-color: $shrek; 
+	    border: 2px solid $shrek-dark;
+	    &:hover {
+		  background-color: $shrek-dark;
+		  border-color: darken($shrek-dark,10%);
+	    }
+	  }
+	  
+    }
+    &.right { //nutcracker
+	  background: url('assets/img/bg-nutcracker.jpg') top right no-repeat;
+	  background-size: cover;
+	  &::before { background-color: rgba($nutcracker-light,0.9); }
+	  .area { 
+	    background-color: $nutcracker; 
+	    border: 2px solid $nutcracker-dark;
+	    &:hover {
+		  background-color: $nutcracker-dark; 
+		  border-color: darken($nutcracker-dark,10%);
+	    }
+	  }
+    }
+    .title {
+	  color: $white;
+    }
   }
-  100% {
-    max-height: 2em;
-    opacity: 1;
-  }
-}
-
-@keyframes appear {
-  50% {
-    max-height: 2em;
-    opacity: 0;
-  }
-  100% {
-    max-height: 2em;
-    opacity: 1;
-  }
-}
+  
+  
+}//.members-landing

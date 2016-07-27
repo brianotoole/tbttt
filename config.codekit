@@ -6366,6 +6366,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/tbttt\/assets\/img\/bg-nutcracker.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 164550,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/img\/bg-nutcracker.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/img\/bg-nutcracker.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/tbttt\/assets\/img\/bg-shrek.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 188238,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/img\/bg-shrek.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/img\/bg-shrek.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/tbttt\/assets\/img\/divider.png": {
 		"fileType": 32768,
 		"ignore": 0,

@@ -61,3 +61,11 @@ Buttons
     text-decoration: none;
   }
 }
+.button {
+  &.no-border {
+	border: none;
+	&:hover {
+	  border: none;
+	}
+  }
+}

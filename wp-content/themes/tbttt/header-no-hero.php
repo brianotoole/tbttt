@@ -56,6 +56,14 @@
 	    </div><!--/.login-dropdown-->
 	    
 	  </div><!--/.top-bar-->
+	  
+	  <div class="choose-bar">
+	    <div class="grid">
+          <div class="intro text-center">
+            <h1 class="title">Choose Your Program:</h1>
+          </div><!--/.intro--> 
+	    </div><!--/.grid--> 
+	  </div><!--/.choose-bar--> 
 
 	</div><!--/grid-->        
     </header><!-- #masthead -->
