@@ -32,20 +32,25 @@
 	      <ul class="links">
 			<?php  if (is_user_logged_in()){
 			  global $current_user; get_currentuserinfo();
-			  echo('<li>Hello, &nbsp;' . $current_user->user_firstname . '</li>');
+			  echo('<li>Logged in as: &nbsp;' . $current_user->user_firstname . '</li>');
 			  echo '<li><a href="'. wp_logout_url() .'">Logout</a></li>';
 			}
 			  else {
-			  echo '<li><a href="#" id="member-login">Member Login</a>';
+			  echo '<li id="member-login"><a href="#">Member Login</a></li>';
 			};
 			?>
-	          <div class="login-dropdown">
-			   <?php wp_login_form(); ?>
-			  </div><!--/.login-container-->
-	        <!--<li><a href="#">Another Link</a>-->
+	          
 	      </ul>
 	    </div>
+	    
+	    <div class="login-dropdown">
+	      <div class="grid">
+	        <?php wp_login_form(); ?>
+	      </div>
+	    </div><!--/.login-dropdown-->
+	    
 	  </div><!--/.top-bar-->
+	  
     	<div class="grid grid-pad head-overflow">
 			<div class="site-branding">
 				

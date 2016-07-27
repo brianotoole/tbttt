@@ -20,7 +20,7 @@ Navigation
   background-color: $black;
   .links {
 	float: right;
-	  
+	clear: right;  
   }
   ul {
     height: 100%;
@@ -33,23 +33,34 @@ Navigation
       padding: 15px;
       color: $white;
       font-size: 1.1em;
+      &.open {background-color: $black-light;}
       a { color: $white; }
+      
 	}
   }
 }
 
 /* members login form */
 .login-dropdown {
-  position: absolute;
+  position: relative;
+  
   #loginform {
   display: none;
+  float: right;
+  clear: right;
   position: relative;
-  padding: 20px;
-  margin-top: 15px;
-  background: $black;
+  width: 450px;
+  margin: 1px auto;
+  margin-right: 30px;
+  padding: 20px 30px 30px;
+  background-color: $black-light;
   border-radius: 0;
-  border-top: 2px solid $lightgray;
+  border-top: 1px solid $hr;
   z-index: 2001;
+  @media (max-width: $screen-sm) {
+    width: 100%;
+    margin-right: auto;
+  }
   &.open {
     display: block;
 	animation: fadeIn 0.3s;
@@ -66,12 +77,8 @@ Navigation
     border: 0;
     outline: 0;
     background: $white;
-    font-weight: 300;
-    font-style: italic;
     border-radius: 2px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    &#rememberme { width: auto; }
   }
   input[type="submit"] {
     color: $white;
