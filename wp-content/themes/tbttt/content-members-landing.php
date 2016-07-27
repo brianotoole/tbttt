@@ -1,3 +1,4 @@
+<div class="members-landing">
 <div class="flex">
 
 <div class="half">
@@ -11,4 +12,5 @@
   </p>
 </div>
 
+</div>
 </div>

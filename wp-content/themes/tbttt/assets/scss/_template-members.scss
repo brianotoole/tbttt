@@ -2,6 +2,7 @@
 Members
 --------------------------------------------------------------*/
 /* memebrs landing (main) */
+.members-landing {
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -51,6 +52,8 @@ p {
 
 a {
   color: #f9eef0;
+}
+
 }
 
 @-webkit-keyframes appear {
