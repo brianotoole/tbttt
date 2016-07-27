@@ -16,9 +16,6 @@ jQuery(document).ready(function($) {
                 $('#form-member-login p.status').text(data.message);
                 if (data.loggedin == true){
                     document.location.href = ajax_login_object.redirecturl;
-                    //window.location = document.location.href + '/members';
-                    var location_nohash = window.location.hash.substring(1);
-                    window.location = location_nohash + '/tbttt/members';
                 }
             }
         });

@@ -279,8 +279,8 @@ function ajax_login_init(){
 
     wp_localize_script( 'ajax-login-script', 'ajax_login_object', array( 
         'ajaxurl' => admin_url( 'admin-ajax.php' ),
-        'redirecturl' => home_url(),
-        'loadingmessage' => __('Checking user info, please wait...')
+        'redirecturl' => home_url('/members'),
+        'loadingmessage' => __('Checking user info, please wait...'),
     ));
 
     // Enable the user with no privileges to run ajax_login() in AJAX
