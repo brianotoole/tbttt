@@ -33,10 +33,10 @@
 			<?php  if (is_user_logged_in()){
 			  global $current_user; get_currentuserinfo();
 			  echo('<li>Logged in as: &nbsp;' . $current_user->user_firstname . '</li>');
-			  echo '<li><a href="'. wp_logout_url() .'">Logout</a></li>';
+			  echo '<li class="member-link"><a href="'. wp_logout_url() .'">Logout</a></li>';
 			}
 			  else {
-			  echo '<li id="member-login"><a href="#">Member Login</a></li>';
+			  echo '<li id="member-login" class="member-link"><a href="#">Member Login</a></li>';
 			};
 			?>
 	          
@@ -45,8 +45,16 @@
 	    
 	    <div class="login-dropdown">
 	      <div class="grid">
-	        <?php wp_login_form(); ?>
-	      </div>
+	        <form id="form-member-login" action="login" method="post">
+              <p class="status"></p>
+              <label for="username">Username</label>
+              <input id="username" type="text" name="username">
+              <label for="password">Password</label>
+              <input id="password" type="password" name="password">
+              <input class="submit_button" type="submit" value="Login" name="submit">
+              <?php wp_nonce_field( 'ajax-login-nonce', 'security' ); ?>
+            </form><!--/#login-->
+	      </div><!--/.grid-->
 	    </div><!--/.login-dropdown-->
 	    
 	  </div><!--/.top-bar-->

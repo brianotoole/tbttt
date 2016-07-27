@@ -245,6 +245,7 @@ $(window).on('scroll', function(){
 
 /* click, login */
 $('#member-login').click(function() {
-  $('#loginform').toggleClass('open');
+  $('#form-member-login').toggleClass('open');
   $('#member-login').toggleClass('open');
 })
+
