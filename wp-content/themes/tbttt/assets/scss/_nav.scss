@@ -50,6 +50,10 @@ Navigation
 /* members login form */
 .login-dropdown {
   position: relative;
+  .grid {
+	@media (max-width: $screen-sm) { padding: 0; }
+  }
+
   
   #form-member-login {
   display: none;
@@ -66,7 +70,7 @@ Navigation
   z-index: 2001;
   @media (max-width: $screen-sm) {
     width: 100%;
-    margin-right: auto;
+    margin: 0 auto;
   }
   &.open {
     display: block;

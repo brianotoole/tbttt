@@ -66,7 +66,7 @@ $nutcracker-dark: darken($nutcracker,10%);
 	  &::before { background-color: rgba($shrek-light,0.9); }
 	  .area { 
 	    background-color: $shrek; 
-	    border: 2px solid $shrek-dark;
+	    border: 4px solid $shrek-dark;
 	    &:hover {
 		  background-color: $shrek-dark;
 		  border-color: darken($shrek-dark,10%);
@@ -80,7 +80,7 @@ $nutcracker-dark: darken($nutcracker,10%);
 	  &::before { background-color: rgba($nutcracker-light,0.9); }
 	  .area { 
 	    background-color: $nutcracker; 
-	    border: 2px solid $nutcracker-dark;
+	    border: 4px solid $nutcracker-dark;
 	    &:hover {
 		  background-color: $nutcracker-dark; 
 		  border-color: darken($nutcracker-dark,10%);
