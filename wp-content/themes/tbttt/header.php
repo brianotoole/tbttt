@@ -27,6 +27,14 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'sensible' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+	  <div class="top-bar">
+	    <div class="grid">
+	      <ul>
+	        <li><a href="#">Member's Login</a>
+	        <li><a href="#">Another Link</a>
+	        </ul>
+	    </div>
+	  </div><!--/.top-bar-->
     	<div class="grid grid-pad head-overflow">
 			<div class="site-branding">
 				
