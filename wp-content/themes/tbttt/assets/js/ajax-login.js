@@ -13,7 +13,13 @@ jQuery(document).ready(function($) {
                 'password': $('#form-member-login #password').val(), 
                 'security': $('#form-member-login #security').val() },
             success: function(data){
-                $('#form-member-login p.status').text(data.message);
+                if (data.message == 'Wrong username or password.'){
+                  //console.log('error');
+                  $('#form-member-login p.status').html('<span class="error">' + data.message + '</span>');
+                } else {
+	              $('#form-member-login p.status').html('<span class="success">' + data.message + '</span>'); 
+                }
+                //$('#form-member-login p.status').text(data.message);
                 if (data.loggedin == true){
                     document.location.href = ajax_login_object.redirecturl;
                 }
