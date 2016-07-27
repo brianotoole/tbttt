@@ -55,7 +55,8 @@ Navigation
   }
 
   
-  #form-member-login {
+  #form-member-login,
+  #form-force-login {
   display: none;
   float: right;
   clear: right;
@@ -106,6 +107,15 @@ Navigation
 
 }
   
+}
+
+#form-force-login {
+  input {
+	margin-bottom: 20px;
+  }
+  input[type="submit"] {
+    width: 100%;
+  }
 }
 
 
