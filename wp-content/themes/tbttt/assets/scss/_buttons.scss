@@ -1,0 +1,63 @@
+/*--------------------------------------------------------------
+Buttons
+--------------------------------------------------------------*/
+.button {
+  display: inline-block;
+  margin: 20px 0;
+  width: 215px;
+  height: 70px;
+  line-height: 68px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  transition: all 300ms linear;
+  line-height: 70px;
+  letter-spacing: 0.07em;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/*primary, white bg, with border*/
+.button.primary {
+  background: white;
+  color: $gray;
+  border: 2px solid $gray;
+  &:hover {
+    color: darken($gray,20%);
+    border: 2px solid darken($gray,10%);
+    text-decoration: none;
+  }
+}
+/*transparent, with border*/
+.button.transparent {
+  background: transparent;
+  color: $gray;
+  border: 2px solid $gray;
+  &:hover {
+    color: darken($gray,20%);
+    border: 2px solid darken($maroon,20%);
+    text-decoration: none;
+  }
+}
+/*white */
+.button.white {
+  background: white;
+  color: $gray;
+  border: 2px solid $gray;
+  &:hover {
+    color: $maroon;
+    border: 2px solid $maroon;
+    background: darken($white,5%);
+    text-decoration: none;
+  }
+}
+/*marroon, no border*/
+.button.maroon {
+  background: $maroon;
+  color: white;
+  &:hover {
+    background: lighten($maroon,20%);
+    text-decoration: none;
+  }
+}

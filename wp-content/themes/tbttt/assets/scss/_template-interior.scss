@@ -1,0 +1,149 @@
+/*--------------------------------------------------------------
+Template - Interior
+--------------------------------------------------------------*/
+.featured-img-header {
+  padding: 250px 0 100px;
+  position: relative;
+  background-size: cover;
+}
+.entry-content {
+  p {
+    padding: 2px 0 25px;
+  }
+  a,
+  p a {
+    text-decoration: underline;
+  }
+}
+
+/*--------------------------------------------------------------
+Sidebar &  Share Buttons
+--------------------------------------------------------------*/
+.event-link {
+  margin-bottom: 30px;
+  border-bottom: 1px solid $lightgray;
+  padding-bottom: 25px;
+  a {
+    display: block;
+    width: 100%;
+    margin: 0 auto 10px;
+    padding: 12px 5px;
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    text-decoration: none;
+    background: $maroon;
+    border: 2px solid $white;
+    &:before {
+      content: '\f044';
+      font-family: fontAwesome;
+      font-size: 1em;
+      color: white;
+      padding-right: 10px;
+    }
+    &:hover {
+      background: $black;
+    }
+  }
+}
+aside {
+  li.cat-item {
+    a {
+      display: block;
+      width: 100%;
+      margin: 0 auto 10px;
+      padding: 5px;
+      border-bottom: 1px solid $lightgray;
+      font-size: 1.25em;
+      text-align: left;
+      text-decoration: none;
+      color: $maroon;
+    }
+    &:hover {
+      color: $black;
+      text-decoration: underline;
+    }
+  }
+}
+.social-share {
+  margin-bottom: 30px;
+  border-bottom: 1px solid $lightgray;
+  padding-bottom: 25px;
+  a {
+    display: block;
+    width: 100%;
+    margin: 0 auto 10px;
+    padding: 12px 5px;
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    text-decoration: none;
+  }
+  a:first-of-type {
+    background: $facebook;
+    border: 2px solid $white;
+    &:before {
+      content: '\f09a';
+      font-family: fontAwesome;
+      font-size: 1em;
+      color: white;
+      padding-right: 10px;
+    }
+    &:hover {
+      background: darken($facebook,12%);
+    }
+  }
+  a:last-of-type {
+    background: $twitter;
+    border: 2px solid $white;
+    &:before {
+      content: '\f099';
+      font-family: fontAwesome;
+      font-size: 1em;
+      color: white;
+      padding-right: 10px;
+    }
+    &:hover {
+      background: darken($twitter,12%);
+    }
+  }
+}
+
+//events
+.more {
+  clear: both;
+  width: 100%;
+  margin: 60px auto;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid $maroon;
+  color: $maroon;
+  &:after {
+    content: '\f054';
+    font-family: 'fontAwesome';
+    font-size: 1.75em;
+    color: white;
+    background: $maroon;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    padding: 11px 7px;
+    margin-top: -53px;
+  }
+  &:hover {
+    background: darken($lightgray,7%);
+    cursor: pointer;
+  }
+  &:hover:after {
+    color: lighten($maroon,15%);
+    background: black;
+    cursor: pointer;
+  }
+  .view {
+    padding-top: 6px;
+    padding-left: 8px;
+    font-size: 1.2em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}

@@ -20,7 +20,19 @@ $font-body: 'Francois One', serif, Arial;
 @import "vendor/flexslider";
 @import "vendor/font-awesome";
 
-// Layout
+// Global
+@import "base";
+@import "helpers";
+@import "buttons";
 @import "wp";
+@import "animations";
+
+// Partials & Layout
+@import "nav";
 @import "layout";
+@import "template-home";
+@import "template-interior";
+@import "template-single";
+@import "template-contact";
+@import "footer";
 @import "responsive";
