@@ -26,12 +26,23 @@
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'sensible' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header post-password-required" role="banner">
 	  <div class="top-bar">
 	    <div class="grid">
 	      <ul class="links">
-	        <li><a href="#">Member's Login</a>
-	        <li><a href="#">Another Link</a>
+			<?php  if (is_user_logged_in()){
+			  global $current_user; get_currentuserinfo();
+			  echo('<li>Hello, &nbsp;' . $current_user->user_firstname . '</li>');
+			  echo '<li><a href="'. wp_logout_url() .'">Logout</a></li>';
+			}
+			  else {
+			  echo '<li><a href="#" id="member-login">Member Login</a>';
+			};
+			?>
+	          <div class="login-dropdown">
+			   <?php wp_login_form(); ?>
+			  </div><!--/.login-container-->
+	        <!--<li><a href="#">Another Link</a>-->
 	      </ul>
 	    </div>
 	  </div><!--/.top-bar-->

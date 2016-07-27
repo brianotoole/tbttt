@@ -31,12 +31,59 @@ Navigation
 	li {
 	  display: inline-block;
       padding: 15px;
-      a {
-	    color: $white;
-	    font-size: 1.1em;
-      }
+      color: $white;
+      font-size: 1.1em;
+      a { color: $white; }
 	}
   }
+}
+
+/* members login form */
+.login-dropdown {
+  position: absolute;
+  #loginform {
+  display: none;
+  position: relative;
+  padding: 20px;
+  margin-top: 15px;
+  background: $black;
+  border-radius: 0;
+  border-top: 2px solid $lightgray;
+  z-index: 2001;
+  &.open {
+    display: block;
+	animation: fadeIn 0.3s;
+    animation-timing-function: ease-out;
+  }
+  p {
+	color: $white;
+  }
+
+  input {
+    width: 100%;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+    border: 0;
+    outline: 0;
+    background: $white;
+    font-weight: 300;
+    font-style: italic;
+    border-radius: 2px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  input[type="submit"] {
+    color: $white;
+    margin: 0;
+    padding: 10px;
+    height: auto;
+    background-color: $success;
+    box-shadow: 0 4px 0 darken(#1BBC9B, 5%);
+  }
+
+}
+  
 }
 
 
@@ -74,16 +121,16 @@ Navigation
   display: block;
   text-decoration: none;
   padding: 40px 18px 12px;
-  margin-top: -20px;
+  margin: 0;
   color: white;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.1em;
-  border-top: 6px solid rgba(0, 0, 0, 0);
-  transition: all 0.4s ease;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
   &:hover {
-    border-top: 6px solid white;
-    color: $black;
+    border-bottom: 4px solid white;
+    color: $white-dark;
   }
 }
 .main-navigation ul ul {
