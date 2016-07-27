@@ -43,7 +43,7 @@
 	    
 	    <div class="login-dropdown">
 	      <div class="grid">
-	        <form class="form-member-login" action="login" method="post">
+	        <form id="form-member-login" action="login" method="post">
               <p class="status"></p>
               <label for="username">Username</label>
               <input id="username" type="text" name="username">

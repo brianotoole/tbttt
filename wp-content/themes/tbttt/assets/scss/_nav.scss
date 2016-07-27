@@ -18,6 +18,8 @@ Navigation
   width: 100%;
   height: 60px;
   background-color: $black;
+  @media (max-width: $screen-sm) { height: 50px; }
+  
   .links {
 	float: right;
 	clear: right;  
@@ -38,6 +40,7 @@ Navigation
         &:hover {
 	      background-color: $black-light;
         }
+        @media (max-width: $screen-sm) { display: none; }
       }
       &.open {background-color: $black-light;}
       a { color: $white; }

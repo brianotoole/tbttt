@@ -95,12 +95,13 @@ h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: upper
 	//nav
 	.menu-toggle {
 		display: block;
-	}
-	.menu-toggle {
+		position: absolute;
+		top: 0;
+		right: 0;
 		background: none;
 		border: none;
 		color: white;
-		padding: 2em 1.5em 2em 0;
+		padding: 1em 1.5em;
 		&:hover, &:focus {
 			color: white;
 			border: 0;

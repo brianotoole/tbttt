@@ -85,7 +85,7 @@
     
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
 		<h3>Menu</h3>  
-		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?>
 	</nav>
 
 	<section id="content" class="site-content">
