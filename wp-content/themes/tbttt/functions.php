@@ -166,7 +166,8 @@ add_action( 'wp_enqueue_scripts', 'sensible_scripts' );
  */
 function sensible_html5shiv() {
     echo '<!--[if lt IE 9]>' . "\n";
-    echo '<script src="' . esc_url( get_template_directory_uri() . '/js/html5shiv.js' ) . '"></script>' . "\n";
+    //echo '<script src="' . esc_url( get_template_directory_uri() . '/assets/js/html5shiv.js' ) . '"></script>' . "\n";
+		echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>' . "\n";
     echo '<![endif]-->' . "\n";
 }
 add_action( 'wp_head', 'sensible_html5shiv' );
