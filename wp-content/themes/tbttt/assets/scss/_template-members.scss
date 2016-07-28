@@ -12,7 +12,6 @@ $nutcracker-dark: darken($nutcracker,10%);
 
 /* memebrs landing (main) */
 
-
 .choose-bar {
   background-color: black;
   @media (max-width: $screen-sm) { display: none; }
@@ -50,7 +49,7 @@ $nutcracker-dark: darken($nutcracker,10%);
       transform: translate(-50%, -50%);
       width: 72%;
       margin: 0;
-      padding: 50px;
+      padding: 40px 0;
       text-align: center;
       @media (max-width: $screen-sm) { 
 	    width: 100%;
