@@ -247,5 +247,6 @@ $(window).on('scroll', function(){
 $('#member-login').click(function() {
   $('#form-member-login').toggleClass('open');
   $('#member-login').toggleClass('open');
+  $('#member-login i').toggleClass('fa-caret-down fa-caret-up');
 })
 

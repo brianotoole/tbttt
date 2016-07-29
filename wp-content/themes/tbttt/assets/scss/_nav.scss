@@ -46,7 +46,21 @@ Navigation
       }
       
       &.open {background-color: $black-light;}
-      a { color: $white; }
+      a { 
+        color: $white;
+        &:hover,&:focus { text-decoration: none; }
+        &:focus { color: darken($white-dark,10%); }
+      }
+      
+      i {
+        display: inline-block;
+        padding: 0 2px;
+	    font-size: 0.85em;
+	    color: $white-dark;
+	    vertical-align: baseline;
+	    transition: all 0.3s linear;
+	    &:focus { color: darken($white-dark,10%); }
+      }
       
 	}
   }
@@ -162,7 +176,7 @@ Navigation
   margin: 40px 15px;
   color: white;
   font-weight: 500;
-  font-size: 1.4em;
+  font-size: 1.5em;
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

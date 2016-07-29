@@ -34,7 +34,7 @@
 			  echo '<li class="member-link-logout"><a href="'. wp_logout_url() .'">Logout</a></li>';
 			}
 			  else {
-			  echo '<li id="member-login" class="member-link-login"><a href="#">Member Login</a></li>';
+			  echo '<li id="member-login" class="member-link-login"><a href="#">Member Login</a> <i class="fa fa-caret-down" aria-hidden="true"></i></li>';
 			};
 			?>
 	          
