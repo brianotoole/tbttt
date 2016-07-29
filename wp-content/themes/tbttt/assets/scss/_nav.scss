@@ -53,12 +53,10 @@ Navigation
       }
       
       i {
-        display: inline-block;
-        padding: 0 2px;
+        margin: 0 2px;
 	    font-size: 0.85em;
 	    color: $white-dark;
 	    vertical-align: baseline;
-	    transition: all 0.3s linear;
 	    &:focus { color: darken($white-dark,10%); }
       }
       
