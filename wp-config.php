@@ -37,6 +37,8 @@ define('DB_COLLATE', '');
 define('WPCF7_LOAD_JS', false);
 define('WPCF7_LOAD_CSS', false);
 
+define( 'ALTERNATE_WP_CRON', true );
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

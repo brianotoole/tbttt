@@ -69,7 +69,7 @@ add_action( 'after_setup_theme', 'sensible_setup' );
  * Load Google Fonts.
  */
 function load_fonts() {
-            wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Lato|Francois+One|Merriweather:400,300,400italic,600,700', array(), '1.0');
+            wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Varela+Round:400,300,400italic,600,700', array(), '1.0');
             wp_enqueue_style( 'googleFonts');
         }
 

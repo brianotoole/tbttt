@@ -20,8 +20,8 @@ $error: #cf1b13;
 $screen-sm: 768px;
 
 // Typography
-$font-heading: 'Lato', serif, Arial;
-$font-body: 'Francois One', serif, Arial;
+$font-heading: 'Varela Round', serif, Arial;
+$font-body: Verdana, serif;
 
 // Vendors
 @import "vendor/reset";
@@ -44,5 +44,6 @@ $font-body: 'Francois One', serif, Arial;
 @import "template-single";
 @import "template-members";
 @import "template-contact";
+@import "plugin-ai1ec"; //all in one event cal plugin
 @import "footer";
 @import "responsive";

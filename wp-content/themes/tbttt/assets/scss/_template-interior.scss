@@ -118,7 +118,8 @@ aside {
   background: transparent;
   border: 1px solid $maroon;
   color: $maroon;
-  &:after {
+  transition: all 0.3s ease-in-out;
+  &::after {
     content: '\f054';
     font-family: 'fontAwesome';
     font-size: 1.75em;
@@ -134,7 +135,7 @@ aside {
     background: darken($lightgray,7%);
     cursor: pointer;
   }
-  &:hover:after {
+  &:hover::after {
     color: lighten($maroon,15%);
     background: black;
     cursor: pointer;

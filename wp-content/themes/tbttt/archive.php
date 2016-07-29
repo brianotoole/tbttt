@@ -27,35 +27,35 @@ get_header(); ?>
 						elseif ( is_year() ) :
 							printf( __( 'Events in:%s', 'sensible' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'sensible' ) ) . '</span>' );
 
-						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
+						//elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
 							_e( 'Asides', 'sensible' );
 
-						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
+						//elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
 							_e( 'Galleries', 'sensible' );
 
-						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
+						//elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
 							_e( 'Images', 'sensible' );
 
-						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
+						//elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
 							_e( 'Videos', 'sensible' );
 
-						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
+						//elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
 							_e( 'Quotes', 'sensible' );
 
-						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
+						//elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
 							_e( 'Links', 'sensible' );
 
-						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
+						//elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
 							_e( 'Statuses', 'sensible' );
 
-						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
+						//elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
 							_e( 'Audios', 'sensible' );
 
-						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
+						//elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
 							_e( 'Chats', 'sensible' );
 
 						else :
-							_e( 'Archives', 'sensible' );
+							_e( 'Events', 'sensible' );
 
 						endif;
 					?>

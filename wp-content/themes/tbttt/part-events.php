@@ -1,11 +1,24 @@
 <div class="events">
+<?php 
 
-<?php if(is_front_page() ) { ?>	
-  <?php $query = new WP_Query( 'posts_per_page=5&category__not_in=7' ); // if homepge, show 3 posts only ?>
-<?php } else { ?>
-  <?php $query = new WP_Query( 'posts_per_page=-1&category__not_in=7' ); // else, show all ?>
-<?php } ?>
-  <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+$args_1 = array(
+'posts_per_page'  => 4,
+'post_type' 	  => 'ai1ec_event'
+);
+$args_2 = array(
+'posts_per_page'  => 2,
+'post_type' 	  => 'ai1ec_event'
+);
+
+
+if(is_front_page() ) { 
+  $query = new WP_Query($args_1);
+} else {
+  $query = new WP_Query($args_2); 
+} 
+if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 
+
+?>
 
 <a href="<?php the_permalink() ?>" title="Click to View: <?php the_title_attribute(); ?>">  
 <div class="col-sm-12 no-padding">

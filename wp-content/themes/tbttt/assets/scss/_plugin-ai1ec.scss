@@ -1,0 +1,29 @@
+/* all in one event cal plugin custom styles */
+
+// labels
+.ai1ec-field-label,
+.ai1ec-single-event .ai1ec-field-label,
+.ai1ec-multi-event .ai1ec-field-label,
+.ai1ec-single-event .ai1ec-time .ai1ec-field-value, 
+.ai1ec-multi-event .ai1ec-time .ai1ec-field-value {
+  margin: 0 5px;
+  text-transform: capitalize;
+}
+
+.ai1ec-field-label {
+  width: 100%;
+  text-align: left;
+  font-size: 1.5em;
+  color: $black;
+}
+
+// excerpts
+.ai1ec-multi-event, 
+.ai1ec-excerpt {
+  font-size: 1.1em;
+}
+
+// footer meta
+.ai1ec-event-footer {
+  display: none;
+}
