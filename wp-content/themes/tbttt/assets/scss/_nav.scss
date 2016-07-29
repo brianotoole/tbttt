@@ -33,9 +33,9 @@ Navigation
     list-style: none;
 	li {
 	  display: inline-block;
-      padding: 15px;
+      padding: 14px 15px;
       color: $white;
-      font-size: 1.1em;
+      font-size: 1.2em;
       cursor: pointer;
       &.member-link-login,
       &.member-link-logout {
@@ -68,12 +68,12 @@ Navigation
   clear: right;
   position: relative;
   width: 450px;
-  margin: 1px auto;
+  margin: 0 auto;
   margin-right: 30px;
   padding: 20px 30px 30px;
   background-color: $black-light;
   border-radius: 0;
-  border-top: 1px solid $hr;
+  border-top: 1px solid rgba($hr,0.4);
   z-index: 2001;
   @media (max-width: $screen-sm) {
     width: 100%;
@@ -156,19 +156,37 @@ Navigation
   position: relative;
 }
 .main-navigation a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
-  padding: 40px 18px 12px;
-  margin: 0;
+  padding: 0;
+  margin: 40px 15px;
   color: white;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 1.1em;
-  border-bottom: 4px solid rgba(0, 0, 0, 0);
-  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 1.4em;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+  &::before {
+	content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: $white-dark;
+    height: 3px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
   &:hover {
-    border-bottom: 4px solid white;
     color: $white-dark;
+    &::before {
+	  right: 0;
+    }
   }
 }
 .main-navigation ul ul {
