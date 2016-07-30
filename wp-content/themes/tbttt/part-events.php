@@ -26,10 +26,12 @@ while ( have_posts() ) : the_post();
 		foreach($events_result as $event) {
 			if($event_count < '999999') { //# posts to display
 				$event_count ++;
-				$event_long_date   = $event->get( 'start' );
+				$event_long_date = $event->get( 'start' );
+				$event_time_string = strtotime($event_long_date);
+				$event_time = date("h:i A",$event_time_string);
 				$event_date = $ai1ec_registry->get('view.event.time')->get_long_date($event_long_date);
-				$event_title   = $event->get( 'post' )->post_title;
-				$postid   = $event->get( 'post_id' );
+				$event_title = $event->get( 'post' )->post_title;
+				$postid = $event->get( 'post_id' );
 				// create function to retrieve wp_posts specific data
 				if(!function_exists('get_excerpt_by_id')) { //check against NULL		
 				  function get_excerpt_by_id($postid){
@@ -57,8 +59,9 @@ while ( have_posts() ) : the_post();
 				echo '</div>';
 				echo '<div class="col-sm-8 descrip">';
 				echo '<h3>'.$event_title.'</h3>';
-				echo '<p>';
-				echo get_excerpt_by_id($postid);
+				echo '<div class="ai1ec-time"><strong>When:</strong> '.$event_date.' at 
+				      <span class="date"> '.$event_time.'</span></div>';
+				echo '<p>'.get_excerpt_by_id($postid).'</p>';
 				echo '</p>';
 				echo '</div>';
 				echo '<a <a href="'.get_permalink($postid).'">';
