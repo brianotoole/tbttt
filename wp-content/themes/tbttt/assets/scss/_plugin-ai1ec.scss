@@ -5,7 +5,8 @@
 .ai1ec-single-event .ai1ec-field-label,
 .ai1ec-multi-event .ai1ec-field-label,
 .ai1ec-single-event .ai1ec-time .ai1ec-field-value, 
-.ai1ec-multi-event .ai1ec-time .ai1ec-field-value {
+.ai1ec-multi-event .ai1ec-time .ai1ec-field-value,
+.p-location {
   margin: 0 5px;
   text-transform: capitalize;
 }
@@ -17,9 +18,10 @@
   color: $black;
 }
 
-// excerpts
+// single
 .ai1ec-multi-event, 
-.ai1ec-single-event .ai1ec-time .ai1ec-field-value {
+.ai1ec-single-event .ai1ec-time .ai1ec-field-value,
+.p-location {
   font-size: 1em;
   font-weight: 400;
 }
