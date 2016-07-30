@@ -45,16 +45,21 @@
 				        array_push($words, '… View More');
 				        $the_excerpt = implode(' ', $words);
 				    endif;
-				
-				
 				    return $the_excerpt;
 				  }
 				}
 				
+				
 				echo '<a href="'.get_permalink($postid).'" title="Click to view '.$event_title.'">';
 				echo '<div class="col-sm-12 no-padding">';
 				echo '<div class="col-sm-2 no-padding img">';
-				echo '<div class="thumbnail default"></div>';
+				  if (has_post_thumbnail( $postid ) ): //if featured image is uploaded... 
+				    $image = get_post_thumbnail_id( $postid);
+				    $img = wp_get_attachment_url( $image );
+	                echo '<img class="thumbnail" src="'.$img.'">';
+	              else: 
+	                echo '<div class="thumbnail default"></div>';
+	              endif;
 				echo '</div>';
 				echo '<div class="col-sm-8 descrip">';
 				echo '<h3>'.$event_title.'</h3>';
