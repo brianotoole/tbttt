@@ -19,9 +19,21 @@
 
 // excerpts
 .ai1ec-multi-event, 
-.ai1ec-excerpt {
+.ai1ec-single-event .ai1ec-time .ai1ec-field-value {
   font-size: 1em;
   font-weight: 400;
+}
+.ai1ec-excerpt {
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+// the cal views
+.ai1ec-week-view .ai1ec-week .ai1ec-event, 
+.ai1ec-oneday-view .ai1ec-oneday .ai1ec-event {
+  font-weight: 400;
+  font-size: 1.2em;
+  text-shadow: none;
 }
 
 // footer meta

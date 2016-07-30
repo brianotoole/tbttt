@@ -1,79 +1,79 @@
-<div class="events">
-<?php 
+<?php
+while ( have_posts() ) : the_post();
 
-$args_1 = array(
-'posts_per_page'  => 4,
-'post_type' 	  => 'ai1ec_event'
-);
-$args_2 = array(
-'posts_per_page'  => 2,
-'post_type' 	  => 'ai1ec_event'
-);
+	global $ai1ec_registry;
 
+	$date_system = $ai1ec_registry->get( 'date.system' );
+	$search = $ai1ec_registry->get('model.search');
 
-if(is_front_page() ) { 
-  $query = new WP_Query($args_1);
-} else {
-  $query = new WP_Query($args_2); 
-} 
-if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 
+	// gets localized time
+	$local_date = $ai1ec_registry->get( 'date.time', $date_system->current_time(), 'sys.default' );
 
+	//sets start time to today
+	$start_time = clone $local_date;
+	$start_time->set_time( 0, 0, 0 );
+	
+	//sets end time to a year from today 
+	$end_time = clone $start_time;
+	$end_time->adjust_month( 12 );
+		
+	$events_result = $search->get_events_between($start_time, $end_time, array(), true);
+	$thumb = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+		
+	if(!empty($events_result)) {
+		$event_count = '0';
+		echo '<div class="events">';
+		foreach($events_result as $event) {
+			if($event_count < '999999') { //# posts to display
+				$event_count ++;
+				$event_long_date   = $event->get( 'start' );
+				$event_date = $ai1ec_registry->get('view.event.time')->get_long_date($event_long_date);
+				$event_title   = $event->get( 'post' )->post_title;
+				$postid   = $event->get( 'post_id' );
+				// create function to retrieve wp_posts specific data
+				if(!function_exists('get_excerpt_by_id')) { //check against NULL		
+				  function get_excerpt_by_id($postid){
+				    $the_post = get_post($postid); //Gets post ID
+				    $the_excerpt = $the_post->post_content; //Gets post_content
+				    $excerpt_length = 40; //Sets excerpt length by word count
+				    $the_excerpt = strip_tags(strip_shortcodes($the_excerpt)); //Strips tags and images
+				    $words = explode(' ', $the_excerpt, $excerpt_length + 1);
+				
+				    if(count($words) > $excerpt_length) :
+				        array_pop($words);
+				        array_push($words, '… View More');
+				        $the_excerpt = implode(' ', $words);
+				    endif;
+				
+				
+				    return $the_excerpt;
+				  }
+				}
+				
+				echo '<a href="'.get_permalink($postid).'" title="Click to view '.$event_title.'">';
+				echo '<div class="col-sm-12 no-padding">';
+				echo '<div class="col-sm-2 no-padding img">';
+				echo '<div class="thumbnail default"></div>';
+				echo '</div>';
+				echo '<div class="col-sm-8 descrip">';
+				echo '<h3>'.$event_title.'</h3>';
+				echo '<p>';
+				echo get_excerpt_by_id($postid);
+				echo '</p>';
+				echo '</div>';
+				echo '<a <a href="'.get_permalink($postid).'">';
+				echo '<div class="col-sm-2 no-padding pull-right">';
+				echo '<div class="more">';
+				echo '<p class="view">View Event</p>';
+				echo '</div>';
+				echo '</div>';
+				echo '</a>';
+				echo '<div class="clear"></div>';
+				echo '<hr>';
+			}
+
+		}
+		echo '</div>';
+	}
+endwhile;
 ?>
-
-<a href="<?php the_permalink() ?>" title="Click to View: <?php the_title_attribute(); ?>">  
-<div class="col-sm-12 no-padding">
-	<div class="col-sm-2 no-padding img">
-	  <?php if (has_post_thumbnail( $post->ID ) ): //if featured image is uploaded... ?>
-	  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
-	  <img class="thumbnail" src="<?php echo $image; ?>">
-	  <?php elseif( get_field('event_img')): //if event thumb is entered...?>
-	  <img class="thumbnail" src="<?php the_field('event_img'); ?>">
-	  <?php else: //if no featured image is uploaded, show default icon img ?>
-	  <div class="thumbnail default"></div>
-	  <?php endif; ?>
-	</div>
-	<div class="col-sm-8 descrip">
-	  <h3><?php the_title(); ?></h3>
-	  <p><em>
-	  <?php if( get_field('event_start_date') && !get_field('event_end_date') )://if only start is entered..?>
-	  <?php the_field('event_start_date'); ?>
-	  
-	  <?php elseif( get_field('event_start_date') && get_field('event_end_date') ): //start & end date...?> 
-      <?php the_field('event_start_date'); ?> - <?php the_field('event_end_date'); ?>
-
-      <?php else: //no event date is entered...?> 
-      <?php endif; ?></em></p>  
-	  <p><?php the_excerpt() ?></p>
-	</div>
-	<a href="<?php the_permalink() ?>" title="Click to View: <?php the_title_attribute(); ?>">
-	  <div class="col-sm-2 no-padding pull-right">
-		<div class="more">
-	      <p class="view">View Event</p>
-	    </div>
-	  </div>
-	</a>
-	<div class="clear"></div>
-	<hr>
-</div>
-</a>
-
-<?php endwhile; 
- wp_reset_postdata();
- else : ?>
-<p><?php _e( 'There are no upcoming events at this time.' ); ?></p>
-<?php endif; ?>
- 
-<?php if(is_front_page() ) { //if homepage, show "View All Events" if there are 5 or more ?>	
-  <?php 
-    $count_posts = wp_count_posts();
-    $published_posts = $count_posts->publish;
-      if( $published_posts >= 5 ) {
-        echo '<div class="col-sm-12 text-center no-padding">';
-        echo '<a href="' . get_option('home') . '/events" class="button white">' . 'View All Events' . '</a>';
-        echo '</div>'; 
-      }
-  ?>
-<?php } else { ?>
-<?php } ?>
-
-</div><!--/.events-->

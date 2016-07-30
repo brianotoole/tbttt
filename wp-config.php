@@ -39,6 +39,8 @@ define('WPCF7_LOAD_CSS', false);
 
 define( 'ALTERNATE_WP_CRON', true );
 
+define('WP_DEBUG', false);
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -59,22 +61,8 @@ define('NONCE_SALT',       'p,HidTRy[ -;(+I_c_T1yTe;qth*<kowNq%R7 h:`Co,mAEW*> U
 
 /**#@-*/
 
-/**
- * WordPress Database Table prefix.
- *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
- */
 $table_prefix  = 'wp_';
 
-/**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- */
-define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 

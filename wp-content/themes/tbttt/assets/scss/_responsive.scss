@@ -69,10 +69,10 @@ Media Queries
 /* above .menu-toggle */
 @media screen and (min-width: 768px) {
 	.b-right {
-	  	border-right: 1px solid $lightgray;
+	  	border-right: 2px solid rgba($hr,0.35);
 	}
 	.b-left {
-		border-left: 1px solid $lightgray;
+		border-left: 2px solid rgba($hr,0.35);
 	}
 	#secondary {
 		padding-left: 20px;

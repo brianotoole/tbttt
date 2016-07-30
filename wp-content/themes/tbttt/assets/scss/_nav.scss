@@ -47,9 +47,8 @@ Navigation
       
       &.open {background-color: $black-light;}
       a { 
-        color: $white;
+        color: $white-dark;
         &:hover,&:focus { text-decoration: none; }
-        &:focus { color: darken($white-dark,10%); }
       }
       
       i {
@@ -57,7 +56,6 @@ Navigation
 	    font-size: 0.85em;
 	    color: $white-dark;
 	    vertical-align: baseline;
-	    &:focus { color: darken($white-dark,10%); }
       }
       
 	}
