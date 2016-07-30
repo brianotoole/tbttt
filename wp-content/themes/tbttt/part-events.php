@@ -1,5 +1,4 @@
 <?php
-while ( have_posts() ) : the_post();
 
 	global $ai1ec_registry;
 
@@ -78,5 +77,5 @@ while ( have_posts() ) : the_post();
 		}
 		echo '</div>';
 	}
-endwhile;
+
 ?>
