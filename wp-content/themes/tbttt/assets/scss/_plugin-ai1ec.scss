@@ -7,8 +7,14 @@
 .ai1ec-single-event .ai1ec-time .ai1ec-field-value, 
 .ai1ec-multi-event .ai1ec-time .ai1ec-field-value,
 .p-location {
-  margin: 0 5px;
   text-transform: capitalize;
+  margin: 0 1px;
+  @media (max-width: $screen-sm) {
+	margin: 0 5px;
+  }
+}
+.ai1ec-time {
+  font-size: 1.1em;
 }
 
 .ai1ec-field-label {

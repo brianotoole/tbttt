@@ -36,7 +36,7 @@
 				  function get_excerpt_by_id($postid){
 				    $the_post = get_post($postid); //Gets post ID
 				    $the_excerpt = $the_post->post_content; //Gets post_content
-				    $excerpt_length = 40; //Sets excerpt length by word count
+				    $excerpt_length = 35; //Sets excerpt length by word count
 				    $the_excerpt = strip_tags(strip_shortcodes($the_excerpt)); //Strips tags and images
 				    $words = explode(' ', $the_excerpt, $excerpt_length + 1);
 				
