@@ -31,6 +31,7 @@
 			<?php  if (is_user_logged_in()){
 			  global $current_user; get_currentuserinfo();
 			  echo('<li>Logged in as: &nbsp;' . $current_user->user_firstname . '</li>');
+			  echo '<li class="member-link-logout"><a href="'. site_url().'">Return to Homepage</a></li>';
 			  echo '<li class="member-link-logout"><a href="'. wp_logout_url() .'">Logout</a></li>';
 			}
 			  else {

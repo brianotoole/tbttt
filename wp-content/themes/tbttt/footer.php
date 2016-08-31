@@ -48,7 +48,18 @@
 			  <p>Plan on shopping online? Click to shop Amazon and a portion of your spending will benefit the Theatre.</p>
 			</a>
 		</div>
-
+	</div><!-- grid -->
+	<div class="grid grid-pad row" style="border-top: 2px solid #8b8b8b;margin-top: 20px;">
+	  <div class="col-xs-3 col-xs-offset-3">
+	    <a href="http://tampaarts.com/" target="_blank">
+	      <img class="sponsor" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footer-logo-arts.png"/>
+	    </a>
+	  </div>
+	  <div class="col-xs-3">
+	    <a href="http://www.hillsboroughcounty.org/" target="_blank">
+	      <img class="sponsor" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footer-logo-hills.png"/>
+	    </a>
+	  </div>
 	</div><!-- grid -->
 </div>
 
