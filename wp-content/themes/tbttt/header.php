@@ -32,7 +32,7 @@
 	      <ul class="links">
 			<?php  if (is_user_logged_in()){
 			  global $current_user; get_currentuserinfo();
-			  echo('<li>Logged in as: &nbsp;' . $current_user->user_firstname . '</li>');
+			  echo('<li class="member-link-user">Logged in as: &nbsp;' . $current_user->user_firstname . '</li>');
 			  echo '<li class="member-link-logout"><a href="'. site_url('/members').'">Member Area</a></li>';
 			  echo '<li class="member-link-logout"><a href="'. wp_logout_url() .'">Logout</a></li>';
 			}
@@ -86,6 +86,12 @@
     
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
 		<h3>Menu</h3>  
+		<?php  if (is_user_logged_in()) {
+		  echo '<li class="menu-item-logged-in"><a href="'. get_bloginfo('url') .'/members" style="padding-left:3px;">Member Area</a></li>';
+		  echo '<li class="member-link-logout"><a href="'. wp_logout_url() .'" style="padding-left:3px;">Logout</a></li>';
+		} else {
+		
+		}; ?>
 		<?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?>
 	</nav>
 
