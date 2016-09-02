@@ -63,8 +63,7 @@
 				echo '</div>';
 				echo '<div class="col-sm-8 descrip">';
 				echo '<h3>'.$event_title.'</h3>';
-				echo '<div class="ai1ec-time"><strong>When:</strong> '.$event_date.' at 
-				      <span class="date"> '.$event_time.'</span></div>';
+				echo '<div class="ai1ec-time"><strong>When:</strong> '.$event_date.'</div>';
 				echo '<p>'.get_excerpt_by_id($postid).'</p>';
 				echo '</p>';
 				echo '</div>';
