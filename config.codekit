@@ -16340,6 +16340,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/tbttt\/assets\/img\/button-buy-tickets.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4149,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/img\/button-buy-tickets.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/img\/button-buy-tickets.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/tbttt\/assets\/img\/divider.png": {
 		"fileType": 32768,
 		"ignore": 0,
