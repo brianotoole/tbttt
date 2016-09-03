@@ -16373,6 +16373,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/tbttt\/assets\/img\/footer-logo-ndeo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13214,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/img\/footer-logo-ndeo.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/tbttt\/assets\/img\/footer-logo-ndeo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/wp-content\/themes\/tbttt\/assets\/img\/gray.png": {
 		"fileType": 32768,
 		"ignore": 0,

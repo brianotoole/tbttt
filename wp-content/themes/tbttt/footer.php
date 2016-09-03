@@ -49,8 +49,8 @@
 			</a>
 		</div>
 	</div><!-- grid -->
-	<div class="grid grid-pad row" style="border-top: 2px solid #8b8b8b;margin-top: 20px;">
-	  <div class="col-xs-3 col-xs-offset-3">
+	<div class="grid grid-pad row" style="border-top: 2px solid #8b8b8b;margin-top:40px;padding-top:60px;">
+	  <div class="col-xs-3">
 	    <a href="http://tampaarts.com/" target="_blank">
 	      <img class="sponsor" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footer-logo-arts.png"/>
 	    </a>
@@ -58,6 +58,16 @@
 	  <div class="col-xs-3">
 	    <a href="http://www.hillsboroughcounty.org/" target="_blank">
 	      <img class="sponsor" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footer-logo-hills.png"/>
+	    </a>
+	  </div>
+	  <div class="col-xs-3">
+	    <a href="http://www.americansforthearts.org/" target="_blank">
+	      <img class="sponsor" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footer-logo-aa.gif"/>
+	    </a>
+	  </div>
+	  <div class="col-xs-3">
+	    <a href="http://www.ndeo.org/" target="_blank">
+	      <img class="sponsor" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footer-logo-ndeo.png"/>
 	    </a>
 	  </div>
 	</div><!-- grid -->
