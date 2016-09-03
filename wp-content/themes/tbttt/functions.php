@@ -178,12 +178,20 @@ add_action( 'wp_head', 'sensible_html5shiv' );
  */
 function sensible_excerpt_length( $length ) {
 
-	$excerpt = get_theme_mod('exc_length', '22');
+	$excerpt = get_theme_mod('exc_length', '25');
 	return $excerpt;
 
 }
 
 add_filter( 'excerpt_length', 'sensible_excerpt_length', 999 );
+
+
+// remove [...] from excerpt
+function new_excerpt_more( $more ) {
+    return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 
 /**
  * Implement the Custom Header feature.

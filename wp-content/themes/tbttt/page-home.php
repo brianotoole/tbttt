@@ -25,7 +25,7 @@ get_header(); ?>
 
 <div class="sec1">
 	<div class="intro" id="contain">
-	<h2 class="title">Our Mission</h2>
+	<h3 class="h-title"><span><?php the_field('homepage_sec1_title'); ?></span></h3> 
 	<p class="intro"><?php the_field('homepage_sec1_callout'); ?></p>
 	<a href="<?php bloginfo('url'); ?>/about" class="button white no-border short">Learn More</a>
 	</div><!--/.intro-->
