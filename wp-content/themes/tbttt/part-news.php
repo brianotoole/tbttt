@@ -2,6 +2,8 @@
 //part-news 
 
 $args = array(
+'orderby' => 'date',
+'order'   => 'DESC',
 'posts_per_page'  => 4,
 'post_type' 	  => 'post',
 'post_status'     => 'publish'
