@@ -23,7 +23,7 @@
 		$event_count = '0';
 		echo '<div class="events">';
 		foreach($events_result as $event) {
-			if($event_count < '999999') { //# posts to display
+			if($event_count < '999') { //# posts to display
 				$event_count ++;
 				$event_long_date = $event->get( 'start' );
 				$event_time_string = strtotime($event_long_date);
@@ -79,7 +79,11 @@
 			}
 
 		}
+		//echo '<a href="'.get_bloginfo('url').'/calendar" class="button primary">View More Events</a>';
 		echo '</div>';
+		
+	} else {
+		echo '<p>There are no upcoming events at this time.</p>.';
 	}
 
 ?>

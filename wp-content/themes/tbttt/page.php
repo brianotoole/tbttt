@@ -25,8 +25,8 @@ get_header(); ?>
 				
 				<?php get_template_part( 'content', 'page' ); ?>
 				
-				<?php if (is_page('events')) { ?>
-				  <?php get_template_part( 'part', 'events' ); ?>
+				<?php if (is_page('event') || is_page('events')) { ?>
+				  <?php get_template_part( 'part', 'events-all' ); ?>
 				<?php } else { ?>
 				<?php } ?>
 
