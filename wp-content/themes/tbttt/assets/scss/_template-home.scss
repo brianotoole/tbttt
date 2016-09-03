@@ -3,17 +3,15 @@ Template - Home
 --------------------------------------------------------------*/
 .hero {
   position: relative;
-  background-color: $gray;
-  //background: url('http://www.townsquarebuzz.com/wp-content/uploads/2013/09/nutcracker.jpg') center center no-repeat;
-  //background: url('img/header-placeholder.png') center center no-repeat;
-  background-size: cover;
   width: 100%;
-  height: 100%;
-  min-height: 500px;
+  height: 600px;
+  min-height: 600px;
+  background-color: $gray;
+  background-size: cover;
   .img {
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: 600px;
     z-index: 1;
     visibility: hidden;
     animation: fadeShow 24s infinite;
@@ -57,13 +55,46 @@ Template - Home
   z-index: 3; //on top of gradient
 }
 
+/* if we ever decide on a full screen video :)
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background: $maroon;
+  video {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100%;
+    min-width: 100%;
+  }
+}
+.sec1,
+.sec2, 
+.sec-news,
+.sec3,
+.home-cta,
+.footer-cta,
+.footer-contact,
+.site-footer {
+  position: relative;
+  z-index: 1;
+}
+*/
+
 /* sections */
 .sec1 {
   background: $maroon;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
+  //margin-top: 100vh; //if fullscreen layout
   padding: 0;
+  z-index: 10;
+  transform: translateZ(1px);
   .intro {
     background: transparent;
     max-width: 75%;
@@ -108,6 +139,22 @@ Template - Home
     text-align: center;
   }
 }
+.sec-news {
+  background: white;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  .intro {
+    background: transparent;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+}
 .squeeze-in {
   > div {
     padding: 30px;
@@ -119,6 +166,7 @@ Template - Home
 }
 /* events home */
 .sec3 {
+  background: white;
   padding: 60px 0 30px;
 }
 .events {
@@ -155,4 +203,39 @@ Template - Home
   background: $maroon;
   color: white;
   text-align: center;
+}
+
+/* latest news */
+.sec-news {
+  .title {
+    margin: 10px 0 50px;
+    padding: 0 5px;
+  }
+}
+.news-item {
+  padding: 20px;
+  @media (max-width: 768px) {
+    padding: 20px 0;
+    &:not(:last-child) { border-bottom: 2px solid rgba($hr,0.35);}
+  }
+  &:nth-child(1),
+  &:nth-child(3) {
+    @media (min-width: 768px) {
+      border-right: 2px solid rgba($hr,0.35);
+    }
+  }
+  .read-more {
+    display: block;
+    margin-top: 10px;
+	color: $maroon;
+	text-decoration: underline;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+	  color: darken($maroon,7%);
+	}
+	i {
+	  color: $maroon;
+	  font-size: 1em;
+	}
+  }
 }

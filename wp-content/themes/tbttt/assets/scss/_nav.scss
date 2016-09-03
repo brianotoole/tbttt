@@ -170,6 +170,7 @@ Navigation
 .main-navigation li {
   float: left;
   position: relative;
+  backface-visibility: hidden;
 }
 .main-navigation a {
   display: inline-block;
@@ -180,11 +181,11 @@ Navigation
   font-weight: 500;
   font-size: 1.5em;
   transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
+  
   &::before {
 	content: '';
     position: absolute;
