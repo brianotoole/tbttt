@@ -18,7 +18,7 @@ if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(
   <div class="news-meta">
     <h3><?php the_title(); ?></h3>
     <p><?php the_excerpt() ?></p>
-    <a href="<?php the_permalink() ?>" class="read-more" title="Click to Read Full Article">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+    <a href="<?php the_permalink() ?>" class="read-more" title="Click to Read Full Article">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
   </div><!--/.news-meta-->
 </div><!--/.col-->
 

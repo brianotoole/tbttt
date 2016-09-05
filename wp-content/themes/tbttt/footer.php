@@ -62,7 +62,7 @@
 	  </div>
 	  <div class="col-xs-3">
 	    <a href="http://www.americansforthearts.org/" target="_blank">
-	      <img class="sponsor" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footer-logo-aa.gif"/>
+	      <img class="sponsor smaller" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footer-logo-aa.gif"/>
 	    </a>
 	  </div>
 	  <div class="col-xs-3">

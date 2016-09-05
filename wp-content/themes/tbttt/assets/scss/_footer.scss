@@ -29,6 +29,12 @@ Footer
   .item {
     margin: 20px 0;
   }
+  img.sponsor {
+	max-width: 215px;
+	&.smaller {
+	  max-width: 125px;
+	}
+  }
 }
 .site-footer {
   font-weight: 400;
