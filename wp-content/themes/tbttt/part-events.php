@@ -1,13 +1,26 @@
 <div class="events">
 <?php 
+// Events are posts, but event start/end date != post date
+// use function "get_events_between()" to query by dates >= than current day 
 $args_limit = array(
-'posts_per_page'  => 5,
-'post_type' 	  => 'post',
+'posts_per_page'  => 8,
+'category_name'   => 'event',
 'orderby'         => 'date',
-'order'	          => 'DESC'
+'order'	          => 'DESC',
+'post_status'     => 'publish'
 );
-$query = new WP_Query($args_all); 
+$args_all = array(
+'posts_per_page'  => -1,
+'category_name'   => 'event',
+'post_status'     => 'publish'
+);
 
+
+if(is_front_page() ) { 
+  $query = new WP_Query($args_limit);
+} else {
+  $query = new WP_Query($args_all); 
+} 
 if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 
 ?>
 
@@ -58,7 +71,7 @@ if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(
   <?php 
     $count_posts = wp_count_posts();
     $published_posts = $count_posts->publish;
-      if( $published_posts > 5 ) {
+      if( $published_posts > 8 ) {
         echo '<div class="col-sm-12 text-center no-padding">';
         echo '<a href="' . get_option('home') . '/events" class="button white">' . 'View All Events' . '</a>';
         echo '</div>'; 

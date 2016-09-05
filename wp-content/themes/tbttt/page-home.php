@@ -51,7 +51,7 @@ get_header(); ?>
 </div><!--/.home-cta-->
 <div class="sec3">
     <div class="grid grid-pad no-top">
-		<?php get_template_part( 'part', 'events-old' ); ?>
+		<?php get_template_part( 'part', 'events' ); ?>
     </div>
 </div><!--/.sec3-->
  
