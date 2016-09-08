@@ -2,6 +2,7 @@
 //part-news 
 
 $args = array(
+'category_name' => 'news',
 'orderby' => 'date',
 'order'   => 'DESC',
 'posts_per_page'  => 4,
